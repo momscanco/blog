@@ -19,6 +19,12 @@
   color: black;
 }
 
+.fab:hover {
+  color: #FFCD04;
+}
+
+
+
 button {
   padding: 0;
   border: none;

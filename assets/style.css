@@ -1,3 +1,7 @@
+.main-body {
+  margin: 20px;
+}
+
 .header {
   height: auto;
   width: 100%;
@@ -23,8 +27,6 @@
   color: #FFCD04;
 }
 
-
-
 button {
   padding: 0;
   border: none;
@@ -37,4 +39,18 @@ button {
 .btn {
   border: solid 1px black;
   border-radius: 4px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 280px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
 }

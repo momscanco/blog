@@ -212,6 +212,58 @@ a:hover {
   padding: 2px 16px;
 }
 
+/* individual blog post styles */
+#main-section-blog-post {
+  max-width: 960px;
+  margin: auto;
+}
+
+.feature-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+#date-author {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.image-for-post {
+  margin-bottom: 10px;
+}
+
+.feature {
+  max-width: 600px;
+  margin: auto;
+}
+
+.article-para {
+  text-align: justify;
+  margin: auto;
+}
+
+#author-section {
+  max-width: 600px;
+  margin: auto;
+}
+
+.about-the-author {
+  display: inline-block;
+  width: 30%;
+}
+
+.author-about-me {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  padding: 20px;
+  margin-left: 100px;
+}
+
 @media screen and (min-width: 75em){
 .row .row {
     margin-right: -.9375rem;
@@ -260,4 +312,3 @@ a:hover {
 }
 
 
-/* style for individual blog post page */

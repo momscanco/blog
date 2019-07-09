@@ -11,18 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script>
-    function contains(textOne, textTwo) {
-      return textOne.toLowerCase().indexOf(textTwo.toLowerCase()) != -1;
-    }
-
-    $('#searchText').keyup(function(){
-      var searchText = $(this).val();
-      $("#program-card").each(function(){
-        $(this).toggle(contains($(this).text(), searchText));
-      });
-    });
-  </script>
+    
   </head>
 
   <body>
@@ -42,11 +31,6 @@
             <li>
               <a href="#"><i class="fab fa-instagram"></i></a>
             </li> 
-            <form class="search-form">
-              <label for="site-search">Search:</label>
-              <input type="search" id="searchText" name="q" aria-label="Search through site content">
-              <button>search</button>
-            </form>
           </ul>  
       </nav>
     </div>
@@ -73,9 +57,9 @@
                     
               <h4 id="program-card-title">The Moms Can Code School</h4>
               <hr width="70%">
-              <h5 id="cohort-links"><a href="cohort-1.html">Cohort 1</a></h5>
+              <h5 id="cohort-links"><a href="cohort_1.html">Cohort 1</a></h5>
               <h5 id="cohort-links"><a href="cohort_2.html">Cohort 2</a></h5>
-              <h5 id="cohort-links"><a href="cohort-3.html">Cohort 3</a></h5>
+              <h5 id="cohort-links"><a href="cohort_3.html">Cohort 3</a></h5>
             </figcaption>
           </figure> 
         </div><!-- card ends -->
@@ -91,14 +75,16 @@
             </figcaption>
           </figure> 
         </div><!-- card ends -->
-  
+
+        <div id="tipue_search_content"></div>
+
       </div>
     </section><!-- row -->
     </div>
 
   </div><!-- program-section -->
 
-
+  
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

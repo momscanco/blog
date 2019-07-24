@@ -27,6 +27,10 @@ body {
   color: #FFCD04;
 }
 
+/* css class to align items left */
+.article-list {
+  text-align: left;
+}
 /* index.html styles */
 
 .homepage-title {

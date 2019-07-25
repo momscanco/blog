@@ -64,43 +64,107 @@
                 </p>
                 <p class="article-para">
                     <br />
-                    <strong>One of the first accounts you’ll set up is a <a href="https://www.github.com">GitHub</a>.
-                    </strong>
-                    <a href="https://www.github.com">GitHub</a> is a repository, or a space in the cloud to save all
-                    your coding work. Think of it as Google Drive for your coding projects. Hopefully you’re thinking,
-                    “Hmmm, I can usually collaborate with others when using cloud computing…” You’re right! GitHub lets
-                    you collaborate with others, just like other cloud computing tools.
-
+                    <strong>You've set up a GitHub, created your first repository, and even added some files. Now what?
+                    </strong> Let's use the terminal to clone your repository onto your computer. A terminal is
+                    text-based interface where you can interact with your files. When working in the
+                    terminal, you are always in a directory (or folder) somewhere on your computer. Cloning your
+                    repository using the terminal serves several purposes. First, it establishes a connection between
+                    your computer and your GitHub repository, and the terminal will know where to send your coding
+                    projects. Next, it
+                    creates the directory on your local
+                    computer. It also initializes the repository so the terminal tracks changes to your files.
                 </p>
                 <br />
                 <p class="article-para">
-                    <strong>Next, you’ll want to learn about Git. </strong>
-                    But wait, didn’t I just set one up? Though similarly named, they are very different. Git is a
-                    version control system. GitHub and Git work together to store and track changes of your coding work.
-                    Think back to the days before cloud computing, and saving different versions of your work: Resume
-                    v1, Resume v2, etc. (admittedly, I still do this). That’s what you’re doing with Git- committing
-                    changes to your coding files, and leaving yourself (or your collaborators) a note about what you
-                    did.
+                    <strong>Copy the web URL of your repository. </strong>Click the green Clone or download button
+                    in your GitHub repository (right side of the screen). The web URL of your repository will appear
+                    in a drop down below the button. Click the button next to it (clipboard with an arrow) to copy
+                    it.
+
                 </p>
-                <br />
+                <div class="image-for-post">
+                    <img class="post-image" src="assets/images/getrepourl.PNG" height="100%" width="100%">
+                </div>
+
+
                 <p class="article-para">
-                    <strong>You’ll be using Git in a terminal. </strong>
-                    A terminal is text-based interface where you can interact with your files. When working in the
-                    terminal, you are always in a directory (or folder) somewhere on your computer. You can tell which
-                    directory you’re in by looking at the path. Type pwd at the command prompt to see which directory you're in. Type cd
+                    <br><strong>Clone your repository to your computer. </strong>Launch your terminal. This could be in
+                    VSCode or another tool. At the command prompt, type <strong>git clone </strong>and paste the url
+                    that you just copied, and hit enter. This will create a copy of your repository onto your computer.
 
-                        <div class="image-for-post">
-                            <img class="post-image" src="assets/images/terminalpath.PNG" height="100%" width="100%">
-                        </div>
-
-                    pwd- print working directory (shows the path and directory/folder you’re in)
-                    ls- lists the files and folders in that directory
-                    cd .. changes the directory one level up
-                    cd directory name changes to another directory
                 </p>
-                <p class="article-para">Conclusion will be here.</p>
+                <br />
+                <div class="image-for-post">
+                    <img class="post-image" src="assets/images/clonerepoterminal.PNG" height="100%" width="100%">
+                </div>
+
+                </p>
+
+                <p class="article-para">
+                    <strong>As you code, you will want to send, or push your changes to your GitHub repository</strong>
+                    (this is like saving your work to the cloud). You need to prepare your files to be pushed. First,
+                    save your work. With your cursor anywhere in your code, press CTRL+S. This saves your work to your
+                    local (on your computer) repository.
+
+                </p>
+                <br />
+
+                <p class="article-para">
+                    <strong>Let Git know that you want to send the file to the repository. </strong>
+                    This is called staging the file. You do this with a git add command: git add filename (Intermediate
+                    tip: if you type the first letter of the filename and hit tab, the terminal will cycle through all
+                    your files so you don’t have to type the whole filename).
+
+
+                </p>
+                <br />
+                <div class="image-for-post">
+                    <img class="post-image" src="assets/images/gitadd.PNG" height="100%" width="100%">
+                </div>
+
+
+                <p class="article-para">
+                    <strong>Make a quick note of what you did in this version of your code. </strong>
+                    This is a commit. You do this with the git commit command: git commit -m “note to self and others”
+                    <p>(Git commit [space] dash m [space] double quotes note to self close double quotes)</p>
+
+
+                </p>
+                <br />
+
+                <div class="image-for-post">
+                    <img class="post-image" src="assets/images/gitcommit.PNG" height="100%" width="100%">
+                </div>
+
+
+
+                <p class="article-para">
+                    <strong>Push your files to the repository. </strong>
+                    Now you are ready to send, or push the file(s) up to the repository by typing git push origin
+                    master.
+
+
+                </p>
+                <br />
+
+                <div class="image-for-post">
+                    <img class="post-image" src="assets/images/gitpush.PNG" height="100%" width="100%">
+                </div>
+
+
+
+                <p class="article-para">If you want to make sure that your changes were sent, go back to your GitHub and
+                    check the repository. You should see the time elasped since you saved your files. That's it! You'll
+                    be using the terminal like a pro in no time!
+                </p>
 
                 <br />
+
+                <div class="image-for-post">
+                    <img class="post-image" src="assets/images/gitpush.PNG" height="100%" width="100%">
+                </div>
+
+
                 <div class="link-back"><a href="cohort_2.html">Back</a></div>
 
             </article>
@@ -111,10 +175,14 @@
 
         <div class="about-the-author" style="float: left;">
             <!-- Your link to the image of you will go in the src -->
-            <img src="assets/images/ilda_rodriguez.webp" alt="image of author">
+            <img src="assets/images/cci_headshot.jpg" alt="image of author" height="100%" width="100%">
         </div>
         <div class="author-about-me">
-            Your about me goes here.
+            Cathy Cheo-Isaacs <a href="https://www.twitter.com/iwearthecrowns">(@iwearthecrowns)</a> is a wearer of many crowns. From professional learning to educational
+            technology, event production, and everything in between, Cathy brings her obsession with details,
+            efficiency, and love of technology to everything she encounters. A passionate, problem solving, life long
+            learner, her latest adventure as a full stack developer couldn’t be more perfect. She is the proud wife of
+            <a href="https://www.twitter.com/mr_isaacs">@mr_isaacs</a> and mom of <a href="https://www.twitter.com/amazingrace1214">@amazingrace1214</a> and <a href="https://www.twitter.com/leilaboo215">@leilaboo215</a>.
         </div>
     </section>
 

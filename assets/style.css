@@ -81,7 +81,8 @@ body {
 
 /* cohort page styles */
 .layoutresults {
-  margin-left: 35px !important;
+  width: 100%;
+  margin: 0 auto !important;
 }
 
 .blog-header {

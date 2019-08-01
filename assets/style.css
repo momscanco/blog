@@ -36,7 +36,6 @@ body {
   font-size: 50px;
 }
 #program-columns {
-  /* margin-left: 30px; */
   width: 80%;
   margin: auto;
 }
@@ -51,10 +50,6 @@ body {
   text-transform: uppercase;
 }
 
-/* #row {
-  margin-left: 10px !important;
-  /* margin-right: 10px !important; */
-} */
 
 .content {
   max-width: 1100px;
@@ -80,7 +75,8 @@ body {
 
 /* cohort page styles */
 .layoutresults {
-  margin-left: 35px !important;
+  width: 80%;
+  margin: 0 auto !important;
 }
 
 .blog-header {
@@ -149,7 +145,6 @@ figure {
   transition: 0.3s;
   width: 280px;
   margin-bottom: 20px;
-  /* margin-right: 20px; */
   margin-left: 20px;
 }
 

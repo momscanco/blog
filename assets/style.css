@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -27,10 +28,6 @@ body {
   color: #FFCD04;
 }
 
-/* css class to align items left */
-.article-list {
-  text-align: left;
-}
 /* index.html styles */
 
 .homepage-title {
@@ -39,16 +36,25 @@ body {
   text-transform: uppercase;
   font-size: 50px;
 }
+#program-columns {
+  /* margin-left: 30px; */
+  width: 80%;
+  margin: auto;
+}
+
+#row {
+  margin-left: 15px !important;
+}
 
 #program-subtitle {
   margin-top: 70px;
   margin-bottom: 70px;
   text-transform: uppercase;
 }
-/* 
-#row {
+
+/* #row {
   margin-left: 10px !important;
-  margin-right: 10px !important;
+  /* margin-right: 10px !important; */
 } */
 
 .content {
@@ -74,6 +80,10 @@ body {
 }
 
 /* cohort page styles */
+.layoutresults {
+  margin-left: 35px !important;
+}
+
 .blog-header {
   margin-top: 50px;
 }
@@ -125,6 +135,10 @@ figure {
   height: 125px;
 }
 
+.tagresults {
+  margin: 10px 10px 10px 30px;
+}
+
 .header {
   height: auto;
   width: 100%;
@@ -136,7 +150,8 @@ figure {
   transition: 0.3s;
   width: 280px;
   margin-bottom: 20px;
-  margin-right: 12px;
+  /* margin-right: 20px; */
+  margin-left: 20px;
 }
 
 .card:hover {

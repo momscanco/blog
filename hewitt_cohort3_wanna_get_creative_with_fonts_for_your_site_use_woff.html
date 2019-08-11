@@ -46,13 +46,14 @@
         <br />
         
         <p class="article-para">
-            <img src="assets/images/newyork.jpg" align="right" margin="3px auto" HSPACE="15" VSPACE="20" alt="a list displaying the words 'New York' in different fonts">
-            I LOVE fonts!  I love discovering new fonts. I love playing with different fonts in a headline to see how it changes the feel of something. I love mixing them together to create a bit of word art. Fonts can completely change the look of a site. A light, airy, hand-sketched font can add whimsy, while a big, bold, heavy font adds weight and emphasis to what you have to say. I have hundreds of fonts installed on my laptop and my brain gets a little giddy thinking about which ones I’ll pull out to use when I start on a new project.<br /><br />
-            We were asked to create a front-end storefront for a boutique website in our website development class. I was excited to take on the task of finding a color palette and fonts for our project. I found a few that I liked and added them to my CSS code under font-family. They looked awesome! One day, during a video meeting, my remote partner shared her screen with me to show me her latest addition to our project. I was surprised to discover that my chosen fonts weren’t showing up on my partner’s computer, just regular old Times New Roman. What?!? I was bummed. Did this mean that I was only allowed to use <a href="https://www.lifewire.com/web-safe-fonts-3467430" style="color: #5070BB !important; border-bottom:1px solid black;">web safe fonts</a>? Not quite, enter WOFF.
+          <img src="assets/images/newyork.jpg" align="right" margin="3px auto" HSPACE="15" VSPACE="20" alt="a list displaying the words 'New York' in different fonts">
+          I LOVE fonts!  I love discovering new fonts. I love playing with different fonts in a headline to see how it changes the feel of something. I love mixing them together to create a bit of word art. Fonts can completely change the look of a site. A light, airy, hand-sketched font can add whimsy, while a big, bold, heavy font adds weight and emphasis to what you have to say. I have hundreds of fonts installed on my laptop and my brain gets a little giddy thinking about which ones I’ll pull out to use when I start on a new project.<br /><br />
+          We were asked to create a front-end storefront for a boutique website in our website development class. I was excited to take on the task of finding a color palette and fonts for our project. I found a few that I liked and added them to my CSS code under font-family. They looked awesome! One day, during a video meeting, my remote partner shared her screen with me to show me her latest addition to our project. I was surprised to discover that my chosen fonts weren’t showing up on my partner’s computer, just regular old Times New Roman. What?!? I was bummed. Did this mean that I was only allowed to use <a href="https://www.lifewire.com/web-safe-fonts-3467430" style="color: #5070BB !important; border-bottom:1px solid black;">web safe fonts</a>? Not quite, enter WOFF.
         </p>
         <br /><br />
         
         <h2>What is WOFF?</h2>
+       
         <p class="article-para">
           <br />
           WOFF is an acronym that stands for Web Open Font Format. WOFF files are OpenType or TrueType fonts that have been compressed and given a bit of <a href="https://en.wikipedia.org/wiki/XML" style="color: #5070BB !important; border-bottom:1px solid black;">XML</a> metadata. The compression and data help them stand out to browsers as a web font, not just a font that is used locally on one’s computer and speeds up the transfer process between a server and a computer on a network connection.
@@ -60,9 +61,10 @@
         <br /><br />
 
         <h2>Why do you need WOFF files?</h2>
+        
         <p class="article-para">
           <br />
-          <img src="assets/images/adventurebegins.jpg" align="left" margin="3px auto" HSPACE="15" VSPACE="20" alt="lots and lots of confusing signs points every which way">
+          <img src="assets/images/adventurebegins.jpg" align="left" margin="3px auto" HSPACE="15" VSPACE="20" alt="a cute mug with the phrase 'the adventure begins' is displayed in multiple fonts">
           My partner didn’t have the fonts that I picked out for our project installed on her computer. When she looked at our code on the server preview, her computer picked out a basic web safe font to display our text in, because it didn’t recognize the font-family I stuck in the CSS. To put it bluntly, not everyone is as font-crazed as me, so I shouldn’t expect them to have the fonts that I love installed on their computer. If you want a better chance that most people will have the experience that you have designed for them, you need to use WOFF files for any non-web safe fonts that you choose to use.
 
         </p>
@@ -71,39 +73,41 @@
         <h2>How do I get WOFF files?</h2> <br />
 
           <p class="article-para">
-            Once you have picked out your TrueType or OpenType fonts you need to convert them to WOFF. There are lots of converters out there and a simple, free one that I found to use was <a href="https://cloudconvert.com/" style="color: #5070BB !important; border-bottom:1px solid black;">cloudconvert</a>.</p><br />
+            Once you have picked out your TrueType or OpenType fonts you need to convert them to WOFF. There are lots of converters out there. A simple, free one that I found to use was <a href="https://cloudconvert.com/" style="color: #5070BB !important; border-bottom:1px solid black;">cloudconvert</a>.</p><br />
             <h4 style="text-align:left;font-size:22px;">Here are your steps for conversion magic:</h4>
-            <div style="text-align:left"
+          <div style="text-align:left"
             <br />
         
-        <ol type="1">
+          <ol type="1">
             <li>Select your TTF or OTF file from your computer</li><br />
             <li>To select your format, click on ‘Font’ and ‘WOFF’</li><br />
             <li>Click on ‘Start Conversion’ at the bottom</li><br />
             <li>The conversion will take a few seconds then you can download your new WOFF file</li><br />
           </ol>
-        </div>
-        </p>
+          </div>
+          </p>
         <br />
         
        <h2>How do I use a WOFF file on my site?</h2><br />
-       <p class="article-para">
-        Next, you will need to add your new fonts to a ‘fonts’ folder in your project. Once they are cozy in their new home you can begin to use them.</p><br />
-        <h4 style="text-align:left;font-size:22px;">Here are your steps for font wizardry:</h4> 
+       
+          <p class="article-para">
+           Next, you will need to add your new fonts to a ‘fonts’ folder in your project. Once they are cozy in their new home you can begin to use them.</p><br />
+          <h4 style="text-align:left;font-size:22px;">Here are your steps for font wizardry:</h4> 
         <div style="text-align:left;"
         <br />
          
-        <ol type="1">
-          <li>Define your font-family in your CSS code. In the example below, you can see the path for my font, ‘bellaboo’.</li><br />
-          <img src="assets/images/definefont.png" align="center" margin="3px auto" alt="picture of defining a woff file font-face in CSS"> <br />
-          <br />
-          <li>Now you can use your font! Here’s an example of some CSS for the body of my site:</li><br />
-          <img src="assets/images/definefont.png" align="center" margin="3px auto" alt="picture of the use of a woff file in CSS code">
-        </ol>
-        <p class="article-para">
+          <ol type="1">
+            <li>Define your font-family in your CSS code. In the example below, you can see the path for my font, ‘bellaboo’.</li><br />
+            <img src="assets/images/definefont.png" align="center" margin="3px auto" alt="picture of defining a woff file font-face in CSS"> <br />
+            <br />
+            <li>Now you can use your font! Here’s an example of some CSS for the body of my site:</li><br />
+            <img src="assets/images/usefont.png" align="center" margin="3px auto" alt="picture of the use of a woff file in CSS code">
+          </ol>
+        
+          <p class="article-para">
             Enjoy your newfound creativity with fonts!<br />
-         </p>
-         </div>
+          </p>
+        </div>
          <br />
         
         <br />

@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -30,18 +31,25 @@ body {
 /* index.html styles */
 
 .homepage-title {
-  margin-top: 90px;
-  margin-bottom: 90px;
+  margin: 90px 40px 90px 40px;
   text-transform: uppercase;
   font-size: 50px;
 }
+
 #program-columns {
+<<<<<<< HEAD
   width: 80%;
   margin: auto;
+=======
+  /* margin-left: 30px; */
+  width: 75%;
+  margin: 0 auto;
+>>>>>>> 4e5d14ecfe227a4446da7c472fe17acbec1195fa
 }
 
 #row {
-  margin-left: 15px !important;
+  width: 80%;
+  margin: 0 auto;
 }
 
 #program-subtitle {
@@ -74,8 +82,13 @@ body {
 }
 
 /* cohort page styles */
+
 .layoutresults {
+<<<<<<< HEAD
   width: 80%;
+=======
+  width: 85%;
+>>>>>>> 4e5d14ecfe227a4446da7c472fe17acbec1195fa
   margin: 0 auto !important;
 }
 

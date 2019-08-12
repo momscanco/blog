@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Moms Can & Co</title>
+
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+  <!-- navbar -->
+  <div class="header">
+    <nav class="navbar navbar-expand-lg">
+      <a href="index.html">
+        <img src="assets/images/logo_momscanco.png" width="80" height="60" alt="" class="logo-image">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="nav ml-auto">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>  
+    </nav>
+  </div>
+<!-- navbar ends -->
+
+<!-- main body area of the individual blog post page  -->
+
+<!-- you will enter your blog post content below here -->
+  <section id="main-section-blog-post">
+
+    <div id="indv">
+      <article class="feature text-center">
+        <h1 class="feature-title text-center">Styling Tables for Email</h1>
+        <hr width="80%">
+        <h4 id="date-author" class="text-center">July, 23, 2019 | Sam Carlin</h4>
+        <div class="image-for-post">
+          <!-- enter the link to a photo that is related to your article in the src quotations below -->
+          <img class="post-image" src="assets/images/final_result.png" alt="final table">
+        </div>
+        <p class="article-para">
+          <em>Finished Table Fit for an Email</em>
+        </p>
+        <br />
+        <p class="article-para">
+          
+          Creating tables in HTML is not the current favorite when building a website. But for something like an email newsletter, tables are necessary. Email clients are pretty far behind in their ability to render HTML. To make sure your email displays properly in the majority of email clients, tables are the way to go. Here, we will go through the process of creating a basic 3 column table styled with inline CSS.
+
+
+        </p>
+        <p class="article-para">
+          <br />
+          
+          First, we set up our table using <code>table</code> tags. Then, we will add the amount of columns and rows we want to use. For this example, we will have 3 columns and 4 rows. We will use <code>th</code>, which designates table header, for the first row. And we use <code>tr</code> (table row) for the following rows, and <code>td</code> (table data) for each cell. The <code>td</code> tags will nest 3 within each <code>tr</code> or <code>th</code>. Add your content between the <code>th</code> and <code>td</code> tags.
+        </p>
+        <br />
+        
+        <p class="article-para">
+          
+          Now that we have our table set up, we can start to style it! We will be doing all the style inline, so it will appear in the tags themselves. This can get very repetitive, but in building an email newsletter you cannot attach a separate stylesheet. We will also not use shorthand CSS as individual properties work better in email. 
+        </p>
+        <br />
+        <p class="article-para">
+          
+          When you create a table, the borders between the grid are invisible. If you want to see the boxes around your table, you can add border=“1” to your table tag and then add your style, like this:
+
+        <code>table border=“1” style=“border: 1px solid black;”</code> Now, you have a visible border around your table, like this: 
+        <br />
+        <br />
+        <img src="assets/images/table_with_border.png" alt="table with border" width="500px">
+
+        </p>
+        <p class="article-para">If you want to get rid of the double line on your table grid, you can add “border-collapse: collapse” to your style tag on your table. </p>
+        <br />
+        <img src="assets/images/border_collapse.png" width="600px" alt="border collapse code">
+        <img src="assets/images/border_collapse_result.png" alt="table with border collapse">
+        <p class="article-para">Now that we have our basic table layout, we can adjust the spacing within the table. Use cellpadding to adjust the space between the content of the cell and it’s borders. Use borderspacing to adjust the space between the cells (this doesn’t work if you use border-collapse: collapse). Let’s add 20px of padding to the left and right, and 10px of padding to the top and bottom of each cell. Here is where it gets repetitive as we have to add the style to each <code>th</code> and <code>td</code> tag.</p>
+        <br />
+        <p class="article-para">There are several different options when making a table: you can add background colors, center the text, place an image in the cells, or add borders to the sides. For this exercise, we will center the text using text-align: center; and add a background color to the headings using background-color: #B2DBE2; .</p>
+        <br />
+        <img src="assets/images/adding_background.png" alt="adding background color to table" width="800px">
+        <br />
+        <br />
+
+        <p class="article-para">If you want content to take up more than one row or column, you can use colspan or rowspan. Make sure you delete the extra <code>td</code> tags to keep your table layout the same. For this, we will delete the “spinach,” “quinoa” and “potato” cells to use colspan and rowspan.
+        Set the cell with “broccoli” to <code>td rowspan=“2”</code> and the cell with “grapes” to <code>td colspan=“3”</code>
+        </p>
+        <br />
+        <img src="assets/images/final_table.png" alt="final table code" width="800px">
+        
+        <p class="article-para">And now you have a table fit for an email!</p>
+        <br />
+        <img src="assets/images/final_result.png" alt="final table" width="500px">
+        <br />
+        <div class="link-back"><a href="cohort_2.html">Back</a></div>
+        
+    </article>
+  </div>
+</section>
+<hr>
+<section id="author-section">
+
+  <div class="about-the-author" style="float: left;">
+    <!-- Your link to the image of you will go in the src -->
+    <img src="assets/images/author.jpg" alt="image of author" width="200px">
+  </div>
+  <div class="author-about-me">
+    Sam Carlin is a TV News Technical Director who’s ready to swap the craziness of TV for the world of web development. She is currently a student at The Moms Can Code School.
+  </div>
+</section>
+
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

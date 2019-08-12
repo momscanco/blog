@@ -37,9 +37,8 @@ body {
 }
 
 #program-columns {
-  /* margin-left: 30px; */
-  width: 75%;
-  margin: 0 auto;
+  width: 80%;
+  margin: auto;
 }
 
 #row {
@@ -149,7 +148,6 @@ figure {
   transition: 0.3s;
   width: 280px;
   margin-bottom: 20px;
-  /* margin-right: 20px; */
   margin-left: 20px;
 }
 

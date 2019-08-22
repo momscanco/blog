@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Moms Can & Co</title>
+
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg">
+            <a href="index.html">
+                <img src="assets/images/logo_momscanco.png" width="80" height="60" alt="" class="logo-image">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="nav ml-auto">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- navbar ends -->
+
+    <!-- main body area of the individual blog post page  -->
+
+    <!-- you will enter your blog post content below here -->
+    <section id="main-section-blog-post">
+
+        <div id="indv">
+            <article class="feature text-center">
+                <h1 class="feature-title text-center">Close your containers! <br>(or don't)</h1>
+                <hr width="80%">
+                <h4 id="date-author" class="text-center">August 20, 2019 | Cathy Cheo-Isaacs</h4>
+                <div class="image-for-post">
+                    <!-- enter the link to a photo that is related to your article in the src quotations below -->
+                    <img class="post-image" src="assets/images/closedcontainer.jpg" alt="candy in a closed jar">
+                </div>
+                <p class="article-para">
+                    <em>Is there really a good time to leave a container open?</em>
+                </p>
+                <br />
+                <p class="article-para">
+                    <strong>Closing containers in real life is pretty important. </strong>
+                    If you don’t, what you are storing could leak (and ruin your super-cute lunchbox), get contaminated,
+                    host an infestation, or make your backpack smell like pickles (so I’ve heard).
+
+                    <br><br>Similarly, not closing containers in HTML can have unintended, though hopefully not as
+                    drastic results. </p>
+                </p>
+                <p class="article-para">
+                    <br />
+                    <strong>Containers are defined in HTML by using the &#60;div&#62; tag. </strong>
+                    A container is just section in your HTML document, and using a <b>&#60;div&#62;</b> tag lets you
+                    easily style that
+                    section with CSS. You can also perform JavaScript on that container, but we’ll save that for
+                    another blog post. But simply defining a container doesn’t always achieve your desired layout.
+                    Using the border property with containers have been a helpful way for me to visualize the
+                    different sections of my web pages while coding.
+
+                </p>
+                <br />
+                <p class="article-para">
+                    <strong>Let’s use CodePen and start with some text on a page. </strong>
+                    In the HTML editor, add the following code:
+
+                    <p class="article-para-indent">
+                        <br>&#60;!DOCTYPE HTML&#62;
+                        <br>&#60;html&#62;
+                        <br>&#60;head&#62;
+                        <br>&#60;/head&#62;
+
+                        <br>&#60;body&#62;
+                        <br>&#60;div class=”container”&#62;first container&#60;/div&#62;
+                        <br>&#60;div class=”container”&#62;second container&#60;/div&#62;
+                        <br>&#60;div class=”container”&#62;third container&#60;/div&#62;
+                        <br>&#60;/body&#62;
+
+                        <br> &#60;/html&#62;
+                        <p class="article-para">
+                            <br><br>We have created three containers with some text inside, and added a class called
+                            container that we’ll style later. Notice that there is a line break after each container.
+                            <div class="image-for-post">
+                                <!-- enter the link to a photo that is related to your article in the src quotations below -->
+                                <img class="post-image" src="assets/images/threecontainers.PNG" alt="code and results">
+                            </div>
+
+                        </p>
+                        <br />
+                        <p class="article-para">
+                            <strong>Let’s see what happens if we “forget” to close a &#60;/div&#62; tag. </strong>
+                            Delete the closing &#60;/div&#62; tag for the first and second containers.
+                            <div class="image-for-post">
+                                <!-- enter the link to a photo that is related to your article in the src quotations below -->
+                                <img class="post-image" src="assets/images/threecontainers_open.PNG"
+                                    alt="code with unclosed tags and results">
+                            </div>
+
+                        </p>
+
+                        <br />
+                        <p class="article-para">
+                            <strong>At first glance, there doesn’t appear to be any difference. </strong>
+                            Adding style to the containers, can more easily visualize how the output is affected.
+
+                            <br><br>Style the container in the CSS editor so there is a border around the text.
+
+                            <p class="article-para-indent">
+                                <br>.container {
+                                <br>border: 2px solid red;
+                                <br>}
+
+                                <p class="article-para">
+                                    <br>Now that a border has been added, we can see that the lower containers seem to
+                                    have a thicker border on the sides and bottom.
+                                    <br><br>
+                                    <div class="image-for-post">
+                                        <!-- enter the link to a photo that is related to your article in the src quotations below -->
+                                        <img class="post-image"
+                                            src="assets/images/threecontainers_compare_border_vert.png"
+                                            alt="side by side code with and without unclosed tags and results">
+                                    </div>
+                                </p>
+
+                                <p class="article-para">
+                                    <br>When we add padding to the container style, the difference between open and
+                                    closed containers becomes more clear. Add padding as follows to the container style.
+                                </p>
+                                <p class="article-para-indent">
+                                    <br>.container {
+                                    <br>border: 2px solid red;
+                                    <br><b>padding:0.5em;</b>
+                                    <br>}
+                                    <br><br>
+
+                                    <div class="image-for-post">
+                                        <!-- enter the link to a photo that is related to your article in the src quotations below -->
+                                        <img class="post-image" src="assets/images/closed_open_border_padding.png"
+                                            alt="side by side code with and without unclosed tags and results">
+                                    </div>
+
+                                <p class="article-para"><br>Leaving a container “open” results in nested containers while closing each
+                                    container, stacks them.
+                                    <br><br>
+                                </p>
+
+                                    <div class="image-for-post">
+                                        <!-- enter the link to a photo that is related to your article in the src quotations below -->
+                                        <img class="post-image" src="assets/images/stackednestedcontainers3.png"
+                                            alt="side by side code with and without unclosed tags and results">
+                                    </div>
+
+                                </p>
+
+                                <p class="article-para">Knowing the difference can make a huge difference in your
+                                    layouts. Just remember to close your &#60;/div&#62; tags to keep your code clean!
+                                </p>
+
+                                <br />
+                                <div class="link-back"><a href="https://moms-can-co.github.io/blog/cohort_3.html">Back</a></div>
+
+
+
+            </article>
+        </div>
+    </section>
+    <hr>
+    <section id="author-section">
+
+        <div class="about-the-author" style="float: left;">
+            <!-- Your link to the image of you will go in the src -->
+            <img src="assets/images/cci_headshot.jpg" alt="image of author" height="100%" width="100%">
+        </div>
+        <div class="author-about-me">
+            <a href="https://iwearthecrowns.github.io/portfolio/">Cathy Cheo-Isaacs</a> (<a href="https://twitter.com/iwearthecrowns">@iwearthecrowns</a>) is a wearer of many crowns. From professional learning to educational
+            technology, event production, and everything in between, Cathy brings her obsession with details,
+            efficiency, and love of technology to everything she encounters. A passionate, problem solving, life long
+            learner, her latest adventure as a full stack developer couldn’t be more perfect. She is the proud wife of
+            <a href="https://twitter.com/mr_isaacs">@mr_isaacs</a> and mom of <a href="https://twitter.com/amazingrace1214">@amazingrace1214</a> and <a href="https://twitter.com/leilaboo215">@leilaboo215</a>.
+        </div>
+    </section>
+
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

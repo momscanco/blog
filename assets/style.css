@@ -196,6 +196,12 @@ a:hover {
   margin: auto;
 }
 
+.article-para-indent {
+  text-align: justify;
+  margin: auto;
+  padding:0px 20px;
+}
+
 #author-section {
   max-width: 600px;
   margin: auto;

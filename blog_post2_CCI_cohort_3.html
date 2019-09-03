@@ -1,49 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Moms Can & Co</title>
-
-    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
 
 <body>
 
-    <!-- navbar -->
-    <div class="header">
-        <nav class="navbar navbar-expand-lg">
-            <a href="index.html">
-                <img src="assets/images/logo_momscanco.png" width="80" height="60" alt="" class="logo-image">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <ul class="nav ml-auto">
-              <li><a href="https://www.facebook.com/momscanco/"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="https://twitter.com/momscanco"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="https://www.instagram.com/momscanco/"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </nav>
-    </div>
-    <!-- navbar ends -->
+<!--Main Navigation-->
+<header>
+
+<!-- Just an image -->
+<nav class="navbar navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo_momscanco copy.png" height="50" alt="MCC logo">
+    </a>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</header>
+<!--Main Navigation-->
+
 
     <!-- main body area of the individual blog post page  -->
 
     <!-- you will enter your blog post content below here -->
-    <section id="main-section-blog-post">
 
-        <div id="indv">
-            <article class="feature text-center">
-                <h1 class="feature-title text-center">Close your containers! <br>(or don't)</h1>
+    <!--Main layout-->
+    <main class="mt-5 pt-5">
+        <!--Main container-->
+        <div class="container">
+          
+          <!-- section: post -->
+          <section class="mt-4">
+      
+            <!-- Grid Row -->
+            <div class="row">
+      
+              <!-- Grid Column -->
+              <div class="col-md-8 mb-4">
+                <!-- Featured Image -->
+                <div class="card mb-4 wow fadeIn">
+                  <img src="img/closedcontainer.jpg" class="img-fluid" alt="image">
+                </div><!-- Featured Image -->
+                <!-- Card -->
+                <div class="card mb-4 wow fadeIn">
+                  <!-- Card Content -->
+                  <div class="card-body">
+                    <p class="h5 my-4">Close your containers!<br>(or don't)</p>
+      
+                    <blockquote class="blockquote">
+                      <p class="mb-0">Is there really a good time to leave a container open?</p>
+                      <footer class="blockquote-footer">Cathy Cheo-Isaacs</footer>
+                    </blockquote>
+      
+                    <p>
+                        <strong>Closing containers in real life is pretty important. </strong>
+                        If you don’t, what you are storing could leak (and ruin your super-cute lunchbox), get contaminated,
+                        host an infestation, or make your backpack smell like pickles (so I’ve heard).
+    
+                        <br><br>Similarly, not closing containers in HTML can have unintended, though hopefully not as
+                        drastic results.
+                    </p>
+                  
+                    <p> <strong>Containers are defined in HTML by using the &#60;div&#62; tag. </strong>
+                      A container is just section in your HTML document, and using a <b>&#60;div&#62;</b> tag lets you
+                      easily style that
+                      section with CSS. You can also perform JavaScript on that container, but we’ll save that for
+                      another blog post. But simply defining a container doesn’t always achieve your desired layout.
+                      Using the border property with containers have been a helpful way for me to visualize the
+                      different sections of my web pages while coding.
+                    </p>
+      
+                    <p><strong>Let’s use CodePen and start with some text on a page. </strong>
+                      In the HTML editor, add the following code:
+                      <br>&#60;!DOCTYPE HTML&#62;
+                        <br>&#60;html&#62;
+                        <br>&#60;head&#62;
+                        <br>&#60;/head&#62;
+
+                        <br>&#60;body&#62;
+                        <br>&#60;div class=”container”&#62;first container&#60;/div&#62;
+                        <br>&#60;div class=”container”&#62;second container&#60;/div&#62;
+                        <br>&#60;div class=”container”&#62;third container&#60;/div&#62;
+                        <br>&#60;/body&#62;
+
+                        <br> &#60;/html&#62;
+
+                        <br><br>We have created three containers with some text inside, and added a class called
+                            container that we’ll style later. Notice that there is a line break after each container.
+                    </p>
+      
+                    <div class="card mb-4 wow fadeIn">
+                      <img class="img-fluid" src="img/threecontainers.PNG" height="100%" width="100%">
+                  </div>
+      
+                    <p>
+                        <strong>Let’s see what happens if we “forget” to close a &#60;/div&#62; tag. </strong>
+                        Delete the closing &#60;/div&#62; tag for the first and second containers.
+                    </p>
+      
+                    <div class="card mb-4 wow fadeIn">
+                        <img class="img-fluid" src="img/threecontainers_open.PNG" height="100%" width="100%">
+                    </div>
+      
+                    <p>
+                        <strong>At first glance, there doesn’t appear to be any difference. </strong>
+                        Adding style to the containers, can more easily visualize how the output is affected.
+
+                        <br><br>Style the container in the CSS editor so there is a border around the text.
+                        <br>.container {
+                          <br>border: 2px solid red;
+                          <br>}
+                    </p>
+                
+                    <p>
+                        <br>Now that a border has been added, we can see that the lower containers seem to
+                        have a thicker border on the sides and bottom.
+                        <br><br>
+                    </p>
+      
+                    <div class="card mb-4 wow fadeIn">
+                        <img class="img-fluid" src="img/threecontainers_compare_border_vert.png" height="100%" width="100%">
+                    </div>
+      
+                    <p>
+                        <br>When we add padding to the container style, the difference between open and
+                        closed containers becomes more clear. Add padding as follows to the container style.
+                      <p>
+                          <br>.container {
+                            <br>border: 2px solid red;
+                            <br><b>padding:0.5em;</b>
+                            <br>}
+                            <br><br>
+                      </p>
+                    </p>
+      
+                    <div class="card mb-4 wow fadeIn">
+                        <img class="img-fluid" src="img/closed_open_border_padding.png" height="100%" width="100%">
+                    </div>
+      
+                    <p>
+                        <br>Leaving a container “open” results in nested containers while closing each
+                        container, stacks them.
+                        <br><br>
+                    </p>
+      
+                    <p>
+                        Knowing the difference can make a huge difference in your
+                        layouts. Just remember to close your &#60;/div&#62; tags to keep your code clean!
+                    </p>
+      
+      
+                </div>
+              </div>
+            <!-- /card -->
+      <!-- Card for Author -->
+              <div class="card mb-4 wow fadeIn">
+                <div class="card-header font-weight-bold">
+                  <span>About the author: </span>
+                  <span class="pull-right">
+                    <a href="https://www.twitter.com/iwearthecrowns">
+                      <i class="fab fa-twitter mr-2"></i>
+                    </a>
+                    <a href="">
+                      <i class="fab fa-instagram mr-2"></i>
+                    </a>
+                    <a href="">
+                      <i class="fab fa-linkedin-in mr-2"></i>
+                    </a>
+                  </span>
+                </div>
+      
+                <!-- card content -->
+                <div class="card-body">
+                  <div class="media d-block d-md-flex mt-3">
+                    <img class="d-flex mb-3 mx-auto z-depth-1" src="img/cci_headshot.jpg" alt="placeholder image" style="width: 100px;">
+                    <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                        <h5 class="mt-0 font-weight-bold">Cathy </h5>
+                        Cathy Cheo-Isaacs <a href="https://www.twitter.com/iwearthecrowns">(@iwearthecrowns)</a> is a wearer of many crowns. From professional learning to educational
+                  technology, event production, and everything in between, Cathy brings her obsession with details,
+                  efficiency, and love of technology to everything she encounters. A passionate, problem solving, life long
+                  learner, her latest adventure as a full stack developer couldn’t be more perfect. She is the proud wife of
+                  <a href="https://www.twitter.com/mr_isaacs">@mr_isaacs</a> and mom of <a href="https://www.twitter.com/amazingrace1214">@amazingrace1214</a> and <a href="https://www.twitter.com/leilaboo215">@leilaboo215</a>.
+                    </div>
+                  </div>
+                </div><!-- /card-body -->
+      
+              </div><!-- /card -->
+            </div><!-- Grid Column -->
+            
+              <!--Grid column-->
+              <div class="col-md-4 mb-4">
+      
+              <!--Card: Jumbotron-->
+              <div class="card mb-4 wow fadeIn">
+      
+              <!-- Content -->
+              <div class="card-body text-center">
+      
+                <h4 class="mb-4">
+                  <strong>Learn Digital Skills</strong>
+                </h4>
+                <p>
+                  <strong>Find out when the next cohort begins!</strong>
+                </p>
+                <p class="mb-4">
+                  <strong>The most comprehensive program to up your game in the remote career world. 
+                    </strong>
+                </p>
+                <a target="_blank" href="https://www.momscan.co" class="btn btn-md">Learn More
+                  <i class="fas fa-graduation-cap ml-2"></i>
+                </a>
+      
+              </div>
+              <!-- Content -->
+            </div>
+          <!--Card: Jumbotron-->
+      
+          </div><!-- Grid Column -->
+        </div><!-- Grid: row -->
+      </section><!--section: post -->
+          
+      <a href="cohort_3.html" class="btn white-text elegant-color">Back</a>
+          
+        </div>
+      </main> <!-- /main layout-->
+      <!-- Footer -->
+      <footer class="page-footer font-small elegant-color pt-4 mt-4">
+      
+          <!-- Footer Links -->
+          <div class="container text-center text-md-left">
+        
+            <!-- Grid row -->
+            <div class="row">
+        
+              <!-- Grid column -->
+              <div class="col-md-6 mt-md-0 mt-3">
+        
+                <!-- Content -->
+                <h5 class="text-uppercase">Moms Can & Co</h5>
+                <p>Helping to optimize women for remote entry-level job <br>opportunities through our online program.</p>
+        
+              </div>
+              <!-- Grid column -->
+        
+              <hr class="clearfix w-100 d-md-none pb-3">
+        
+              <!-- Grid column -->
+              <div class="col-md-3 mb-md-0 mb-3">
+        
+                  <!-- Links -->
+                  <h5 class="text-uppercase">The Moms Can Code School</h5>
+        
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="cohort_1.html">Cohort One</a>
+                    </li>
+                    <li>
+                      <a href="cohort_2.html">Cohort Two</a>
+                    </li>
+                    <li>
+                      <a href="cohort_3.html">Cohort Three</a>
+                    </li>
+                    <li>
+                      <a href="cohort_4.html">Cohort Four</a>
+                    </li>
+                  </ul>
+        
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+        
+                  <!-- Links -->
+                  <h5 class="text-uppercase">Connect With Us</h5>
+        
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </li>
+                  </ul>
+        
+                </div>
+                <!-- Grid column -->
+        
+            </div>
+            <!-- Grid row -->
+        
+          </div>
+          <!-- Footer Links -->
+        
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">© 2018 Copyright
+            <a href="www.momscan.co"> www.momscan.co</a>
+          </div>
+          <!-- Copyright -->
+        
+        </footer>
+        <!-- Footer -->
+      </footer>
+      <!--Footer-->
+        
+        </body>
+        </html>
+        
+      
+     <br>(or don't)</h1>
                 <hr width="80%">
                 <h4 id="date-author" class="text-center">August 20, 2019 | Cathy Cheo-Isaacs</h4>
                 <div class="image-for-post">

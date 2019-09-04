@@ -1,107 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Moms Can & Co</title>
-    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Moms Can & Co</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- navbar -->
-    <div class="header">
-        <nav class="navbar navbar-expand-lg">
-            <a href="index.html">
-                <img src="assets/images/logo_momscanco.png" width="80" height="60" alt="" class="logo-image">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <ul class="nav ml-auto">
-          <li><a href="https://www.facebook.com/momscanco/"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="https://twitter.com/momscanco"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="https://www.instagram.com/momscanco/"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-        </nav>
-    </div>
-    <!-- navbar ends -->
+<!--Main Navigation-->
+<header>
 
-    <!-- main body area of the individual blog post page  -->
+<!-- Just an image -->
+<nav class="navbar navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo_momscanco copy.png" height="50" alt="MCC logo">
+    </a>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-    <!-- you will enter your blog post content below here -->
-    <section id="main-section-blog-post">
+</header>
+<!--Main Navigation-->
 
-        <div id="indv">
-            <article class="feature text-center">
-                <h1 class="feature-title text-center">How to find, modify and add free images to your website background?</h1>
-                <hr width="80%">
-                <h4 id="date-author" class="text-center">August 15, 2019 | Jacklyn Wurtz</h4>
-                <div class="image-for-post">
-                    <!-- enter the link to a photo that is related to your article in the src quotations below -->
-                    <img class="post-image" src="assets/images/picresize.png" alt="laptop">
-                </div>
-                <p class="article-para">
-                    <em>Images can be a tricky thing to add to your website when you want to maintain the aesthetic and not disrupt the flow. Furthermore, where can you go to find free pics and then alter them? There are many ways to use an image to enhance your work. For this tutorial, we will be using the image as the background for the whole website. I will show you exactly how to find, modify, save and insert your image as your background in four easy steps.</em>
-                </p>
-                <br />
-                <p class="article-para">
-                    <strong>Find your image!</strong> First thing you’ll want to do is visit a site that offers free pictures. (I recommend pexels.com unsplash.com or pixabay.com) Browse around and find and image you like and think will work well in your
-                    design. Download and save it into a space you will remember.
-                </p>
-                <p class="article-para">
-                    <br />
-                    <strong>Modify It</strong> The next step will be resizing and cropping the image to your liking. (I use picresize.com) Upload or ‘drop’ the file and click “Continue to edit picture”. At this point you will see a variety of options
-                    including rotate, flip, crop and resize. Once you have made all your changes, save the newly resized image. Go to your finder, find where you have the image saved, and then drag it over to your VS.
-                </p>
-                <br />
-                <p class="article-para">
-                    <strong>Add It</strong> In your HTML file, you will need to create a space for your image to sit and designate a class to reference in your CSS file. Start by going into your
-                    < body> tags and adding a
-                        < div> tag. Within the
-                            < div> tag, add the class bg-image. Your tag should now look like this
-                                < div class=“bg-image”>
-                                    < /div>.
-                </p>
-                <br />
-                <p class="article-para">
-                    <strong>Style It</strong> Go into your CSS file and on a new line, refer to the class you have assigned in the previous step using a period and the name. (.bg-image) Next you’ll add opening and closing curly brackets, insert background-image:url(“”);
-                    and in between the quotations add the image of your choosing. You’ll also want to add the height, position, repeat and size to make sure the image appears how you want.
-                </p>
-                <p class="article-para">As you can see, it is quite simple to plug an image in as your background. There is so much space for customization that it can get quite addicting to play with. Just have fun with it and explore all your options. Can’t wait to see what
-                    you create next so be sure to connect with me at my LinkedIn below.</p>
+<!--Main layout-->
+<main class="mt-5 pt-5">
+  <!--Main container-->
+  <div class="container">
+    
+    <!-- section: post -->
+    <section class="mt-4">
 
-                <br />
-                <div class="link-back"><a href="cohort_3.html">Back</a></div>
+      <!-- Grid Row -->
+      <div class="row">
 
-            </article>
-        </div>
-    </section>
-    <hr>
-    <section id="author-section">
+        <!-- Grid Column -->
+        <div class="col-md-8 mb-4">
+          <!-- Featured Image -->
+          <div class="card mb-4 wow fadeIn">
+            <img src="img/freshh-connection-T0d3UdwPkr0-unsplash.jpg" class="img-fluid" alt="image">
+          </div><!-- Featured Image -->
 
-        <div class="about-the-author" style="float: left;">
-            <!-- Your link to the image of you will go in the src -->
-            <img src="assets/images/jacklynwurtz.jpg"  width="200px" alt="image of author">
+          <!-- Card -->
+          <div class="card mb-4 wow fadeIn">
+            <!-- Card Content -->
+            <div class="card-body">
+              <p class="h5 my-4">How to find, modify and add free images to your website background?</p>
+
+              <blockquote class="blockquote">
+                <p class="mb-0"><em>Images can be a tricky thing to add to your website when you want to maintain the aesthetic and not disrupt the flow. Furthermore, where can you go to find free pics and then alter them? There are many ways to use an image to enhance your work. For this tutorial, we will be using the image as the background for the whole website. 
+                  I will show you exactly how to find, modify, save and insert your image as your background in four easy steps.</em></p>
+                <footer class="blockquote-footer">Jacklyn Wurtz</footer>
+              </blockquote>
+
+              <p>
+                  <strong>Find your image!</strong> First thing you’ll want to do is visit a site that offers free pictures. (I recommend pexels.com unsplash.com or pixabay.com) Browse around and find and image you like and think will work well in your
+                  design. Download and save it into a space you will remember.
+              </p>
+              
+              <p>
+                  <strong>Modify It</strong> The next step will be resizing and cropping the image to your liking. (I use picresize.com) Upload or ‘drop’ the file and click “Continue to edit picture”. At this point you will see a variety of options
+                  including rotate, flip, crop and resize. Once you have made all your changes, save the newly resized image. Go to your finder, find where you have the image saved, and then drag it over to your VS.
+              </p>
+
+              <p>
+                  <strong>Add It</strong> In your HTML file, you will need to create a space for your image to sit and designate a class to reference in your CSS file. Start by going into your
+                  < body> tags and adding a
+                      < div> tag. Within the
+                          < div> tag, add the class bg-image. Your tag should now look like this
+                              < div class=“bg-image”>
+                                  < /div>.
+              </p>
+
+              <p>
+                  <strong>Style It</strong> Go into your CSS file and on a new line, refer to the class you have assigned in the previous step using a period and the name. (.bg-image) Next you’ll add opening and closing curly brackets, insert background-image:url(“”);
+                  and in between the quotations add the image of your choosing. You’ll also want to add the height, position, repeat and size to make sure the image appears how you want.
+              </p>
+
+              <p>
+                As you can see, it is quite simple to plug an image in as your background. There is so much space for customization that it can get quite addicting to play with. Just have fun with it and explore all your options. Can’t wait to see what
+                you create next so be sure to connect with me at my LinkedIn below.
+              </p>
+            
+            </div>
+          </div>
+        <!-- /card -->
+
+        <!-- Card for Author -->
+        <div class="card mb-4 wow fadeIn">
+          <div class="card-header font-weight-bold">
+            <span>About the author</span>
+            <span class="pull-right">
+              
+              <a href="https://www.linkedin.com/in/jacklyn-wurtz-a5a82b189/">
+                  <i class="fab fa-linkedin-in mr-2"></i>
+              </a>
+            </span>
           </div>
 
-          <div class="author-about-me">
-            Jacklyn Wurtz is a former preschool teacher of eight years, now mother of two young children who is actively pursuing a career in computer programming. Early childhood education has helped her develop exceptional time management and organization skills.
-            Through her interactions with children and parents alike, her communication skills have been refined allowing her to connect with all audiences and convey clear messages. While she learned a lot through her work with children in a preschool
-            setting, she is excited to further her education and explore other areas of interest. She is currently enrolled with the MomsCan:Code School where she is learning the fundamentals of coding. Upon the completion of this course, she is hopeful
-            to start her career utilizing her newly acquired skills. She is eager to connect at https://www.linkedin.com/in/jacklyn-wurtz-a5a82b189/
+          <!-- card content -->
+          <div class="card-body">
+            <div class="media d-block d-md-flex mt-3">
+              <img class="d-flex mb-3 mx-auto z-depth-1" src="img/jacklynwurtz.jpg" alt="placeholder image" style="width: 100px;">
+              <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                  <h5 class="mt-0 font-weight-bold">Name of Author</h5>
+                  Jacklyn Wurtz is a former preschool teacher of eight years, now mother of two young children who is actively pursuing a career in computer programming. Early childhood education has helped her develop exceptional time management and organization skills.
+                  Through her interactions with children and parents alike, her communication skills have been refined allowing her to connect with all audiences and convey clear messages. While she learned a lot through her work with children in a preschool
+                  setting, she is excited to further her education and explore other areas of interest. She is currently enrolled with the MomsCan:Code School where she is learning the fundamentals of coding. Upon the completion of this course, she is hopeful
+                  to start her career utilizing her newly acquired skills.
+              </div>
+            </div>
+          </div><!-- /card-body -->
+
+        </div><!-- /card -->
+      </div><!-- grid column end -->
+
+          <!--Grid column-->
+          <div class="col-md-4 mb-4">
+
+              <!--Card: Jumbotron-->
+              <div class="card mb-4 wow fadeIn">
+
+              <!-- Content -->
+              <div class="card-body text-center">
+
+                <h4 class="mb-4">
+                  <strong>Learn Digital Skills</strong>
+                </h4>
+                <p>
+                  <strong>Find out when the next cohort begins!</strong>
+                </p>
+                <p class="mb-4">
+                  <strong>The most comprehensive program to up your game in the remote career world. 
+                    </strong>
+                </p>
+                <a target="_blank" href="https://www.momscan.co" class="btn btn-md">Learn More
+                  <i class="fas fa-graduation-cap ml-2"></i>
+                </a>
+
+              </div>
+              <!-- Content -->
+            </div>
+          <!--Card: Jumbotron-->
+
+          </div><!-- Grid Column -->
+
+      </div><!-- Grid: row -->
+    </section><!--section: post -->
+
+    <a href="cohort_3.html" class="btn white-text elegant-color">Back</a>
+
+   </div>
+  </main> <!-- /main layout-->
+
+<!-- Footer -->
+<footer class="page-footer font-small elegant-color pt-4 mt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase">Moms Can & Co</h5>
+          <p>Helping to optimize women for remote entry-level job <br>opportunities through our online program.</p>
+  
         </div>
-    </section>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+            <!-- Links -->
+            <h5 class="text-uppercase">The Moms Can Code School</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="cohort_1.html">Cohort One</a>
+              </li>
+              <li>
+                <a href="cohort_2.html">Cohort Two</a>
+              </li>
+              <li>
+                <a href="cohort_3.html">Cohort Three</a>
+              </li>
+              <li>
+                <a href="cohort_4.html">Cohort Four</a>
+              </li>
+            </ul>
+  
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+  
+            <!-- Links -->
+            <h5 class="text-uppercase">Connect With Us</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+          <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright
+      <a href="www.momscan.co"> www.momscan.co</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 
-
-    <!-- scripts -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+  
   </body>
-</html>
+  </html>
+  
+

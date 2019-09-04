@@ -2,201 +2,343 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Moms Can & Co</title>
-
-    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Moms Can & Co</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- navbar -->
-    <div class="header">
-        <nav class="navbar navbar-expand-lg">
-            <a href="index.html">
-                <img src="assets/images/logo_momscanco.png" width="80" height="60" alt="" class="logo-image">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <ul class="nav ml-auto">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </nav>
-    </div>
-    <!-- navbar ends -->
+<!--Main Navigation-->
+<header>
+
+<!-- Just an image -->
+<nav class="navbar navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo_momscanco copy.png" height="50" alt="MCC logo">
+    </a>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</header>
+<!--Main Navigation-->
+
 
     <!-- main body area of the individual blog post page  -->
 
     <!-- you will enter your blog post content below here -->
-    <section id="main-section-blog-post">
 
-        <div id="indv">
-            <article class="feature text-center">
-                <h1 class="feature-title text-center">Got Git?</h1>
-                <hr width="80%">
-                <h4 id="date-author" class="text-center">July 23, 2019 | <a
-                        href="https://iwearthecrowns.github.io/portfolio/">Cathy Cheo-Isaacs</a></h4>
-                <div class="image-for-post">
-                    <!-- enter the link to a photo that is related to your article in the src quotations below -->
-                    <img class="post-image" src="assets/images/confidentcomputing.jpg"
-                        alt="female using computer with confidence">
-                </div>
-                <p class="article-para">
-                    <em>Getting Started with Your First Repository</em>
+    <!--Main layout-->
+<main class="mt-5 pt-5">
+  <!--Main container-->
+  <div class="container">
+    
+    <!-- section: post -->
+    <section class="mt-4">
+
+      <!-- Grid Row -->
+      <div class="row">
+
+        <!-- Grid Column -->
+        <div class="col-md-8 mb-4">
+          <!-- Featured Image -->
+          <div class="card mb-4 wow fadeIn">
+            <img src="img/confidentcomputing.jpg" class="img-fluid" alt="image">
+          </div><!-- Featured Image -->
+          <!-- Card -->
+          <div class="card mb-4 wow fadeIn">
+            <!-- Card Content -->
+            <div class="card-body">
+              <p class="h5 my-4">Got Git?</p>
+
+              <blockquote class="blockquote">
+                <p class="mb-0">Getting Started with Your First Repository</p>
+                <footer class="blockquote-footer">Cathy Cheo-Isaacs</footer>
+              </blockquote>
+
+              <p>
+                <strong>Congratulations on starting your coding journey! </strong>
+                You’re probably feeling excited and overwhelmed by all the new
+                lingo that is rolling off of everyone’s tongues. Here are a few tips to help you ease into your new
+                coding life.
+              </p>
+            
+              <p> <strong>You've set up a GitHub, created your first repository, and even added some files. Now what?
+                </strong> Let's use the terminal to clone your repository onto your computer. A terminal is
+                text-based interface where you can interact with your files. When working in the
+                terminal, you are always in a directory (or folder) somewhere on your computer. Cloning your
+                repository using the terminal serves several purposes. First, it establishes a connection between
+                your computer and your GitHub repository, and the terminal will know where to send your coding
+                projects. Next, it creates the directory on your local computer. It also initializes the repository so the terminal tracks changes to your files.
+              </p>
+
+              <p><strong>Copy the web URL of your repository. </strong>Click the green Clone or download button
+              in your GitHub repository (right side of the screen). The web URL of your repository will appear
+              in a drop down below the button. Click the button next to it (clipboard with an arrow) to copy
+              it.</p>
+
+              <div class="card mb-4 wow fadeIn">
+                <img class="img-fluid" src="img/getrepourl.PNG" height="100%" width="100%">
+            </div>
+
+              <p>
+                <br><strong>Clone your repository to your computer. </strong>Launch your terminal. This could be in
+                VSCode or another tool. At the command prompt, type <strong>git clone </strong>and paste the url
+                that you just copied, and hit enter. This will create a copy of your repository onto your computer.
+              </p>
+
+              <div class="card mb-4 wow fadeIn">
+                  <img class="img-fluid" src="img/clonerepoterminal.PNG" height="100%" width="100%">
+              </div>
+
+              <p>
+                <strong>As you code, you will want to send, or push your changes to your GitHub repository</strong>
+                (this is like saving your work to the cloud). You need to prepare your files to be pushed. First,
+                save your work. With your cursor anywhere in your code, press CTRL+S. This saves your work to your
+                local (on your computer) repository.
+              </p>
+          
+              <p>
+                <strong>Let Git know that you want to send the file to the repository. </strong>
+                This is called staging the file. You do this with a git add command: git add filename (Intermediate
+                tip: if you type the first letter of the filename and hit tab, the terminal will cycle through all
+                your files so you don’t have to type the whole filename).
+              </p>
+
+              <div class="card mb-4 wow fadeIn">
+                  <img class="img-fluid" src="img/gitadd.PNG" height="100%" width="100%">
+              </div>
+
+              <p>
+                <strong>Make a quick note of what you did in this version of your code. </strong>
+                This is a commit. You do this with the git commit command: git commit -m “note to self and others”
+              
+                <p>
+                  (Git commit [space] dash m [space] double quotes note to self close double quotes)
                 </p>
-                <br />
-                <p class="article-para">
-                    <strong>Congratulations on starting your coding journey! </strong>
-                    You’re probably feeling excited and overwhelmed by all the new
-                    lingo that is rolling off of everyone’s tongues. Here are a few tips to help you ease into your new
-                    coding life.
-                </p>
-                <p class="article-para">
-                    <br />
-                    <strong>You've set up a GitHub, created your first repository, and even added some files. Now what?
-                    </strong> Let's use the terminal to clone your repository onto your computer. A terminal is
-                    text-based interface where you can interact with your files. When working in the
-                    terminal, you are always in a directory (or folder) somewhere on your computer. Cloning your
-                    repository using the terminal serves several purposes. First, it establishes a connection between
-                    your computer and your GitHub repository, and the terminal will know where to send your coding
-                    projects. Next, it
-                    creates the directory on your local
-                    computer. It also initializes the repository so the terminal tracks changes to your files.
-                </p>
-                <br />
-                <p class="article-para">
-                    <strong>Copy the web URL of your repository. </strong>Click the green Clone or download button
-                    in your GitHub repository (right side of the screen). The web URL of your repository will appear
-                    in a drop down below the button. Click the button next to it (clipboard with an arrow) to copy
-                    it.
+              </p>
 
-                </p>
-                <div class="image-for-post">
-                    <img class="post-image" src="assets/images/getrepourl.PNG" height="100%" width="100%">
-                </div>
+              <div class="card mb-4 wow fadeIn">
+                  <img class="img-fluid" src="img/gitcommit.PNG" height="100%" width="100%">
+              </div>
+
+              <p>
+                <strong>Push your files to the repository. </strong>
+                Now you are ready to send, or push the file(s) up to the repository by typing git push origin
+                master.
+              </p>
+
+              <div class="card mb-4 wow fadeIn">
+                  <img class="img-fluid" src="img/gitpush.PNG" height="100%" width="100%">
+              </div>
+
+              <p>
+                If you want to make sure that your changes were sent, go back to your GitHub and
+                check the repository. You should see the time elasped since you saved your files. That's it! You'll
+                be using the terminal like a pro in no time!
+              </p>
+
+              <div class="card mb-4 wow fadeIn">
+                  <img class="img-fluid" src="img/gitpush.PNG" height="100%" width="100%">
+              </div>
 
 
-                <p class="article-para">
-                    <br><strong>Clone your repository to your computer. </strong>Launch your terminal. This could be in
-                    VSCode or another tool. At the command prompt, type <strong>git clone </strong>and paste the url
-                    that you just copied, and hit enter. This will create a copy of your repository onto your computer.
-
-                </p>
-                <br />
-                <div class="image-for-post">
-                    <img class="post-image" src="assets/images/clonerepoterminal.PNG" height="100%" width="100%">
-                </div>
-
-                </p>
-
-                <p class="article-para">
-                    <strong>As you code, you will want to send, or push your changes to your GitHub repository</strong>
-                    (this is like saving your work to the cloud). You need to prepare your files to be pushed. First,
-                    save your work. With your cursor anywhere in your code, press CTRL+S. This saves your work to your
-                    local (on your computer) repository.
-
-                </p>
-                <br />
-
-                <p class="article-para">
-                    <strong>Let Git know that you want to send the file to the repository. </strong>
-                    This is called staging the file. You do this with a git add command: git add filename (Intermediate
-                    tip: if you type the first letter of the filename and hit tab, the terminal will cycle through all
-                    your files so you don’t have to type the whole filename).
-
-
-                </p>
-                <br />
-                <div class="image-for-post">
-                    <img class="post-image" src="assets/images/gitadd.PNG" height="100%" width="100%">
-                </div>
-
-
-                <p class="article-para">
-                    <strong>Make a quick note of what you did in this version of your code. </strong>
-                    This is a commit. You do this with the git commit command: git commit -m “note to self and others”
-                    <p>(Git commit [space] dash m [space] double quotes note to self close double quotes)</p>
-
-
-                </p>
-                <br />
-
-                <div class="image-for-post">
-                    <img class="post-image" src="assets/images/gitcommit.PNG" height="100%" width="100%">
-                </div>
-
-
-
-                <p class="article-para">
-                    <strong>Push your files to the repository. </strong>
-                    Now you are ready to send, or push the file(s) up to the repository by typing git push origin
-                    master.
-
-
-                </p>
-                <br />
-
-                <div class="image-for-post">
-                    <img class="post-image" src="assets/images/gitpush.PNG" height="100%" width="100%">
-                </div>
-
-
-
-                <p class="article-para">If you want to make sure that your changes were sent, go back to your GitHub and
-                    check the repository. You should see the time elasped since you saved your files. That's it! You'll
-                    be using the terminal like a pro in no time!
-                </p>
-
-                <br />
-
-                <div class="image-for-post">
-                    <img class="post-image" src="assets/images/gitpush.PNG" height="100%" width="100%">
-                </div>
-
-
-                <div class="link-back"><a href="cohort_2.html">Back</a></div>
-
-            </article>
+          </div>
         </div>
-    </section>
-    <hr>
-    <section id="author-section">
+      <!-- /card -->
+<!-- Card for Author -->
+        <div class="card mb-4 wow fadeIn">
+          <div class="card-header font-weight-bold">
+            <span>About the author: </span>
+            <span class="pull-right">
+              <a href="https://www.twitter.com/iwearthecrowns">
+                <i class="fab fa-twitter mr-2"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-instagram mr-2"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-linkedin-in mr-2"></i>
+              </a>
+            </span>
+          </div>
 
-        <div class="about-the-author" style="float: left;">
-            <!-- Your link to the image of you will go in the src -->
-            <img src="assets/images/cci_headshot.jpg" alt="image of author" height="100%" width="100%">
-        </div>
-        <div class="author-about-me">
-            Cathy Cheo-Isaacs <a href="https://www.twitter.com/iwearthecrowns">(@iwearthecrowns)</a> is a wearer of many crowns. From professional learning to educational
+          <!-- card content -->
+          <div class="card-body">
+            <div class="media d-block d-md-flex mt-3">
+              <img class="d-flex mb-3 mx-auto z-depth-1" src="img/cci_headshot.jpg" alt="placeholder image" style="width: 100px;">
+              <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                  <h5 class="mt-0 font-weight-bold">Cathy </h5>
+                  Cathy Cheo-Isaacs <a href="https://www.twitter.com/iwearthecrowns">(@iwearthecrowns)</a> is a wearer of many crowns. From professional learning to educational
             technology, event production, and everything in between, Cathy brings her obsession with details,
             efficiency, and love of technology to everything she encounters. A passionate, problem solving, life long
             learner, her latest adventure as a full stack developer couldn’t be more perfect. She is the proud wife of
             <a href="https://www.twitter.com/mr_isaacs">@mr_isaacs</a> and mom of <a href="https://www.twitter.com/amazingrace1214">@amazingrace1214</a> and <a href="https://www.twitter.com/leilaboo215">@leilaboo215</a>.
+              </div>
+            </div>
+          </div><!-- /card-body -->
+
+        </div><!-- /card -->
+      </div><!-- Grid Column -->
+      
+        <!--Grid column-->
+        <div class="col-md-4 mb-4">
+
+        <!--Card: Jumbotron-->
+        <div class="card mb-4 wow fadeIn">
+
+        <!-- Content -->
+        <div class="card-body text-center">
+
+          <h4 class="mb-4">
+            <strong>Learn Digital Skills</strong>
+          </h4>
+          <p>
+            <strong>Find out when the next cohort begins!</strong>
+          </p>
+          <p class="mb-4">
+            <strong>The most comprehensive program to up your game in the remote career world. 
+              </strong>
+          </p>
+          <a target="_blank" href="https://www.momscan.co" class="btn btn-md">Learn More
+            <i class="fas fa-graduation-cap ml-2"></i>
+          </a>
+
         </div>
-    </section>
+        <!-- Content -->
+      </div>
+    <!--Card: Jumbotron-->
+
+    </div><!-- Grid Column -->
+  </div><!-- Grid: row -->
+</section><!--section: post -->
+    
+<a href="cohort_3.html" class="btn white-text elegant-color">Back</a>
+    
+  </div>
+</main> <!-- /main layout-->
+<!-- Footer -->
+<footer class="page-footer font-small elegant-color pt-4 mt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase">Moms Can & Co</h5>
+          <p>Helping to optimize women for remote entry-level job <br>opportunities through our online program.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+            <!-- Links -->
+            <h5 class="text-uppercase">The Moms Can Code School</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="cohort_1.html">Cohort One</a>
+              </li>
+              <li>
+                <a href="cohort_2.html">Cohort Two</a>
+              </li>
+              <li>
+                <a href="cohort_3.html">Cohort Three</a>
+              </li>
+              <li>
+                <a href="cohort_4.html">Cohort Four</a>
+              </li>
+            </ul>
+  
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+  
+            <!-- Links -->
+            <h5 class="text-uppercase">Connect With Us</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+          <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright
+      <a href="www.momscan.co"> www.momscan.co</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+</footer>
+<!--Footer-->
+  
+  </body>
+  </html>
+  
 
 
-    <!-- scripts -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-</body>
 
-</html>
+
+
+

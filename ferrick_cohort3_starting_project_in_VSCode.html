@@ -1,133 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Starting a Project in Visual Studio Code</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Moms Can & Co</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-    <link href="assets/fontawesome/css/all.css" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  </head>
+<body>
 
-  <body>
+<!--Main Navigation-->
+<header>
 
-  <!-- navbar -->
-  <div class="header">
-    <nav class="navbar navbar-expand-lg">
-      <a href="index.html">
-        <img src="assets/images/logo_momscanco.png" width="80" height="60" alt="" class="logo-image">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <ul class="nav ml-auto">
-        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-      </ul>  
-    </nav>
+<!-- Just an image -->
+<nav class="navbar navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo_momscanco copy.png" height="50" alt="MCC logo">
+    </a>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    </ul>
   </div>
-<!-- navbar ends -->
+</nav>
 
-<!-- main body area of the individual blog post page  -->
+</header>
+<!--Main Navigation-->
 
-<!-- you will enter your blog post content below here -->
-  <section id="main-section-blog-post">
+<!--Main layout-->
+<main class="mt-5 pt-5">
+  <!--Main container-->
+  <div class="container">
+    
+    <!-- section: post -->
+    <section class="mt-4">
 
-    <div id="indv">
-      <article class="feature text-center">
-        <h1 class="feature-title text-center">Starting a Project in Visual Studio Code</h1>
-        <hr width="80%">
-        <h4 id="date-author" class="text-center">July 21, 2019 | Marcie Ferrick</h4>
-        <div class="image-for-post">
-          <!-- enter the link to a photo that is related to your article in the src quotations below -->
-          <img class="post-image" src="assets/images/laptop_code.jpg" alt="laptop" style="height: 400px; width: 600px;">
+      <!-- Grid Row -->
+      <div class="row">
+
+        <!-- Grid Column -->
+        <div class="col-md-8 mb-4">
+          <!-- Featured Image -->
+          <div class="card mb-4 wow fadeIn">
+            <img src="img/laptop_code.jpg" class="img-fluid" alt="image">
+          </div><!-- Featured Image -->
+
+          <!-- Card -->
+          <div class="card mb-4 wow fadeIn">
+            <!-- Card Content -->
+            <div class="card-body">
+              <p class="h5 my-4">Starting a Project in Visual Studio Code</p>
+
+              <blockquote class="blockquote">
+                <p class="mb-0"><em>Whether you're creating new files, or using files saved on your local computer or a GitHub repository, learn how to begin your project in Visual Studio Code.</em></p>
+                <footer class="blockquote-footer">Marcie Ferrick</footer>
+              </blockquote>
+
+              <p>
+                You’re super excited about learning to code, maybe you’ve done some self-studying, maybe you’ve joined a coding bootcamp, and you’ve downloaded and installed Visual Studio Code. You’re ready to get started… but, you have no idea how.  Don’t worry, everyone is a beginner at some point, and I’ve got you covered. Follow the steps below to start your project in VS Code, depending on whether you’re starting from scratch, using files you have stored on your local computer, or using files from a GitHub repository. Then, read on to learn about some useful VS Code extensions.
+              </p>
+              
+              <p><br />
+                <strong>Starting From Scratch</strong>
+                <ol style="text-align: left">
+                    <li style="padding-left:10px;">Create a new folder on your local computer where you will store your project files.</li>
+                    <li style="padding-left:10px;">In VS Code, click “File”, and select “Open Folder.”</li>
+                    <li style="padding-left:10px;">From there, navigate to your project folder and click “select folder.”</li>
+                    <li style="padding-left:10px;">Now you should see the name of your project folder under “Open Editors” to the left of your screen.</li>
+                    <li style="padding-left:10px;">On the same line as your project folder name, you’ll see four icons. The first one (from left to right) is the “new file” icon.</li>
+                    <div class="card mb-4 wow fadeIn">
+                      <img src="img/VSCode_NewFile.jpg" class="img-fluid" alt="image">
+                    </div>
+                    <li style="padding-left:10px;">Click the “new file” icon and name your file. Press “enter.”
+                      <br><em>Remember to use the appropriate extension when naming your file so its contents will be interpreted accurately. For example, your HTML code will be written in a file with the .html extension, and your CSS styling will be written in a file with the .css extension. I recommend starting with an “index.html” file and a “style.css” file.</em></li></li>
+                    <li style="padding-left:10px;">Now, you are ready to begin working on your files! Simply click the file name you’d like to  
+                      work in from the list on the left. Be sure to store all files needed for your project, such as images you'd like to use, in the  
+                      project folder you created on your local computer so they’ll appear in the list!</li>
+                 </ol>
+                </p>
+
+              <p>
+                <strong>Starting With Files Already Saved on Your Local Computer</strong>
+                If you’ve already got your project files saved on your local computer, follow steps 2, 3, 
+                and 7 above, and you’re ready to go. Easy peasy! 
+              </p>
+            
+              <p>
+                <strong>Starting With Files Stored in a GitHub Repository</strong>
+                To do this, you will need to clone the GitHub repository by opening the repository and clicking 
+                the “clone or download” button. For more information about cloning a repository in GitHub, 
+                <a href="https://help.github.com/en/articles/cloning-a-repository" target="_blank">click here</a>. 
+              </p>
+
+              <p>
+                <strong>How to View Your Webpage in a Browser</strong>
+                You’ve typed up a bunch of HTML code, added a little CSS styling, now you want to know what it actually looks like, right? To view the webpage in a browser, simply open the index.html file stored in your project folder on your local computer. Be sure to reload the page each time you make changes! <em>Hint: Turn on “Auto-save” in the VS Code "file" menu so you don’t have to worry about saving your work.</em>
+                Alternately, you can use the LiveServer extension in VS Code (keep reading to learn more) to view your page.
+              </p>
+
+              <p>
+                <strong>Helpful VS Code Extensions</strong>
+                Visual Studio Code has tons of extensions to integrate with other systems and help you work more efficiently. See below for some of my favorites. To search for extensions, click the extensions icon from the vertical menu on the left side of your screen (second from the bottom in the screenshot to the right) .
+                <div class="card mb-4 wow fadeIn">
+                  <img src="img/VSCode_ext.jpg" class="img-fluid" alt="screenshot of extension icon">
+                </div> 
+              </p>
+
+              <p>
+                <em><strong>LiveShare</em></strong> - This one is a must if you’ll be pair programming/working collaboratively with other programmers. LiveShare allows multiple users to work within the same project at the same time. You’ll be able to view other users’ cursors in real time, so you know exactly what they’re working on. 
+              </p>
+
+              <p>
+                <em><strong>GitHub</em></strong> - Integrates GitHub and its workflows into VS Code. Be sure to read the directions for this one thoroughly; you’ll need to create a new personal access token from GitHub (but don’t worry, the directions walk you through that). 
+              </p>
+
+              <p>
+                <em><strong>LiveServer</em></strong> - Allows you to view your live webpage with changes updating continuously in real time.
+              </p>
+
+              <p>
+                If you get stuck, check out VS Code’s help menu. Use the interactive playground to test out editing features, view tutorial videos, and read tips and tricks to get you going. You got this!
+              </p>
+
+
+            </div>
+          </div>
+        <!-- /card -->
+
+        <!-- Card for Author -->
+        <div class="card mb-4 wow fadeIn">
+          <div class="card-header font-weight-bold">
+            <span>About the author</span>
+            <span class="pull-right">
+              
+              <a href="https://twitter.com/tRoobeautyblog">
+                  <i class="fab fa-twitter mr-2"></i>
+              </a>
+              <a href="https://www.instagram.com/troobeautyhonestly/">
+                  <i class="fab fa-instagram mr-2"></i>
+              </a>
+              <a href="">
+                  <i class="fab fa-linkedin-in mr-2"></i>
+              </a>
+            </span>
+          </div>
+
+          <!-- card content -->
+          <div class="card-body">
+            <div class="media d-block d-md-flex mt-3">
+              <img class="d-flex mb-3 mx-auto z-depth-1" src="img/marcie_ferrick.jpg" alt="placeholder image" style="width: 100px;">
+              <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                  <h5 class="mt-0 font-weight-bold">Marcie Ferrick</h5>
+                  Marcie Ferrick is a current student of Moms Can Code School and an avid self-studier, 
+                  honing her skills in HTML, CSS, and Javascript. She has worked with diverse populations to
+                  provide resources and support services aiding students in their educational journeys. Often
+                  commended for her quick response time and resourcefulness, she enjoys helping others, and hopes
+                  to translate her skills and strengths in communication, organization, and problem-solving to a web 
+                  development career, helping others create websites that will fuel their personal and professional 
+                  growth. When she’s not working to cultivate her dream career, Marcie enjoys books, comedy, and 
+                  most of all, spending time with her charismatic two year-old son.  
+              </div>
+            </div>
+
+          </div><!-- /card-body -->
+
+        </div><!-- /card -->
+      </div><!-- grid column end -->
+
+          <!--Grid column-->
+          <div class="col-md-4 mb-4">
+
+              <!--Card: Jumbotron-->
+              <div class="card mb-4 wow fadeIn">
+
+              <!-- Content -->
+              <div class="card-body text-center">
+
+                <h4 class="mb-4">
+                  <strong>Learn Digital Skills</strong>
+                </h4>
+                <p>
+                  <strong>Find out when the next cohort begins!</strong>
+                </p>
+                <p class="mb-4">
+                  <strong>The most comprehensive program to up your game in the remote career world. 
+                    </strong>
+                </p>
+                <a target="_blank" href="https://www.momscan.co" class="btn btn-md">Learn More
+                  <i class="fas fa-graduation-cap ml-2"></i>
+                </a>
+
+              </div>
+              <!-- Content -->
+            </div>
+          <!--Card: Jumbotron-->
+
+          </div><!-- Grid Column -->
+
+      </div><!-- Grid: row -->
+    </section><!--section: post -->
+
+    <a href="cohort_3.html" class="btn white-text elegant-color">Back</a>
+    
+   </div>
+  </main> <!-- /main layout-->
+<!-- Footer -->
+<footer class="page-footer font-small elegant-color pt-4 mt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase">Moms Can & Co</h5>
+          <p>Helping to optimize women for remote entry-level job <br>opportunities through our online program.</p>
+  
         </div>
-        <p class="article-para">
-          <em>Whether you're creating new files, or using files saved on your local computer or a GitHub repository, learn how to begin your project in Visual Studio Code.</em>
-        </p>
-        <br />
-        <p class="article-para">
-          You’re super excited about learning to code, maybe you’ve done some self-studying, maybe you’ve joined a coding bootcamp, and you’ve downloaded and installed Visual Studio Code. You’re ready to get started… but, you have no idea how.  Don’t worry, everyone is a beginner at some point, and I’ve got you covered. Follow the steps below to start your project in VS Code, depending on whether you’re starting from scratch, using files you have stored on your local computer, or using files from a GitHub repository. Then, read on to learn about some useful VS Code extensions.
-        </p>
-        <p class="article-para">
-          <br />
-          <strong>Starting From Scratch</strong>
-          <ol style="text-align: left">
-              <li style="padding-left:10px;">Create a new folder on your local computer where you will store your project files.</li>
-              <li style="padding-left:10px;">In VS Code, click “File”, and select “Open Folder.”</li>
-              <li style="padding-left:10px;">From there, navigate to your project folder and click “select folder.”</li>
-              <li style="padding-left:10px;">Now you should see the name of your project folder under “Open Editors” to the left of your screen.</li>
-              <li style="padding-left:10px;">On the same line as your project folder name, you’ll see four icons. The first one (from left to right) is the “new file” icon.</li>
-              <img src="assets/images/VSCode_NewFile.jpg" alt="screenshot of new file icon" style="height:160px; width: 260px; display: block; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px;">
-              <li style="padding-left:10px;">Click the “new file” icon and name your file. Press “enter.”
-                <br><em>Remember to use the appropriate extension when naming your file so its contents will be interpreted accurately. For example, your HTML code will be written in a file with the .html extension, and your CSS styling will be written in a file with the .css extension. I recommend starting with an “index.html” file and a “style.css” file.</em></li></li>
-              <li style="padding-left:10px;">Now, you are ready to begin working on your files! Simply click the file name you’d like to  
-                work in from the list on the left. Be sure to store all files needed for your project, such as images you'd like to use, in the  
-                project folder you created on your local computer so they’ll appear in the list!</li>
-           </ol>
-        </p>
-        <br />
-        <p class="article-para">
-          <strong>Starting With Files Already Saved on Your Local Computer</strong>
-          If you’ve already got your project files saved on your local computer, follow steps 2, 3, and 7 above, and you’re ready to go. Easy peasy! 
-        </p>
-        <br />
-        <p class="article-para">
-          <strong>Starting With Files Stored in a GitHub Repository</strong>
-          To do this, you will need to clone the GitHub repository by opening the repository and clicking the “clone or download” button. For more information about cloning a repository in GitHub, <a href="https://help.github.com/en/articles/cloning-a-repository" target="_blank">click here</a>. 
-        </p>
-        <br />
-        <p class="article-para">
-          <strong>How to View Your Webpage in a Browser</strong>
-          You’ve typed up a bunch of HTML code, added a little CSS styling, now you want to know what it actually looks like, right? To view the webpage in a browser, simply open the index.html file stored in your project folder on your local computer. Be sure to reload the page each time you make changes! <em>Hint: Turn on “Auto-save” in the VS Code "file" menu so you don’t have to worry about saving your work.</em>
-          Alternately, you can use the LiveServer extension in VS Code (keep reading to learn more) to view your page.
-        </p>
-        <br />
-        <p class="article-para">
-          <strong>Helpful VS Code Extensions</strong>
-          Visual Studio Code has tons of extensions to integrate with other systems and help you work more efficiently. See below for some of my favorites. To search for extensions, click the extensions icon from the vertical menu on the left side of your screen (second from the bottom in the screenshot to the right) .
-        <img src="assets/images/VSCode_ext.jpg" alt="screenshot of extension icon" style="width: 40px; height: 300px; float: right; margin-top: 20px; margin-left: 20px;">
-        </p>
-        <br />
-        <p style="text-align: left;"><em><strong>LiveShare</em></strong> - This one is a must if you’ll be pair programming/working collaboratively with other programmers. LiveShare allows multiple users to work within the same project at the same time. You’ll be able to view other users’ cursors in real time, so you know exactly what they’re working on. 
-        </p>
-        <br />
-        <p style="text-align: left;"><em><strong>GitHub</em></strong> - Integrates GitHub and its workflows into VS Code. Be sure to read the directions for this one thoroughly; you’ll need to create a new personal access token from GitHub (but don’t worry, the directions walk you through that). 
-        </p>
-        <br />
-        <p style="text-align: left;"><em><strong>LiveServer</em></strong> - Allows you to view your live webpage with changes updating continuously in real time.
-        </p>
-        <br />
-        <p class="article-para">If you get stuck, check out VS Code’s help menu. Use the interactive playground to test out editing features, view tutorial videos, and read tips and tricks to get you going. You got this!
-        </p>
-        
-        <br />
-        <div class="link-back"><a href="cohort_2.html">Back</a></div>
-        
-    </article>
-  </div>
-</section>
-<hr>
-<section id="author-section">
-
-  <div class="about-the-author" style="float: left;">
-    <!-- Your link to the image of you will go in the src -->
-    <img src="assets/images/marcie_ferrick.jpg" alt="image of author" style="height:250px; width: 200px;">
-  </div>
-  <div class="author-about-me" style="margin-left: 50px; width: 60%;">
-    Marcie Ferrick is a current student of Moms Can Code School and an avid self-studier, honing her skills in HTML, CSS, and Javascript. She has worked with diverse populations to provide resources and support services aiding students in their educational journeys. Often commended for her quick response time and resourcefulness, she enjoys helping others, and hopes to translate her skills and strengths in communication, organization, and problem-solving to a web development career, helping others create websites that will fuel their personal and professional growth. When she’s not working to cultivate her dream career, Marcie enjoys books, comedy, and most of all, spending time with her charismatic two year-old son. Connect with her on social <a href="https://twitter.com/tRoobeautyblog" target="_blank">@troobeautyblog</a> on Twitter and <a href="https://www.instagram.com/troobeautyhonestly/" target="_blank">@troobeautyhonestly</a> on Instagram!
-  </div>
-</section>
-
-
-    <!-- scripts -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+            <!-- Links -->
+            <h5 class="text-uppercase">The Moms Can Code School</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="cohort_1.html">Cohort One</a>
+              </li>
+              <li>
+                <a href="cohort_2.html">Cohort Two</a>
+              </li>
+              <li>
+                <a href="cohort_3.html">Cohort Three</a>
+              </li>
+              <li>
+                <a href="cohort_4.html">Cohort Four</a>
+              </li>
+            </ul>
+  
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+  
+            <!-- Links -->
+            <h5 class="text-uppercase">Connect With Us</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+          <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright
+      <a href="www.momscan.co"> www.momscan.co</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+</footer>
+<!--Footer-->
+  
   </body>
-</html>
+  </html>
+  

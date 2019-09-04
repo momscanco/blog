@@ -1,5 +1,5 @@
 .navbar {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .nav-link {
@@ -8,6 +8,7 @@
 
 .fab {
   margin-right: 20px;
+  color: black;
 }
 
 .fab:hover {

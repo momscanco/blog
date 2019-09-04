@@ -2,195 +2,341 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Moms Can & Co</title>
-
-  <link href="assets/fontawesome/css/all.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css" type="text/css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- navbar -->
-  <div class="header">
-    <nav class="navbar navbar-expand-lg">
-      <a href="index.html">
-        <img src="assets/images/logo_momscanco.png" width="80" height="60" alt="" class="logo-image">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <ul class="nav ml-auto">
-        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-      </ul>
-    </nav>
+<!--Main Navigation-->
+<header>
+
+<!-- Just an image -->
+<nav class="navbar navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo_momscanco copy.png" height="50" alt="MCC logo">
+    </a>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    </ul>
   </div>
-  <!-- navbar ends -->
+</nav>
 
-  <!-- main body area of the individual blog post page  -->
+</header>
+<!--Main Navigation-->
+<!--Main layout-->
+<main class="mt-5 pt-5">
+    <!--Main container-->
+    <div class="container">
+      
+      <!-- section: post -->
+      <section class="mt-4">
+  
+        <!-- Grid Row -->
+        <div class="row">
+  
+          <!-- Grid Column -->
+          <div class="col-md-8 mb-4">
+            <!-- Featured Image -->
+            <div class="card mb-4 wow fadeIn">
+              <img src="img/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg" class="img-fluid" alt="image">
+            </div><!-- Featured Image -->
+  
+            <!-- Card -->
+            <div class="card mb-4 wow fadeIn">
+              <!-- Card Content -->
+              <div class="card-body">
+                <p class="h5 my-4">Think You’re Ready to Code Your First Website?
+                    <br> Don’t Write a Line Before Answering These 4 Questions</p>
+  
+                <blockquote class="blockquote">
+                  <p class="mb-0"><em>Or, A Newbie Coder’s Guide to Designing for the Web</em></p>
+                  <footer class="blockquote-footer">Alexandra Bryan</footer>
+                </blockquote>
+  
+                <p> Nearly every self-taught beginning web developer has been here. After going through a couple HTML and
+                    CSS tutorials, the next step is to create your own site, right? The tutorials have demystified the
+                    coding process and reveal that websites aren’t so complicated: some DIV tags, a handful of images, and
+                    a style sheet and suddenly, you’ve created (with their instructions) a beautiful, functional site.
+                    Go forth young grasshopper, with the newfound power to build web things!
+                    <br /><br />
+                    Not so fast.
+                    
+                    While it’s true that many website don’t require complicated or advanced HTML and CSS to work well and
+                    look good, there’s much more to web development than just the code. In my experience, there are four
+                    major questions to answer before even creating your index.html.
+                    <br /><br />
+                    Full disclosure here: I too, am in the early stages of a career transition into
+                    coding. I also have years of experience in layout, editing, and general principles of design from a
+                    communications perspective. Yet rarely are design decisions mentioned within the context of a coding
+                    lesso. Because a web browser is a visual medium, development and design are closely intertwined. I realize
+                    that a lot of devs don't want to consider design priciples, but when a web developer is making coding
+                    decisions,
+                    they’re affecting the functionality of the site for a user - inherently impacting the design.
+                    <br /><br />
+                    So when finally leaving tutorial-land and tackling that first website - where’s a newbie to start, to make
+                    something
+                    that works well and looks good? A little planning will go a
+                    long way in stretching your new skills to produce a website that is both visually pleasing and
+                    functionally useful.
+                    <br /><br />
+                    So these are the four key questions to answer before writing a single line of code:</p>
+                
+                <p><br />
+                  <strong>1. Establish your purpose - What’s the point?</strong>
+                  The first thing to determine is this: why are you making this site? Is it for a product, an idea,
+                  to inform, to entertain? What do you want this site to do or offer to its intended audience? Without
+                  determining your purpose, it’s nearly impossible to figure out how the site should be constructed for a
+                  user.
+                  <br /><br />
+                  Use the following sentence starter to get you going:
+                  <br />
+                  <strong>The purpose of this website is to (intended action) for (intended user) by
+                    (the methods to fulfill the action).</strong>
+                  <br /><br />
+                  Don’t get too caught up on this step either. The purpose doesn’t have to be earth-shatteringly important.
+                  I think my first website circa 2002 was an entertaining homage to the perky pop punk music I blasted 20
+                  hours a day (Sum 41, anyone?). Just jot down a sentence or two of what you want your finished product to do
+                  or communicate. By defining this goal, you can actively code an experience for an audience that will meet
+                  its intended purpose.</p>
+  
+                <p><strong>2. Determine function - How do you want it to work?</strong>
+                  Underneath the purpose sentence(s) you wrote to answer number 1, list the pages and functions
+                  that will be necessary to bring this purpose to life. How many pages does the site need to have,
+                  and what content will each page hold? Will some simple paragraphs and text links suffice, or will
+                  forms and buttons need to be incorporated for additional functionality?
+                  <br /><br />
+                  Once this list is drafted, assign your list items into either “header” navigation and “footer” navigation,
+                  with the “header” items being the main features of your site. These two designations will serve as
+                  guideposts for the rest of your layout, since the header anchors the top of a website and the footer,
+                  the bottom.</p>
 
-  <!-- you will enter your blog post content below here -->
-  <section id="main-section-blog-post">
+                  <p><strong>3. Sketch an outline - How should it be laid out?</strong>
+                    A layout, or wireframe, is a blueprint of your site and helps to create the visual structure.
+                    You’ll need to assign a spot to each of the functions and pages you’ve already detailed above.
+                    It can be easier to construct your wireframe when looking at other sites for inspiration, and
+                    following a similar framework. Don’t worry too much at this point about the specific images or colors -
+                    the best method for wireframing is actually to stick to greyscaled elements. This will help you
+                    determine the layout and content to best fit your site’s functionality, making it easy for a user to
+                    navigate.
+                    <br /><br />
+                    Actually constructing the wireframe can be done in a variety of ways. The most basic and easiest
+                    route is to go low-tech, and sketch out the general layout of your site pages on a piece of paper.
+                    But this method can be hard to edit and refer back to, so there are a lot of programs available that
+                    will help you build a wireframe with more precision. My personal favorite is <a href="https://www.figma.com/">
+                      Figma</a>, a free browser-based interface design application.
+                  </p>
 
-    <div id="indv">
-      <article class="feature text-center">
-        <h1 class="feature-title text-center">Think You’re Ready to Code Your First Website?
-          <br> Don’t Write a Line Before Answering These 4 Questions</h1>
-        <hr width="80%">
-        <h4 id="date-author" class="text-center">February 25, 2019 | Alexandra Bryan</h4>
-        <div class="image-for-post">
-          <!-- enter the link to your photo in the src quotations below -->
-          <img class="post-image" src="assets/images/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg" width="600"
-            alt="abstract-layout-design">
+                  <p><strong>4. Detail the “vibe,” or style - What impression should it create?</strong>
+                    There are entire fields of study and a variety of industries dedicated to the design of visual
+                    communications, but a couple of basic decisions will serve newbie coders well. The easiest way to design
+                    a page is to keep the visuals consistent and simple. Come up with a theme of 2-3 colors and fonts, and
+                    use only those fonts and colors. Consistent visuals paired with a predetermined layout means your site
+                    will look polished and ready for its audience.
+                    <br /><br />
+                    I usually ask myself to jot down a few word that should come to mind when a user views the website -
+                    light, airy and quirky? Playful, kid-friendly? Serious, professional, and futuristic? Then choose the
+                    colors and font that associate with the descriptions. If you’re stuck, a quick Google search for
+                    something like “web color schemes” will turn up a ton of articles and resources with suggestions for
+                    complementary color combinations (hex codes included!).
+                  </p>
+                  
+                  <p>
+                    Hopefully, by using these four questions to guide the planning of your first website,
+                    the task is a lot less daunting. You don't have to be a designer to create something useful and good looking!
+                    Most importantly, don't let these answers paralyze you -- jot something down, and just get started!
+                  </p>
+              </div>
+            </div>
+          <!-- /card -->
+  
+          <!-- Card for Author -->
+          <div class="card mb-4 wow fadeIn">
+            <div class="card-header font-weight-bold">
+              <span>About the author</span>
+              <span class="pull-right">
+                <a href="">
+                    <i class="fab fa-twitter mr-3"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-instagram mr-3"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-linkedin-in mr-3"></i>
+                </a>
+              </span>
+            </div>
+  
+            <!-- card content -->
+            <div class="card-body">
+              <div class="media d-block d-md-flex mt-3">
+                <img class="d-flex mb-3 mx-auto z-depth-1" src="img/Abryan-Headshot.png" alt="placeholder image" style="width: 100px;">
+                <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                    <h5 class="mt-0 font-weight-bold">Alexandra Bryan</h5>
+                    Alexandra Bryan is a Ruby on Rails web developer, inspired to create build software that makes a difference.
+                    She strongly believes that the best software comes from a foundation of empathy and human connection, because
+                    the most impactful programs and apps are the ones that draw people together and connect a shared experience.
+                    She love to learn, and share that learning with others.
+                    <br /> <br />
+                    She recently graduated from the Moms Can Code School, and she's also a certified secondary English
+                    teacher, with a B.A. in Journalism and Communications from Rowan University and a M.A. in Teaching from
+                    California University of Pennsylvania.
+                </div>
+              </div>
+            </div><!-- /card-body -->
+  
+          </div><!-- /card -->
+        </div><!-- grid column end -->
+  
+            <!--Grid column-->
+            <div class="col-md-4 mb-4">
+  
+                <!--Card: Jumbotron-->
+                <div class="card mb-4 wow fadeIn">
+  
+                <!-- Content -->
+                <div class="card-body text-center">
+  
+                  <h4 class="mb-4">
+                    <strong>Learn Digital Skills</strong>
+                  </h4>
+                  <p>
+                    <strong>Find out when the next cohort begins!</strong>
+                  </p>
+                  <p class="mb-4">
+                    <strong>The most comprehensive program to up your game in the remote career world. 
+                      </strong>
+                  </p>
+                  <a target="_blank" href="https://www.momscan.co" class="btn btn-md">Learn More
+                    <i class="fas fa-graduation-cap ml-2"></i>
+                  </a>
+  
+                </div>
+                <!-- Content -->
+              </div>
+            <!--Card: Jumbotron-->
+  
+            </div><!-- Grid Column -->
+  
+        </div><!-- Grid: row -->
+      </section><!--section: post -->
+      <a href="cohort_1.html" class="btn white-text elegant-color">Back</a>
+     </div>
+    </main> <!-- /main layout-->
+  <!-- Footer -->
+  <footer class="page-footer font-small elegant-color pt-4 mt-4">
+  
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+    
+        <!-- Grid row -->
+        <div class="row">
+    
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+    
+            <!-- Content -->
+            <h5 class="text-uppercase">Moms Can & Co</h5>
+            <p>Helping to optimize women for remote entry-level job <br>opportunities through our online program.</p>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none pb-3">
+    
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+    
+              <!-- Links -->
+              <h5 class="text-uppercase">The Moms Can Code School</h5>
+    
+              <ul class="list-unstyled">
+                <li>
+                  <a href="cohort_1.html">Cohort One</a>
+                </li>
+                <li>
+                  <a href="cohort_2.html">Cohort Two</a>
+                </li>
+                <li>
+                  <a href="cohort_3.html">Cohort Three</a>
+                </li>
+                <li>
+                  <a href="cohort_4.html">Cohort Four</a>
+                </li>
+              </ul>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+    
+              <!-- Links -->
+              <h5 class="text-uppercase">Connect With Us</h5>
+    
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+              </ul>
+    
+            </div>
+            <!-- Grid column -->
+    
         </div>
-        <p class="article-para">
-          <em>Or, A Newbie Coder’s Guide to Designing for the Web</em>
-        </p>
-        <br />
-        <p class="article-para">
-          Nearly every self-taught beginning web developer has been here. After going through a couple HTML and
-          CSS tutorials, the next step is to create your own site, right? The tutorials have demystified the
-          coding process and reveal that websites aren’t so complicated: some DIV tags, a handful of images, and
-          a style sheet and suddenly, you’ve created (with their instructions) a beautiful, functional site.
-          Go forth young grasshopper, with the newfound power to build web things!
-          <br /><br />
-          Not so fast.
-          
-          While it’s true that many website don’t require complicated or advanced HTML and CSS to work well and
-          look good, there’s much more to web development than just the code. In my experience, there are four
-          major questions to answer before even creating your index.html.
-          <br /><br />
-          Full disclosure here: I too, am in the early stages of a career transition into
-          coding. I also have years of experience in layout, editing, and general principles of design from a
-          communications perspective. Yet rarely are design decisions mentioned within the context of a coding
-          lesso. Because a web browser is a visual medium, development and design are closely intertwined. I realize
-          that a lot of devs don't want to consider design priciples, but when a web developer is making coding
-          decisions,
-          they’re affecting the functionality of the site for a user - inherently impacting the design.
-          <br /><br />
-          So when finally leaving tutorial-land and tackling that first website - where’s a newbie to start, to make
-          something
-          that works well and looks good? A little planning will go a
-          long way in stretching your new skills to produce a website that is both visually pleasing and
-          functionally useful.
-          <br /><br />
-          So these are the four key questions to answer before writing a single line of code:
-        </p>
-        <p class="article-para">
-          <br />
-          <strong>1. Establish your purpose - What’s the point?</strong>
-          The first thing to determine is this: why are you making this site? Is it for a product, an idea,
-          to inform, to entertain? What do you want this site to do or offer to its intended audience? Without
-          determining your purpose, it’s nearly impossible to figure out how the site should be constructed for a
-          user.
-          <br /><br />
-          Use the following sentence starter to get you going:
-          <br />
-          <strong>The purpose of this website is to (intended action) for (intended user) by
-            (the methods to fulfill the action).</strong>
-          <br /><br />
-          Don’t get too caught up on this step either. The purpose doesn’t have to be earth-shatteringly important.
-          I think my first website circa 2002 was an entertaining homage to the perky pop punk music I blasted 20
-          hours a day (Sum 41, anyone?). Just jot down a sentence or two of what you want your finished product to do
-          or communicate. By defining this goal, you can actively code an experience for an audience that will meet
-          its intended purpose.
-        </p>
-        <br />
-        <p class="article-para">
-          <strong>2. Determine function - How do you want it to work?</strong>
-          Underneath the purpose sentence(s) you wrote to answer number 1, list the pages and functions
-          that will be necessary to bring this purpose to life. How many pages does the site need to have,
-          and what content will each page hold? Will some simple paragraphs and text links suffice, or will
-          forms and buttons need to be incorporated for additional functionality?
-          <br /><br />
-          Once this list is drafted, assign your list items into either “header” navigation and “footer” navigation,
-          with the “header” items being the main features of your site. These two designations will serve as
-          guideposts for the rest of your layout, since the header anchors the top of a website and the footer,
-          the bottom.
-        </p>
-        <br />
-        <p class="article-para">
-          <strong>3. Sketch an outline - How should it be laid out?</strong>
-          A layout, or wireframe, is a blueprint of your site and helps to create the visual structure.
-          You’ll need to assign a spot to each of the functions and pages you’ve already detailed above.
-          It can be easier to construct your wireframe when looking at other sites for inspiration, and
-          following a similar framework. Don’t worry too much at this point about the specific images or colors -
-          the best method for wireframing is actually to stick to greyscaled elements. This will help you
-          determine the layout and content to best fit your site’s functionality, making it easy for a user to
-          navigate.
-          <br /><br />
-          Actually constructing the wireframe can be done in a variety of ways. The most basic and easiest
-          route is to go low-tech, and sketch out the general layout of your site pages on a piece of paper.
-          But this method can be hard to edit and refer back to, so there are a lot of programs available that
-          will help you build a wireframe with more precision. My personal favorite is <a href="https://www.figma.com/">
-            Figma</a>, a free browser-based interface design application.
-        </p>
-        <br />
-        <p class="article-para">
-          <strong>4. Detail the “vibe,” or style - What impression should it create?</strong>
-          There are entire fields of study and a variety of industries dedicated to the design of visual
-          communications, but a couple of basic decisions will serve newbie coders well. The easiest way to design
-          a page is to keep the visuals consistent and simple. Come up with a theme of 2-3 colors and fonts, and
-          use only those fonts and colors. Consistent visuals paired with a predetermined layout means your site
-          will look polished and ready for its audience.
-          <br /><br />
-          I usually ask myself to jot down a few word that should come to mind when a user views the website -
-          light, airy and quirky? Playful, kid-friendly? Serious, professional, and futuristic? Then choose the
-          colors and font that associate with the descriptions. If you’re stuck, a quick Google search for
-          something like “web color schemes” will turn up a ton of articles and resources with suggestions for
-          complementary color combinations (hex codes included!).
-        </p>
-        <br />
-        <p class="article-para">
-          Hopefully, by using these four questions to guide the planning of your first website,
-          the task is a lot less daunting. You don't have to be a designer to create something useful and good looking!
-          Most importantly, don't let these answers paralyze you -- jot something down, and just get started!
-        </p>
-        <br />
-        <div class="link-back"><a href="cohort_1.html">Back</a></div>
-
-      </article>
-    </div>
-  </section>
-  <hr>
-  <section id="author-section">
-
-    <div class="about-the-author" style="float: left;">
-      <!-- Your link to your image will go in the src -->
-      <img src="assets/images/Abryan-Headshot.png" alt="image of author Alexandra Bryan" width="200">
-    </div>
-    <div class="author-about-me">
-      Alexandra Bryan is a Ruby on Rails web developer, inspired to create build software that makes a difference.
-      She strongly believes that the best software comes from a foundation of empathy and human connection, because
-      the most impactful programs and apps are the ones that draw people together and connect a shared experience.
-      She love to learn, and share that learning with others.
-      <br /> <br />
-      She recently graduated from the Moms Can Code School, and she's also a certified secondary English
-      teacher, with a B.A. in Journalism and Communications from Rowan University and a M.A. in Teaching from
-      California University of Pennsylvania.
-    </div>
-  </section>
-
-
-  <!-- scripts -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-</body>
-
-</html>
+        <!-- Grid row -->
+    
+      </div>
+      <!-- Footer Links -->
+    
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2018 Copyright
+        <a href="www.momscan.co"> www.momscan.co</a>
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+  </footer>
+  <!--Footer-->
+    
+    </body>
+    </html>
+    

@@ -189,12 +189,12 @@
                                         branch and merge later with the master. Therefore you should create a new branch using this command:
                                         <br><code>$ git branch [branch name]</code><br> In order to switch from the master branchto your own branch, you will type this command:
                                         <br><code>$ git checkout [branch name]</code></li><br>
-                                    <li><strong>Add, commit and push</strong><br>Once you have made your edits in the text editor (such as Atom, Sublime or Visual Studio Code), you will add, commit and push to the master branch of the origin repository. The
+                                    <li><strong>Add, commit and push</strong><br>Once you have made your edits in the text editor (such as Atom, Sublime or Visual Studio Code), you will add, commit and push your local branch to the origin repository. The
                                         three commands you need are:<br>
                                         <code>$ git add [file name]<br>
-                                        $ git commit -m "add new file" </code><br> (For commit, it is best practice to add a message for your collaborators in parenthesis that describes the edit you have made) <br><code>$ git push origin master</code><br>(This
-                                        command pushes the committed edits to the master branch of your forked'origin' repository in GitHub) Note that this 'origin' repository is still your own forked copy so you need to request the edits to the upstream
-                                        repository and get them approved by theowner. </li><br>
+                                        $ git commit -m "add new file" </code><br> (For commit, it is best practice to add a message for your collaborators in parenthesis that describes the edit you have made) <br><code>$ git push origin [branch name]</code><br>(This
+                                        command pushes the committed edits made on your local branch to your forked 'origin' repository in GitHub) Note that this 'origin' repository is still your own forked copy so you need to request the edits to the
+                                        upstream repository and get them approved by theowner. </li><br>
                                     <li><strong>Pull request</strong><br>In order to request the edits to the upstream repository, go to GitHub and create a new pull request. <img src="img/aiko_githubPR.png" alt="Pull request button on GitHub" width="100%"></li><br>
                                     <li><strong>Wait for approval</strong><br>If your request needs any changes, the owner will ask for the code to be revised. If it looks good, it will be approved and your code gets merged to the master branch of the upstream
                                         repository! </li><br>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Moms Can & Co</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--Main Navigation-->
+<header>
+
+<!-- Just an image -->
+<nav class="navbar navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo_momscanco copy.png" height="50" alt="MCC logo">
+    </a>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main class="mt-5 pt-5">
+  <!--Main container-->
+  <div class="container">
+    
+    <!-- section: post -->
+    <section class="mt-4">
+
+      <!-- Grid Row -->
+      <div class="row">
+
+        <!-- Grid Column -->
+        <div class="col-md-8 mb-4">
+          <!-- Featured Image -->
+          <div class="card mb-4 wow fadeIn">
+            <img src="img/yellow-iphone.jpg" class="img-fluid" alt="image">
+          </div><!-- Featured Image -->
+
+          <!-- Card -->
+          <div class="card mb-4 wow fadeIn">
+            <!-- Card Content -->
+            <div class="card-body">
+              <p class="h4 my-4">From Local to Remote</p>
+
+              <blockquote class="blockquote">
+                <p class="mb-0">A step-by-step tutorial on 2 ways to copy a file from your local computer to an empty GitHub remote repository, either via Command Line or directly in GitHub.</p>
+                <footer class="blockquote-footer">Racquel Tung</footer>
+              </blockquote>
+
+              <div class="getting started">
+                  <h5><strong>Getting Set Up!</strong></h5>  Before you start prepping a file to push:
+                  <p>Create a remote repository on GitHub with same name as folder on your local directory.  For this example, my repository's name will be “irish-twins”, for my 4 and 5 year olds.  As you can see in my local folder, I have a new file ready, named hello.txt.  Within it, I added some sample text.</p>
+                  <p>On GitHub:
+                  <img src="img/GH_ss1.jpg" alt="code menu showing setup page" display="inline"> <!--Insert Image 1 here--></p>
+                  <p>On my local:
+                  <img src="img/GH_ss2.jpg" alt="explorer showing hello.txt" display="inline"> <!--Insert Image 2 here--></p>
+                  <p>Sample text:
+                  <img src="img/GH_ss3.jpg" alt="contents of hello.txt shown" display="inline"> <!--Insert Image 3 here--></p>
+              </div>
+              
+                <div class="command line">
+                    <h5><strong>Using Command Line</strong></h5>
+                    <h6>In Command Line</h6>
+                   
+                    <ol>
+                       <li>Initialize your local repository</li>
+                       <img src="img/git_ss1.jpg" alt="terminal showing git init entry">
+                       <li>Add your file to the initialized repository that will be pushed to the remote repository</li>
+                       <img src="img/git_ss2.jpg" alt="terminal showing git add hello.txt entry">
+                       <li>Create an instance of this version of file that you plan to upload to the remote repository.  Add a comment of what the change is.  Keep the comment in the quotes succinct.</li>
+                       <img src="img/git_ss3.jpg" alt="terminal showing git commit -m entry">
+                       <li>Add the remote-repository’s location as your new origin of the incoming file.</li>
+                       <img src="img/git_ss4.jpg" alt="terminal showing git remote add origin entry">
+                       <li>Sanity check:  I like to check double check that the destination is correct, so I use:</li>
+                       <img src="img/git_ss5.jpg" alt="terminal showing git remote -v entry">
+                       <li>And now, the push.</li>
+                       <img src="img/git_ss6.jpg" alt="terminal showing git push -u origin master entry">
+                    </ol>
+                    <p>As this is the first push of a new file to an empty repository, the file is pushed to the master branch.</p>
+                   
+                    <h6>Let's check out GitHub</h6>
+                    <ol>
+                        <li>Open GitHub</li>
+                        <li>Go to remote repository</li>
+                        <li>Under Code menu, you’ll see the new file present.</li>
+                        <img src="img/GH_ss4.jpg" alt="code menu with hello.txt present"> <!--Insert Image 4 here-->
+                        <li>Click on file name to open it, check that your file contents made it.</li>
+                        <img src="img/GH_ss5.jpg" alt="opened file"> <!--Insert Image 5 here-->
+                    </ol>
+               </div>
+ 
+             
+               <div class="github">
+                    <h5><strong>Using GitHub</strong></h5>
+                    <h6>In GitHub</h6>
+                   
+                    <ol>
+                       <li>Under Code menu, click “uploading an existing file” hyperlink</li>
+                       <img src="img/GH_ss1.jpg" alt="code menu showing setup page"> <!--Insert Image 1 here-->
+                       <li>Add the file you wish to add by dragging it to the space provided or using the explorer window to select your file.  </li>
+                       <img src="img/GH_ss6.jpg" alt="code menu showing methods to add file"> <!--Insert Image 6 here-->
+                       <li>Once added, the filename will appear just above the “Commit changes box”. <br>
+                        In the “Commit changes” box, leave a comment about the changes. Keep your comment succinct.  </li>
+                       <li>As this is an empty repository, we can keep “Commit directly to the master branch” selected. <br>
+                        Hit the green “Commit changes” button.</li>
+                       <img src="img/GH_ss7.jpg" alt="code menu showing added file with comment"> <!--Insert Image 7 here-->
+                       <li>Going back to the Code menu, you will see your new file added to the master branch.  </li>
+                       <img src="img/GH_ss4.jpg" alt="code menu with hello.txt present"> <!--Insert Image 4 here-->
+                       <li>Click on file name to open it, check that your file contents made it.</li>
+                       <img src="img/GH_ss5.jpg" alt="opened file"> <!--Insert Image 5 here-->
+                    </ol>
+                </div>
+
+              <p>Though using GitHub for all actions is more visual, I hope that the Command Line method proves to be an easy approach as well!</p>
+                         
+            </div>
+          </div>
+        <!-- /card -->
+
+        <!-- Card for Author -->
+        <div class="card mb-4 wow fadeIn">
+          <div class="card-header font-weight-bold">
+            <span>About author</span>
+            <span class="pull-right">
+              <a href="">
+                  <i class="fab fa-twitter mr-2"></i>
+              </a>
+              <a href="">
+                  <i class="fab fa-linkedin-in mr-2"></i>
+              </a>
+            </span>
+          </div>
+
+          <!-- card content -->
+          <div class="card-body">
+            <div class="media d-block d-md-flex mt-3">
+              <img class="d-flex mb-3 mx-auto z-depth-1" src="img/RMT.jpg" alt="placeholder image" style="width: 100px;">
+              <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                  <h5 class="mt-0 font-weight-bold">Racquel Tung</h5>
+                  <p>Racquel is a full-time working mom to two fierce little girls. She, her husband, the kiddos, and shiba inu reside in New Jersey.</p>
+                  <p>Racquel is a forever a student; obtaining degrees and certificates to support her pharmaceutical career. Her latest venture, however, is one that serves her personal interest: coding. She looks forward to the challenge set forth by Moms Can & Co to be fundamentally ready as a Junior Web Developer.</p>
+              </div>
+            </div>
+          </div><!-- /card-body -->
+
+        </div><!-- /card -->
+      </div><!-- grid column end -->
+
+          <!--Grid column-->
+          <div class="col-md-4 mb-4">
+
+              <!--Card: Jumbotron-->
+              <div class="card mb-4 wow fadeIn">
+
+              <!-- Content -->
+              <div class="card-body text-center">
+
+                <h4 class="mb-4">
+                  <strong>Learn Digital Skills</strong>
+                </h4>
+                <p>
+                  <strong>Find out when the next cohort begins!</strong>
+                </p>
+                <p class="mb-4">
+                  <strong>The most comprehensive program to up your game in the remote career world. 
+                    </strong>
+                </p>
+                <a target="_blank" href="https://www.momscan.co" class="btn btn-md">Learn More
+                  <i class="fas fa-graduation-cap ml-2"></i>
+                </a>
+
+              </div>
+              <!-- Content -->
+            </div>
+          <!--Card: Jumbotron-->
+
+          </div><!-- Grid Column -->
+
+      </div><!-- Grid: row -->
+    </section><!--section: post -->
+    <a href="cohort_4.html" class="btn white-text elegant-color">Back</a>
+   </div>
+  </main> <!-- /main layout-->
+
+<!-- Footer -->
+<footer class="page-footer font-small elegant-color pt-4 mt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase">Moms Can & Co</h5>
+          <p>Helping to optimize women for remote entry-level job <br>opportunities through our online program.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+            <!-- Links -->
+            <h5 class="text-uppercase">The Moms Can Code School</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="cohort_1.html">Cohort One</a>
+              </li>
+              <li>
+                <a href="cohort_2.html">Cohort Two</a>
+              </li>
+              <li>
+                <a href="cohort_3.html">Cohort Three</a>
+              </li>
+              <li>
+                <a href="cohort_4.html">Cohort Four</a>
+              </li>
+            </ul>
+  
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+  
+            <!-- Links -->
+            <h5 class="text-uppercase">Connect With Us</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+          <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright
+      <a href="www.momscan.co"> www.momscan.co</a>
+    </div>
+    <!-- Copyright -->
+  
+  
+</footer>
+<!--Footer-->
+  
+  </body>
+  </html>
+  

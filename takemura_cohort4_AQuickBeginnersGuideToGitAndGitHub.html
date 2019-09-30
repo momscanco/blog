@@ -90,18 +90,23 @@
 
                                 <h6><b>What is Git and GitHub?</b></h6>
 
-                                <p>So Git and GitHub, are they the same thing? Short answer is, no! So how are they different?<br> Git is a type of version control system (VCS) that lets you track the history of your code as you and your team collaborate
-                                    on projects together. It also allows each developer to work locally on their computer and later merge their work together as one master code. There are actually many variations of VCS similar to Git which you can learn
-                                    more
-                                    <a href="https://en.wikipedia.org/wiki/Version_control">here</a>. Out of those, Git is the one you hear most often because it is one of the most used systems in the world, and also one which GitHub is built on.
-                                    <br> Then what is GitHub? GitHub is a social platform that hosts Git coding projects. It hosts the largest amount of open source projects and its social features allow you to collaborate with other developers. Similar
-                                    to Git, keep in mind that although you hear a lot about GitHub, they are not the only code hosting platform. You can learn more about other platforms <a href="https://en.wikipedia.org/wiki/Comparison_of_source-code-hosting_facilities">here</a>.</p>
+                                <p>So Git and GitHub, are they the same thing? Short answer is, no! So how are they different?</p>
+
+                                <p>Git is a type of version control system (VCS) that lets you track the history of your code as you and your team collaborate on projects together. It also allows each developer to work locally on their computer and later
+                                    merge their work together as one master code. There are actually many variations of VCS similar to Git which you can learn more
+                                    <a href="https://en.wikipedia.org/wiki/Version_control">here</a>. Out of those, Git is the one you hear most often because it is one of the most used systems in the world, and also one which GitHub is built on.</p>
+                                <p>Now what is GitHub? GitHub is a social platform that hosts Git coding projects. It hosts the largest amount of open source projects and its social features allow you to collaborate with other developers. Similar to Git,
+                                    keep in mind that although you hear a lot about GitHub, they are not the only code hosting platform. You can learn more about other platforms <a href="https://en.wikipedia.org/wiki/Comparison_of_source-code-hosting_facilities">here</a>.</p>
 
                                 <h6><b>How do you use Git and GitHub?</b></h6>
-                                <p>So let's say you want to try using Git and GitHub. Where and how do you start? <br>The initial step is to <a href="https://help.github.com/en/articles/set-up-git#setting-up-git">install and set up Git on your local computer</a>                                    and <a href="https://help.github.com/en/articles/signing-up-for-a-new-github-account#next-steps">create a GitHub account</a>. To connect the two, the next step is to <a href="https://help.github.com/en/articles/set-up-git#next-steps-authenticating-with-github-from-git">authenticate with GitHub from Git</a>.
-                                    These links provide a very detailed step by step guide, so I will instead focus on how you can start collaborating with others using Git and GitHub.<br> Let's start with the basic terms you should start to familiarize
-                                    yourself with, which I listed below. These are not by all means comprehensive, but a good place to start without overwhelming you! There are always resources such as the <a href="https://education.github.com/git-cheat-sheet-education.pdf">Git Cheat Sheet</a>                                    whenever you want to know more.</p>
-                                <p>Basic Git Terms</p>
+                                <p>So let's say you want to try using Git and GitHub. Where and how do you start? </p>
+
+                                <p>The initial step is to <a href="https://help.github.com/en/articles/set-up-git#setting-up-git">install and set up Git on your local computer</a> and <a href="https://help.github.com/en/articles/signing-up-for-a-new-github-account#next-steps">create a GitHub account</a>.
+                                    To connect the two, the next step is to <a href="https://help.github.com/en/articles/set-up-git#next-steps-authenticating-with-github-from-git">authenticate with GitHub from Git</a>. These links provide a very detailed
+                                    step by step guide, so I will instead focus on how you can start collaborating with others using Git and GitHub.</p>
+                                <p>Let's start with the basic terms you should start to familiarize yourself with, which I listed below. These are not by all means comprehensive, but a good place to start without overwhelming you! There are always resources
+                                    such as the <a href="https://education.github.com/git-cheat-sheet-education.pdf">Git Cheat Sheet</a> whenever you want to learn more.</p>
+                                <p>Basic Git Terms:</p>
                                 <table class="table">
                                     <thead>
                                         <tr>
@@ -120,7 +125,7 @@
                                         </tr>
                                         <tr>
                                             <td>upstream repository</td>
-                                            <td>The main repository where all of the individual code changes eventually merge into</td>
+                                            <td>The main remote repository where all of the individual code changes eventually merge into</td>
                                         </tr>
                                         <tr>
                                             <td>local repository</td>
@@ -132,7 +137,7 @@
                                         </tr>
                                         <tr>
                                             <td>branch and master</td>
-                                            <td>Typically you create a new branch to conduct a specific task (such as adding a new feature, fixing a bug, making an update) These branches will then merge into the master branch.
+                                            <td>Typically you create a new branch to conduct a specific task (such as adding a new feature, fixing a bug, making an update). These branches will then merge into the master branch.
                                             </td>
                                         </tr>
                                         <tr>
@@ -141,7 +146,7 @@
                                         </tr>
                                         <tr>
                                             <td>add and commit</td>
-                                            <td>After you make any changes on your branch, you will save them to the repository through the act of 'adding' and 'committing'</td>
+                                            <td>After you make any changes on your branch, you will save them to the local repository through the act of 'adding' and 'committing'</td>
                                         </tr>
                                         <tr>
                                             <td>push</td>
@@ -154,7 +159,7 @@
                                     </tbody>
                                 </table>
                                 <br>
-                                <p>Basic GitHub Terms</p>
+                                <p>Basic GitHub Terms:</p>
                                 <table class="table">
                                     <thead>
                                         <tr>
@@ -165,7 +170,7 @@
                                     <tbody>
                                         <tr>
                                             <td>pull request</td>
-                                            <td>Once you push your committed edits to the remote repository, you will conduct a pull request to the upstream repository so that your changes can be reviewed by other team members. When the pull request is accepted,
+                                            <td>Once you push your committed changes to the remote repository, you will open a pull request to the upstream repository so that your changes can be reviewed by other team members. When the pull request is accepted,
                                                 your changes are merged into the upstream repository.</td>
                                         </tr>
                                         <tr>
@@ -183,26 +188,27 @@
                                     <br>
                                     <li><strong>Clone</strong><br>Clone the forked repository to your local computer by first copying the remote URL of either HTTPS or SSH, whichever you chose when you <a href="https://help.github.com/en/articles/set-up-git#next-steps-authenticating-with-github-from-git">authenticated with GitHub from Git. </a>
                                         <img src="img/aiko_githubClone.png" alt="Clone button on GitHub" width="100%"> Then open the Terminal (for Mac users) or Git Bash (for Windows users) and type this command:<br>
-                                        <code>$ git clone [remote URL you copied from GitHub]</code> <br>Note that the square brackets are there for guidance and is not necessary to be typed in. This will create a copy of the repository on your local
-                                        desktop.
+                                        <code>$ git clone [remote URL you copied from GitHub]</code> <br>(Note that the square brackets are there for guidance and is not necessary to be typed in.)<br> This will create a copy of the repository on your
+                                        local computer.
                                     </li><br>
                                     <li><strong>Create branch</strong><br>In the cloned repository on your local computer, initially you will be on the master branch. It is possible to work directly on master, but if you decide to create a new branch to differentiate
                                         the tasks you want to work on, you will use this command:
-                                        <br><code>$ git branch [branch name]</code><br> In order to switch from the master branchto your own branch, you will type this command:
+                                        <br><code>$ git branch [branch name]</code><br> In order to switch from the master branch to your own branch, you will type this command:
                                         <br><code>$ git checkout [branch name]</code></li><br>
                                     <li><strong>Add, commit and push</strong><br>Once you have made your changes in the text editor (such as Atom, Sublime or Visual Studio Code), you will add, commit and push your local branch to the origin repository. The
                                         three commands you need are:<br>
                                         <code>$ git add [file name]<br>
                                         $ git commit -m "add new file" </code><br> (For commit, it is a best practice to add a message for your collaborators in parenthesis that describes the changes you have made)
-                                        <br><code>$ git push origin [branch name]</code><br>(This command pushes the commits made on your local branch to your forked 'origin' repository in GitHub) Note that this 'origin' repository is still your own forked
-                                        copy so you need to request the commits to the upstream repository and get them approved by the owner. </li><br>
+                                        <br><code>$ git push origin [branch name]</code><br>(This command pushes the commits made on your local branch to your forked 'origin' repository in GitHub) <br>Note that this 'origin' repository is still your own
+                                        forked copy so you need to request the commits to the upstream repository and get them approved by the owner. </li><br>
                                     <li><strong>Open pull request</strong><br>In order to request the changes to be merged into the upstream repository, go to GitHub and open a new pull request. This will initiate a code review/discussion process with the
                                         owner of the upstream repository.<img src="img/aiko_githubPR.png" alt="Pull request button on GitHub" width="100%"></li><br>
                                     <li><strong>Wait for approval</strong><br>If your request needs any changes and/or further reviews, the owner will ask for the code to be revised. If it looks good, it will be approved and your code gets merged to the master
                                         branch of the upstream repository. </li><br>
-                                    <li><strong>Success!</strong><br>Hooray, you've successfully collaborated on an open source project!</li>
+                                    <li><strong>Success!</strong><br>Hooray, you've successfully collaborated on your first GitHub project!</li>
 
                                 </ol>
+                                <br>
                                 <p>Though I've only scratched the surface, I hope this quick beginner's guide gave you a better understanding of what Git and GitHub are and how they work.
                                     <p>For further learnings, I recommend checking out the <a href="https://lab.github.com/">GitHub Learning Lab</a> as a start. When you run into an error or a problem, there's always the <a href="http://stackoverflow.com">Stack Overflow</a>                                        community which will most likely have your answers!
                                     </p>Thank you for taking the time to read this post, and good luck on your code collaboration journey!</p>

@@ -89,25 +89,119 @@
                 <p class="h5 my-4">CSS Positioning: You Got This!</p>
 
                 <blockquote class="blockquote">
-                  <p class="mb-0">Subtitle of the post or teaser goes here.</p>
-                  <footer class="blockquote-footer">Author Name Here</footer>
+                  <p class="mb-0"></p>
+                  <footer class="blockquote-footer">Andrea Martz</footer>
                 </blockquote>
 
-                <p>I love cheesecake sugar plum I love. Tiramisu carrot cake candy canes marzipan liquorice lollipop.
-                  Muffin brownie I love chocolate bar jelly beans. Biscuit pie candy canes icing marzipan danish oat
-                  cake chupa chups. Cookie tiramisu apple pie powder dragée. Croissant sweet biscuit.</p>
+                <h4>Why is it so hard to put things where I want them?</h4>
+                <p>When I first started learning HTML and CSS, I thought to myself, “Well, this is won’t be hard. I’m going to build my own
+                  custom webpage right now!” I was surprised to learn that while the syntax of CSS is straightforward and many properties
+                  are intuitive (think “color” and “border,” for example), positioning elements where I wanted them to go was not.
+                  Frustration set in: “Why doesn’t <span class="code">top: 100px</span> move my elemetn down 100 pixels like the MDN 
+                  documentation says it should? Did I miss a semi-colon? Did I select the element correctly?”</p>
+                
+                <div class="button-container">
+                  <a href="#table">
+                    <button type="button" class="btn btn-success">Learn the position <br> property now
+                    </button>
+                  </a>
+                </div>                  
+                
+                <p>It turns out that some CSS properties are not stand-alone properties. When we try to position an element using
+                  “directional” properties, as I like to call them, such as <span class="code">top, bottom, left,</span> and 
+                  <span class="code">right</span>, we first have to set a value for the <span class="code">position</span> property for that element. 
+                  If we don’t…well, CSS will ignore us like a spoiled housecat, and nothing will
+                  change on the page.</p>
 
-                <p>Soufflé cake lemon drops halvah I love powder jelly beans muffin. I love wafer caramels gummi bears
-                  croissant icing gummi bears. Chocolate bar jelly beans lollipop jelly beans. Gummi bears wafer candy
-                  tootsie roll gummies. I love dessert sesame snaps cheesecake. Bear claw I love tart gummies.</p>
+                <div class="image-container">
+                  <img src="img/spoiled-housecat.jpg" alt="angry hissing housecat">
+                </div>
+
+                <p>After reading this article, you should have a full understanding of how to use the <span class="code">position</span> 
+                  property to completely control the placement of elements on your page and let that housecat know who will be the boss from now on.</p>
+                
+                <p>To get the most out of this article, you the reader should have a basic understanding of HTML and CSS, including the
+                  behavior and characteristics of the different types of HTML elements (i.e., block, inline, and inline-block). An
+                  understanding of the HTML document flow is also helpful but not required.</p>
+
+                <h4>CSS position and directional properties overview</h4>
+
+                <p>The <span class="code">position</span> property for an element can take on any one of five values:</p>
+                <span class="code keyword">static fixed relative absolute sticky</span>
+
+                <p>The <span class="code">position</span> property alone, though, doesn’t always make the element move (or move where you intend it to). Enter the
+                “directional” properties.</p>
+                
+                <p>The directional properties are as follows:</p>
+                <span class="code keyword">top right bottom left z-index</span>
+
+                <p>The first four properties determine the location of the element in two dimensions and will be 
+                  the focus of this article. The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index">z-index</a>
+                  can be thought of as adding a third dimension, and it is outside the scope of this article.</p>
+
+                <p>The table below summarizes the behavior of elements positioned with each of the values, except for <span class="code">sticky</span>,
+                  which I will discuss in a later section below.</p>
+                
+                <div id="table">
+                  <img class="table" src="img/position-property-table.jpg" alt="table showing position values">
+                </div>
+
+                <p>As can be seen in the table, the behavior of the positioned element will differ in important ways 
+                  based on the value of <span class="code">position</span>.</p>
+                
+                <ul>
+                  <li class="table-list-item">
+                    <span class="item-name">Use with directional properties?</span> Some values can be used with the directional 
+                    properties, and others cannot.
+                  </li>
+                  <li class="table-list-item">
+                    <span class="item-name">Positioning Context.</span> This defines the reference point, or starting position, for the position change. 
+                    Positioning contexts include the
+                    <ul>
+                      <li>
+                        <span class="item-name">viewport:</span> the visible area of the webpage, which will be different on each device or monitor,
+                      </li>
+                      <li>
+                        <span class="item-name">closest positioned ancestor:</span> the parent or closest ancestor containing the element which has 
+                        a <span class="code">position</span> value other than <span class="code">static</span>,
+                      </li>
+                      <li>
+                        <span class="item-name">HTML element <span>&lthtml&gt</span>:</span> the container of all elements on every webpage, and
+                      </li>
+                      <li>
+                        <span class="item-name">element itself:</span> the element’s original position in the document flow before positioning
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="table-list-item">
+                    <span class="item-name">Removed from document flow?</span> Some values for <span class="code">position</span> change the HTML document flow. The normal document 
+                    flow (i.e., without positioning) places the
+                    elements on the page from top to bottom and left to right in the order they are specified in the HTML and in accordance
+                    with their type (i.e., block, inline, or inline-block). When an element is removed from the flow, it is as though the
+                    element is floating above the other elements on the page. The other elements appear to ignore the element and will move
+                    into the place where it used to be.
+                  </li>
+                  <li class="table-list-item">
+                    <span class="item-name">Scroll behavior.</span> Elements scroll with the page by default. Some values alter the expected 
+                    scroll behavior.
+                  </li>
+                  <li class="table-list-item">
+                    <span class="item-name">Reduced block width?</span> Some values cause the width of block elements to be reduced to exactly the width of their 
+                    content, which makes them behave like inline-block elements.
+                  </li>
+                </ul>
 
                 <p>Jelly-o sesame snaps cake marshmallow I love jujubes gummi bears liquorice. Muffin gingerbread
-                  tiramisu.
-                  Jelly-o sugar plum lemon drops gingerbread donut. Tart dessert pudding cheesecake jujubes. Candy canes
-                  I love ice cream jelly beans sweet roll caramels dessert cake I love. Lollipop gummi bears muffin.
-                  Jujubes caramels candy sugar plum chocolate dragée jelly beans. Danish icing I love candy canes
-                  dessert
-                  cake sweet chocolate bar sesame snaps. Candy canes I love chocolate cake liquorice apple pie..</p>
+                  tiramisu.</p>
+                
+                <p>Jelly-o sesame snaps cake marshmallow I love jujubes gummi bears liquorice. Muffin gingerbread
+                  tiramisu.</p>
+                
+                <p>Jelly-o sesame snaps cake marshmallow I love jujubes gummi bears liquorice. Muffin gingerbread
+                  tiramisu.</p>
+                
+                <p>Jelly-o sesame snaps cake marshmallow I love jujubes gummi bears liquorice. Muffin gingerbread
+                  tiramisu.</p>
 
               </div>
             </div>

@@ -23,3 +23,27 @@
   margin-top: 100px;
 }
 
+/* Andrea's styles below */
+.code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.keyword {
+  word-spacing: 2rem;
+}
+
+#table {
+  max-width: 550px;
+}
+
+.table-list-item .item-name {
+  font-weight: bold;
+}

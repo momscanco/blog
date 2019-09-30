@@ -114,7 +114,7 @@
                   change on the page.</p>
 
                 <div class="image-container">
-                  <img src="img/spoiled-housecat.jpg" alt="angry hissing housecat">
+                  <img class="photo" src="img/spoiled-housecat.jpg" alt="angry hissing housecat">
                 </div>
 
                 <p>After reading this article, you should have a full understanding of how to use the <span class="code">position</span> 
@@ -191,19 +191,132 @@
                   </li>
                 </ul>
 
-                <p>Jelly-o sesame snaps cake marshmallow I love jujubes gummi bears liquorice. Muffin gingerbread
-                  tiramisu.</p>
+                <h4>So, what does it look like on the page?</h4>
+                <h5><span class="code">position: static</span></h5>
+
+                <p>Static (<span class="code">static</span>) is the default position value of all elements on a webpage. In the graphic below, 
+                  three <span class="code">&ltdiv&gt</span> elements are nested inside a parent element. This means that they are siblings of each other. 
+                  The parent element is inside the <span class="code">&ltbody&gt</span> element. No position values have been applied. 
+                  Therefore, they all have <span class="code">position: static</span>. Note also that that the blue <span class="code">&ltdiv&gt</span> 
+                  has some content.</p>
+
+                <div class="image-container">
+                  <img class="screenshot" src="img/static-normal-flow-content.JPG" alt="image showing position static">
+                </div>
+
+                <div class="note">NOTE: As each position value is discussed below, <span>keep an eye on the position of the <span class="blue-text">blue</span> box</span>,
+                 as that is the one that will get the position property applied each time.</div>
+
+                <h5><span class="code">position: fixed</span></h5>
+
+                <p>Now, let’s apply <span class="code">position: fixed</span> to the blue element without directional properties and watch for changes.</p>
                 
-                <p>Jelly-o sesame snaps cake marshmallow I love jujubes gummi bears liquorice. Muffin gingerbread
-                  tiramisu.</p>
+                <div class="image-container">
+                  <img class="screenshot" src="img/fixed-no-dir.JPG" alt="">
+                </div>
                 
-                <p>Jelly-o sesame snaps cake marshmallow I love jujubes gummi bears liquorice. Muffin gingerbread
-                  tiramisu.</p>
+                <p>The blue element has now been taken out of the flow. The orange element moved up to take its place, and it is now
+                sitting under the blue element. The blue element also has been reduced to the width of its content.</p>
+
+                <p>Now let’s position the box to the upper left corner of its positioning context, which is the viewport, by applying <span class="code">top: 0</span> and 
+                  <span class="code">left: 0</span>.</p>
+
+                <div class="image-container">
+                  <img class="screenshot" src="img/fixed-top-0-left-0.JPG" alt="">
+                </div>
+
+                <p>If we now scroll down the page, we’ll see that the blue box stays put, but all of the other elements scroll up:</p>
+
+                <div class="image-container">
+                  <video controls width="300">                 
+                    <source src="img/fixed-top-0-left-0-scroll.mp4" type="video/mp4">                
+                    Sorry, your browser doesn't support embedded videos.
+                  </video>
+                </div>
+
+                <h5><span class="code">position: relative</span></h5>
+
+                <p>Let’s now remove the directional properties and replace <span class="code">position: fixed</span> with 
+                  <span class="code">position: relative</span> and see what will change.</p>
+
+                <div class="image-container">
+                  <img class="screenshot" src="img/relative-no-dir.JPG" alt="">
+                </div>
+
+                <p>Interesting. The page looks just like it did before any positioning was applied. This is because the element remains in
+                the flow and we haven’t set a direction for it to move in yet.</p>
+
+                <p>We can verify that the positioning context is the image itself by applying <span class="code">top: 0</span> and
+                <span class="code">left: 0</span> and noting that the blue <span class="code">&ltdiv&gt</span> still does not move.</p>
                 
-                <p>Jelly-o sesame snaps cake marshmallow I love jujubes gummi bears liquorice. Muffin gingerbread
-                  tiramisu.</p>
+                <p>It will move, though if we set non-zero values to <span class="code">top</span> and <span class="code">left</span>. 
+                  For example, let’s set <span class="code">top: -30px</span> and <span class="code">left: -20px</span>.</p>
+
+                <div class="image-container">
+                  <img class="screenshot" src="img/relative-top--30-left--20.JPG" alt="">
+                </div>
+
+                <p>The image moved up and to the left because the directional properties give the direction that the “push” is coming from.
+                 When the value is negative, it’s as if the push came from the opposite direction. We can verify this by removing the settings for 
+                 <span class="code">top</span> and <span class="code">left</span> and setting 
+                 <span class="code">bottom: 30px</span> and <span class="code">right: 20px</span> and noting that the image stays the same.</p>
+
+                <h5><span class="code">position: absolute</span></h5>
+
+                <p>With only <span class="code">position: absolute</span> applied, let’s see how the element behaves. It will behave 
+                in the same way whether there are positioned ancestors or not at this point, because we have not “moved” the element yet with directional properties.</p>
+
+                <div class="image-container">
+                  <img class="screenshot" src="img/absolute-no-dir-no-pos-ancestors.JPG" alt="">
+                </div>
+
+                <p>Let's apply <span class="code">position: relative</span> to the parent element and move the blue element using
+                <span class="code">top: 0</span> and <span class="code">left: 0</span>.</p>
+
+                <div class="image-container">
+                  <img class="screenshot" src="img/absolute-parent-relative-top-0-left-0.JPG" alt="">
+                </div>
+
+                <p>As expected, the element moved to the top left corner of the parent element.</p>
+
+                <h5><span class="code">position: sticky</span></h5>
+
+                <p>When an element is positioned using <span class="code">sticky</span>, its behavior is best described as a hybrid of 
+                <span class="code">fixed</span> and <span class="code">relative</span>, except
+                that the element’s width will <span class="underline">not</span> be reduced to the width of the content. Whether the element is behaving like it is
+                positioned using <span class="code">fixed</span> or <span class="code">relative</span> at any given time depends on the user’s scroll position.</p>
+
+                <p>If we only set <span class="code">position: sticky</span>, we might as well not bother, because nothing about the appearance or 
+                 behavior of the page will change. We need to also set at least one directional property.</p>
+
+                <p>With <span class="code">position: sticky</span>, and <span class="code">top: 0</span> and <span class="code">left: 0</span>, the initial appearance does not change, but let’s watch what happens when
+                the user scrolls the page.</p>
+
+                <div class="image-container">
+                  <video controls width="300">
+                    <source src="img/sticky-top-0-left-0-scroll.mp4" type="video/mp4">
+                    Sorry, your browser doesn't support embedded videos.
+                  </video>
+                </div>
+
+                <p>The element behaves as though it has <span class="code">position: relative</span> until it reaches the specified location 
+                  (i.e., <span class="code">top: 0</span> and <span class="code">left: 0</span>). At that point, it begins to behave like <span class="code">position:
+                fixed</span>. However, a sticky element cannot leave its parent container, so as the parent scrolls off the page, the element
+                goes with it. Also, because a sticky element must stay within its parent, its positioning context is a little different
+                than expected.</p>
+
+                <h5>That's it!</h5>
+
+                <p>Congratulations! You have tamed the position beast, and it will now succumb to your will.</p>
+                
+                <p>Good kitty.</p>
+
+                <div class="image-container">
+                  <img class="photo" src="img/good-kitty.jpg" alt="">
+                </div>
 
               </div>
+              <!-- /card-body -->
             </div>
             <!-- /card -->
 

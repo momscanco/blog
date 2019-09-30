@@ -47,3 +47,29 @@
 .table-list-item .item-name {
   font-weight: bold;
 }
+
+.screenshot {
+  max-width: 300px;
+}
+
+.photo {
+  border-radius: 10%;
+  max-width: 300px;
+}
+
+.blue-text {
+  color: #5599fe;
+}
+
+.note {
+  border: 1px solid black;
+  margin: 10px auto;
+}
+
+.note span {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}

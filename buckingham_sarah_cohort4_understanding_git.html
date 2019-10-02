@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Moms Can & Co</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Main Navigation-->
+    <header>
+
+        <!-- Just an image -->
+        <nav class="navbar navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo_momscanco copy.png" height="50" alt="MCC logo">
+                </a>
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item">
+                        <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mt-5 pt-5">
+        <!--Main container-->
+        <div class="container">
+
+            <!-- section: post -->
+            <section class="mt-4">
+
+                <!-- Grid Row -->
+                <div class="row">
+
+                    <!-- Grid Column -->
+                    <div class="col-md-8 mb-4">
+                        <!-- Featured Image -->
+                        <div class="card mb-4 wow fadeIn">
+                            <img src="img/git.png" class="img-fluid" alt="image">
+                        </div><!-- Featured Image -->
+
+                        <!-- Card -->
+                        <div class="card mb-4 wow fadeIn">
+                            <!-- Card Content -->
+                            <div class="card-body">
+                                <p class="h5 my-4">Understanding Git: All You Need is Love && Commit(ment)</p>
+
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">A simplified guide to help conceptualize the basic flow of Git
+                                        commands for Newbs.</p>
+                                    <footer class="blockquote-footer">Sarah Buckingham</footer>
+                                </blockquote>
+
+                                <p>Learning to code can be extremely overwhelming. You are likely learning basic
+                                    internet and computer fundamentals, grappling over JavaScript, and learning how to
+                                    efficiently use your text editor. Then there is Git….. where, let’s face it, you are
+                                    pushed into the deep end of adding, committing, pushing and never-ending merge
+                                    conflicts with an expectation to swim. Now, I am no lifeguard, but let me at least
+                                    teach you some stroke techniques so you can tread water.
+                                </p>
+                                <p><img src="img/tread-water.jpg" class="img-fluid" alt="image"></p>
+
+                                <p>First things first -- <i><b>Git is <u>NOT</u> Github.</b></i> </p>
+
+                                <p><i><b>Git</b></i> is a popular <i>distributed version control system</i>. It allows
+                                    you to work in a team-based environment with other developers by enabling a
+                                    non-linear development process.</p>
+                                <p><b>I STILL DON'T GET IT. HALLLLLP!</b></p>
+                                <p>Think of it as the opposite of an assembly line - you don’t have to depend on the
+                                    person in front of you to finish their portion before you can work on yours. Git is
+                                    a tool that allows developers to be able to make changes simultaneously and then
+                                    combine all of their work in Master, at the end. </p>
+
+                                <p>
+                                    <font size="4" color="red"><b><u>Git’s Core Functionality is to save checkpoints (or
+                                                commits) you have made within the code base, and share them with other
+                                                people.</u></b></font> Everything about git revolves around this notion.
+                                </p>
+
+                                <p>
+                                    Creating checkpoints allows a developer the ability to refer back to it whenever
+                                    they want. This is exceptionally handy when you deploy a new product that ends up
+                                    creating a bug that critically affects users. Git allows you the ability to roll
+                                    back the deployment to the previous checkpoint and the developers get a chance to
+                                    squash the bug and attempt deployment again.
+                                </p>
+
+                                <p>
+                                    <i><b>Github,</b></i> on the other hand, is like a file cabinet - it’s literally a
+                                    hub that stores your repository and all the code that is sent (or pushed) to it from
+                                    computers running the Git tool.
+                                </p>
+
+                                <p>Now that you understand what Git <b><i>is</i></b> and it’s core functionality, let’s
+                                    talk about how it <b><i>works</i></b>. Below is a simplified guide on the very basic
+                                    flow of Git commands that you will use frequently in the command-line interface
+                                    (CLI). These commands show you how to create your own checkpoints and implement your
+                                    changes to your Master (or desired) branch. </p>
+
+                                <p>To put these commands into perspective, let’s look at them as stages of commitment in
+                                    a relationship:</p>
+
+                                <p>
+                                    <font size="4"><b><u>STAGE 1: INFATUATION</u></b></font>
+                                    <br /><i>“Here’s my number, call me maybe?!”</i>
+                                    <br /><img class="img-fluid" src="img/call-me-maybe.jpg" />
+                                </p>
+
+                                <p><img src="img/git-checkout-master.png" /> &&
+                                    <img src="img/git-pull.png" />
+                                    <br />You are checking out the person (branch) that you are interested in getting to
+                                    know more.
+                                </p>
+
+                                <p>From the main repository (CD into the correct directory), checkout the branch that
+                                    you want to make a copy of and make changes to (in this blog I will be referring to
+                                    it as Master, but it could be any branch). You are then going to pull in any changes
+                                    that have been made recently from your other teammates in Master to your local
+                                    machine. </p>
+                                <p><i>
+                                        <font size="3">Helpful tip: if you think you are already on master (or the
+                                            branch you want a copy of) `git branch` to double check what branch you are
+                                            currently on to be extra sure. </font>
+                                    </i></p>
+
+                                <p>
+                                    <font size="4"><b><u>STAGE 2: THE FIRST DATE</u></b></font>
+                                    <br /><i>“Wanna go on a date?”</i>
+                                    <br /><img class="img-fluid" src="img/first-date.gif" />
+                                </p>
+                                <p><img src="img/git-checkout-b.png" />
+                                    <br />You are taking out this person (or creating and checking out this branch) for
+                                    the very first time.</p>
+                                <p>This command gives you an <b><u>exact</u></b> replica of Master on your local machine
+                                    and switches over to the replica so you can try some new thangs and build some cool
+                                    stuff without affecting Master. This replica is called a branch and you can name it
+                                    whatever you want. </p>
+
+                                <p>
+                                    <font size="4"><b><u>STAGE 3: OFFICIALLY A COUPLE</u></b></font>
+                                    <br /><i>“Will you be my boo thang?”</i>
+                                    <br /><img class="img-fluid" src="img/will-you-go.gif" />
+                                </p>
+                                <p>
+                                    <font color="red">There is no git command for this. You are just adding, eliminating
+                                        and/or refactoring code in your text editor.</font>
+                                    <br />You are officially dating - you’re trying new restaurants and texting each
+                                    other way too much.
+                                </p>
+
+                                <p>You’re diving in! You’re making changes to your replica that you would like to
+                                    eventually put into master once you’ve got it exactly how you want it. </p>
+
+                                <p>
+                                    <font size="4"><b><u>STAGE 4: SETTLING DOWN</u></b></font>
+                                    <br /><i>“I might pop the question at some point, but not right now...”</i>
+                                    <br /><img class="img-fluid" src="img/settling-down.jpg" />
+                                </p>
+                                <p><img src="img/git-add-all.png" /> OR <img src="img/git-add-specific-file.png" />
+                                    <br />You are settling down but still have time to say “F this” and run for the
+                                    hills.</p>
+
+                                <p>This is called “Staging” - You’re happy with your changes, you want to save them, but
+                                    you still have the ability to discard your changes before you’re fully committed.
+                                </p>
+
+                                <p>
+                                    <font size="4"><b><u>STAGE 5: ENGAGEMENT</u></b></font>
+                                    <br /><i>“Will you marry me?!”</i>
+                                    <br /><img class="img-fluid" src="img/marry-me.gif" />
+                                </p>
+
+                                <p><img src="img/git-commit-message.png" />
+                                    <br />You are engaged, committed, but haven’t said your vows quite yet.</p>
+                                <p>Your new changes are saved and this is your new checkpoint. If you refer back to your
+                                    checkpoint before this one (your last commit), you will not see any of the changes
+                                    that you just made. The commit message is important so that others can see what you
+                                    did and why you did it; think of this as a heartfelt proposal someone might say
+                                    about what they bring and their future together when they ask someone to marry them.
+                                </p>
+                                <p><i>NOTE: At this time, Git takes a snapshot (or reference) of what all of your files
+                                        look like at that moment and stores a reference to that snapshot so that you can
+                                        refer back to in the future, if necessary.</i></p>
+
+                                <p>
+                                    <font size="4"><b><u>STAGE 6: WEDDING DAY</u></b></font>
+                                    <br /><i>“I do!”</i>
+                                    <br /><img class="img-fluid" src="img/wedding-day.jpg" />
+                                </p>
+                                <p><img src="img/git-push-origin.png" /> AND <font color="red">Create a Pull Request
+                                    </font>
+                                    <br />It’s almost official. Today is the big day! And you get to share the good news
+                                    with others.</p>
+                                <p>The ‘-u’ allows your branch to be automatically linked with the specified branch (in
+                                    our case Master). ‘Git push’ takes a snapshot of the changes you made and gives it
+                                    to Master.
+                                    <br />Once you have pushed, you can go to github and create a pull request by doing
+                                    the following:
+                                    <ul>
+                                        <li>Go to the page for the repository and click on the pull requests tab</li>
+                                        <li>Click the “New Pull Request” Button</li>
+                                        <li>Select the branch you want to submit, and write a summary of what your
+                                            change explaining what it is intended to do and how it is implemented</li>
+                                    </ul>
+                                    The pull request just means that you are asking for permission for your
+                                    contributions/revisions to be added to the project’s main repository (this is part
+                                    of Github NOT Git).
+                                </p>
+
+                                <p>After a successful push + approval of pull request, your new code will go into the
+                                    Master the branc. Your teammates will then be able to view your changes by using
+                                    ‘git pull’ in the Master branch.</p>
+
+                                <p>
+                                    <font size="4"><b><u>STAGE 7: HONEYMOON</u></b></font>
+                                    <br /><i>“Honey, we are going to Hawaii!” </i>
+                                    <br /><img class="img-fluid" src="img/carlton.gif"/>
+                                </p>
+                                <p>
+                                    <br />
+                                    <font color="red">CELEBRATE! And repeat steps when you’re ready to make a new branch
+                                        and implement new changes.</font>
+                                </p>
+                                <br />
+                                <p>Understanding how Git works and what it can do for you is extremely important and
+                                    will save you so much time in the future. It is vital in recovering from merge
+                                    conflicts, which commonly happens and brings developers a lot of grief.</p>
+                                <p>Welp, there you have it! You are now a git pro!!
+                                    ...just kidding! There is so much to learn about git and there are developers out
+                                    there who have been in the field for 10+ years who still have to research what to do
+                                    for specific things git-related. So, know that you’re not alone and once you
+                                    interact with git on your own, it begin to click. Meanwhile, tread that water! You
+                                    got this!!!
+                                </p>
+                                <p>Helpful Links:</p>
+                                <ul>
+                                    <li><a href="https://developer.ibm.com/tutorials/d-learn-workings-git/">Learn the
+                                            Workings of Git</a></li>
+                                    <li><a href="https://hackernoon.com/understanding-git-fcffd87c15a3">Hackernoon
+                                            Understanding Git
+                                        </a></li>
+                                    <li><a href="https://gitexplorer.com/">Git Explorer</a></li>
+                                </ul>
+                            </div>
+
+
+
+                        </div>
+                        <!-- /card -->
+
+                        <!-- Card for Author -->
+                        <div class="card mb-4 wow fadeIn">
+                            <div class="card-header font-weight-bold">
+                                <span>About Sarah</span>
+                                <span class="pull-right">
+                                    <a href="https://medium.com/@sarah.rose.buckingham" target="_blank">
+                                        <i class="fab fa-medium mr-2"></i>
+                                    </a>
+                                    <a href="https://twitter.com/sbuck89" target="_blank">
+                                        <i class="fab fa-twitter mr-2"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/sbuck89/" target="_blank">
+                                        <i class="fab fa-instagram mr-2"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/sarah-buckingham/" target="_blank">
+                                        <i class="fab fa-linkedin-in mr-2"></i>
+                                    </a>
+                                </span>
+                            </div>
+
+                            <!-- card content -->
+                            <div class="card-body">
+                                <div class="media d-block d-md-flex mt-3">
+                                    <img class="d-flex mb-3 mx-auto z-depth-1" src="./img/sarah-buckingham.png"
+                                        alt="placeholder image" style="width: 100px;">
+                                    <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                                        <h5 class="mt-0 font-weight-bold">Sarah Buckingham</h5>
+                                        I love to find innovative solutions to social problems.
+
+Working in Social Work, I’ve seen how tech can help reach vulnerable populations; helping people make more informed decisions, creating ways for people to connect, and giving people access to the tools they need to have agency in their own lives. The myriad of possibilities piqued my interest and so I decided to pursue an education at Fullstack Academy to become a software engineer to put my innovative ideas at play.
+<p>I am a mother of two VERY strong-willed children, and two rambunctious dogs.  When I am not coding, I'm off hiking in the Pacific Northwest, traveling abroad, or have my nose in a captivating book.  I have a strong passion for music and a deep love for black and white film photography.  I am excited to continue to couple my expertise in Social Work with my passion as a full-stack developer to have a positive and lasting impact on the lives of many.
+</p>
+                                    </div>
+                                </div>
+                            </div><!-- /card-body -->
+
+                        </div><!-- /card -->
+                    </div><!-- grid column end -->
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-4">
+
+                        <!--Card: Jumbotron-->
+                        <div class="card mb-4 wow fadeIn">
+
+                            <!-- Content -->
+                            <div class="card-body text-center">
+
+                                <h4 class="mb-4">
+                                    <strong>Learn Digital Skills</strong>
+                                </h4>
+                                <p>
+                                    <strong>Find out when the next cohort begins!</strong>
+                                </p>
+                                <p class="mb-4">
+                                    <strong>The most comprehensive program to up your game in the remote career world.
+                                    </strong>
+                                </p>
+                                <a target="_blank" href="https://www.momscan.co" class="btn btn-md">Learn More
+                                    <i class="fas fa-graduation-cap ml-2"></i>
+                                </a>
+
+                            </div>
+                            <!-- Content -->
+                        </div>
+                        <!--Card: Jumbotron-->
+
+                    </div><!-- Grid Column -->
+
+                </div><!-- Grid: row -->
+            </section>
+            <!--section: post -->
+            <a href="cohort_4.html" class="btn white-text elegant-color">Back</a>
+        </div>
+    </main> <!-- /main layout-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small elegant-color pt-4 mt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Moms Can & Co</h5>
+                    <p>Helping to optimize women for remote entry-level job <br>opportunities through our online
+                        program.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">The Moms Can Code School</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="cohort_1.html">Cohort One</a>
+                        </li>
+                        <li>
+                            <a href="cohort_2.html">Cohort Two</a>
+                        </li>
+                        <li>
+                            <a href="cohort_3.html">Cohort Three</a>
+                        </li>
+                        <li>
+                            <a href="cohort_4.html">Cohort Four</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Connect With Us</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright
+            <a href="www.momscan.co"> www.momscan.co</a>
+        </div>
+        <!-- Copyright -->
+
+
+    </footer>
+    <!--Footer-->
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.table {
+    padding: 3px 3px;
+    border: 3px solid #e9ebec;
+}
+
+.term {
+    width: 170px;
+}
+
+th,
+td {
+    border: 1px solid #e9ebec;
+}
+
+;

@@ -93,7 +93,7 @@
 
                                 <iframe src="https://giphy.com/embed/GStLeae4F7VIs" width="480" height="259" frameBorder="0" class="giphy-embed"
                                     allowFullScreen></iframe>
-                                <!-- <p><a href="https://giphy.com/gifs/movie-silent-applausegifs-GStLeae4F7VIs">via GIPHY</a></p> -->
+                                <p><a href="https://giphy.com/gifs/movie-silent-applausegifs-GStLeae4F7VIs">via GIPHY</a></p>
 
                                 <h4>What is a Git Alias?</h4>
                                 
@@ -109,12 +109,12 @@
                                 <p>If you’re already using git, then you have a configuration file called <code>.gitconfig</code> that lives in your $HOME directory.
                                 Out of the box, it has some basic user info such as your name and email address, but we’re going to add to that today.</p>
                                 
-                                <p>Let’s use <code>git status</code> as our example. To set an alias for <code>git status</code>, you simply type this command into your terminal</p>
+                                <p>Let’s use <code>git status</code> as our first example. To set an alias for <code>git status</code>, you simply type this command into your terminal</p>
                                 
                                 <pre>git config --global alias.st status</pre>
-                                
-                                <p>Here the <code>--global</code> flag sets the alias so that it will be available in any git repository on your machine.  <code>alias</code> sets the
-                                alias. Here the <code>co</code> represents whatever you want the shortcut to be, and the last word is the command it is taking the place of. (If the
+                                                            
+                                <p>Here the <code>--global</code> flag sets the alias so that it will be available in any git repository on your machine.
+                                In this case, the <code>st</code> represents whatever you want the shortcut to be, and the last word is the command it is taking the place of. (If the
                                  command that is being shortened is longer than one word, it needs to be in quotes).</p>
                                 
                                 <p>Now when you are in the terminal and want to check git status, you can just type <code>git st</code>.</p>
@@ -123,33 +123,28 @@
                                 
                                 <pre>
                                 git config --global alias.co checkout
-                                
                                 git config --global alias.cob ‘checkout -b’
-                                
                                 git config --global alias.com ‘checkout master’
-                                
                                 git config --global alias.ci commit
-
-                                git config --global alias.c clear
                                 </pre>
                                 
                                 <h4>Let’s Step It Up</h4>
                                 
-                                <p>One set of commands that I find most tedious is this</p>
+                                <p>One set of commands that I find most tedious is this:</p>
                                 
                                 <pre>
-                                Git add -A
-                                Git commit -m “message”
+                                git add -A
+                                git commit -m "message"
                                 </pre>
                                 
                                 <p>So let’s set an alias that combines both of these commands into one.</p>
                                 
-                                <pre>Git config –global alias.ac ‘!git add -A && git commit -m’</pre>
+                                <pre>git config --global alias.ac '!git add -A && git commit -m'</pre>
                                 
                                 <p>The ! is necessary when stringing together multiple commands.  Now when you want to commit all 
                                     your files (including untracked files) and make a commit, you can type</p>
                                 
-                                <pre>Git ac “message”</pre>
+                                <pre>git ac "Your commit message"</pre>
                                 
                                 <p>That’s so much shorter, right?!</p>
                                 
@@ -159,61 +154,49 @@
                                 
                                 <h5>Publish</h5>
                                 
-                                <p>Let’s imagine you’re making your first push on a new feature branch. Personally, I regularly forget to set it upstream and get an error message like
-                                this after typing <code>git push</code></p>
+                                <p>Imagine I am making my first push on a new feature branch. Personally, I regularly forget to set it upstream, so I then get an error message like
+                                this after entering <code>git push</code>:</p>
                                 
-                                <pre>[ -set upstream error]</pre>
+                                <pre>
+                                    fatal: The current branch new-branch has no upstream branch.
+                                    To push the current branch and set the remote as upstream, use
+                                    
+                                        git push --set-upstream origin new-branch
+                                </pre>
                                 
-                                <p>And then I either have to use the mouse to copy/paste that line or I proceed to type out</p>
+                                <p>And then I either have to use the mouse to copy/paste that last line or I proceed to type out</p>
                                 
-                                <pre>Git push -u origin <branch-name></pre>
+                                <pre>git push -u origin new-branch</pre>
                                 
                                 <p>It’s not super long...but it’s not short either. And if you’re working with many branches a day, the
                                 push-error-copy-paste-push workflow is not too efficient.</p>
                             
-                                <p>Instead, you can create an alias that sets the upstream remote branch with the same name as the locoal branch,
-                                tracks it, and pushes the current branch all in one quick step. Then when you’re ready to push on your new branch,
+                                <p>Instead, you can create an alias that sets the upstream remote branch with the same name as the local branch,
+                                tracks it, and then pushes the current branch all in one quick step. Then when you’re ready to push your new branch,
                                 all you have to type is <code>git publish</code></p>
                             
-                                <pre>Git config –global alias.publish "!git push -u origin $(git !git rev-parse --abbrev-ref HEAD)"</pre>
+                                <pre>git config --global alias.publish '!git push -u origin $(git !git rev-parse --abbrev-ref HEAD)'</pre>
                             
                                 <p>The first part of the replaced command looks the same as what was suggested in our error message, but what about the last
-                                part in parentheses? Shouldn’t that just be the <code><branch name></code>?</p>
+                                part in parentheses? Shouldn’t that just be <code>new-branch</code>?</p>
                                 
-                                <p>In fact, that's exactly what is! This is a helpful combo of git commands that retrieves the name of the current branch.</p>
+                                <p>In fact, that's exactly what is! This is a helpful combo of git commands that dynamically retrieves the name of the current branch.</p>
                         
-                                <p>Now your workflow just changed from this</p>
-                        
-                                <pre>
-                                ...
-                                Git push
-                                [error message]
-                                Copy/paste
-                                Success
-                                </pre>
-                        
-                                <p>to</p>
-                        
-                                <pre>
-                                ...
-                                Git publish
-                                </pre>
-                        
-                                <h5>unstage</h5>
+                                <h5>Unstage</h5>
                         
                                 <p>We've seen that git aliases can be used to simplify commands.  Another use case is to rename commands. For example, <code>git
                                 reset HEAD --</code> is used to remove a file from the staging area. It’s not necessarily a long command, but it’s not
                                 an intuitive name either. Since we are unstaging files, why not just call it "unstage"?</p>
                         
-                                <pre>Git confit –global alias.unstage “reset HEAD –”</pre>
+                                <pre>git config --global alias.unstage 'reset HEAD --'</pre>
                         
                                 <p>Now you can simply type</p>
                                 
-                                <pre>Git unstage /file/path.html</pre>
+                                <pre>git unstage /file/path.html</pre>
                         
                                 <p>Instead of</p>
                         
-                                <pre>Git reset HEAD -- /file/path.html</pre>
+                                <pre>git reset HEAD -- /file/path.html</pre>
                         
                                 <p>That’s an improvement in my book!</p>
                         
@@ -221,31 +204,36 @@
                         
                                 <p>Thank you for taking the time to read this tutorial. I hope it has helped you to find a more efficient git
                                 workflow. You have learned about your <code>.gitconfig</code> file, how to set up basic git aliases, and have seen some
-                                examples of slightly more complex aliases that combine multiple commands into one alias. Before we go, I’ll
+                                examples of slightly more complex aliases that combine multiple commands into one. Before we go, I’ll
                                 leave you with a couple final alias tips.</p>
                         
                                 <p>First of all, only create an alias for what you commonly use and for what will actually be helpful. There are a number of
-                                git alias lists out there, but there’s not need to add them all. It just doesn’t make sense to memorize a lot of
-                                aliases, especially ones that aren’t used on a regular basis. Start with a few obvious basics, get used to using
+                                git alias lists out there, but there’s no need to add them all. It just doesn’t make sense to memorize a multitude of
+                                aliases, especially ones that are not used on a regular basis. Start with a few obvious basics, get used to using
                                 those, and then only create others as you realize they would be useful to have.</p>
                         
-                                <p>Lastly, you have added your aliases one by one, but how do you review what you have? You have a few options. In the
+                                <p>Lastly, now that you have added your aliases, how can you review what you have in place? You have a few options. In the
                                 command line, you can enter</p>
                                     
                                 <ul>
-                                    <li><code>open ~/.gitconfig</code> – this will open the file in your default text editor</li>
+                                    <li><code>open ~/.gitconfig</code> - This will open the file in your default text editor.</li>
                             
-                                    <li><code>code ~/.gitconfig</code> – this will open the file in VS Code if that’s what you use and you’ve set up the code command</li>
+                                    <li><code>code ~/.gitconfig</code> - This will open the file in VS Code if that’s what you use and you’re set up the code command.</li>
                             
-                                    <li><code>git config --list --show-origin</code> - this will show the contents of your config file. This will also show the path to
+                                    <li><code>git config --list --show-origin</code> - This will show the contents of your config file. This will also show the path to
                                     your config file if you’re not sure where it is.</li>
                                 </ul>
 
-                                <p>Here's my config file with all the aliases discussed in this tutorial.</p>
-                        
-                                <pre>[config file screenshot]</pre>
+                                <p>Any text editor can be used to view your file.  Once open in a text editor, you can also manually add an alias within the file instead
+                                of using <code>git config --global alias.shortcut command</code> in the command line.</p>
 
-                                <p>Remember the 149 keystrokes at the beginning of this tutorial?  With these aliases, that 149 keystrokes turns into
+                                <p>Here's the alias section of my config file with all the aliases discussed in this tutorial.</p>
+                        
+                                <img src="img/mcgowan-git-alias-screenshot.png" width="500px">
+
+                                <p></p>
+
+                                <p>Remember the 149 keystrokes at the beginning of this tutorial?  With these aliases, those 149 keystrokes turns into
                                     only 81 keystrokes.  Extrapolate that over all the coding you do in a day and that's some serious time savings!
                                 </p>
                                 

@@ -83,7 +83,7 @@
                                 feature is not another crazy and complex command that you have to memorize. Instead, this is a feature that lets you
                                 memorize less. Intrigued? Read on.</p>
                                 
-                                <p>There’s one thing about the daily use of git can get quite cumbersome: all the repetitive typing. <code>git status</code>, <code>git
+                                <p>There’s one thing about the daily use of git that can get quite cumbersome: all the repetitive typing. <code>git status</code>, <code>git
                                 add -A</code>, <code>git commit -m “message”</code>, <code>git status</code>, <code>git checkout master</code>, <code>git checkout branch</code>, <code>git status</code>, <code>git add -A</code>, <code>git
                                 commit -m “message”</code>... That's 149 keystrokes.  There’s gotta be a better way!</p>
                                 
@@ -106,8 +106,8 @@
                                 
                                 <h4>How to Create a Git Alias</h4>
                                 
-                                <p>If you’re already using git, then you have a configuration file called <code>.gitconfig</code> that lives in your $HOME directory.
-                                Out of the box, it has some basic user info such as your name and email address, but we’re going to add to that today.</p>
+                                <p>Since you’re already using git, then you have a configuration file called <code>.gitconfig</code> that lives in your $HOME directory.
+                                Out of the box, it has some basic user info such as your name and email address, and we’re going to add more to it today.</p>
                                 
                                 <p>Let’s use <code>git status</code> as our first example. To set an alias for <code>git status</code>, you simply type this command into your terminal</p>
                                 
@@ -123,8 +123,8 @@
                                 
                                 <pre>
                                 git config --global alias.co checkout
-                                git config --global alias.cob ‘checkout -b’
-                                git config --global alias.com ‘checkout master’
+                                git config --global alias.cob 'checkout -b'
+                                git config --global alias.com 'checkout master'
                                 git config --global alias.ci commit
                                 </pre>
                                 
@@ -168,12 +168,11 @@
                                 
                                 <pre>git push -u origin new-branch</pre>
                                 
-                                <p>It’s not super long...but it’s not short either. And if you’re working with many branches a day, the
-                                push-error-copy-paste-push workflow is not too efficient.</p>
-                            
-                                <p>Instead, you can create an alias that sets the upstream remote branch with the same name as the local branch,
+                                <p>If you’re working with many branches a day, the
+                                push-error-copy-paste-push workflow is not too efficient.
+                                Instead, you can create an alias that sets the upstream remote branch with the same name as the local branch,
                                 tracks it, and then pushes the current branch all in one quick step. Then when you’re ready to push your new branch,
-                                all you have to type is <code>git publish</code></p>
+                                all you have to type is <code>git publish</code>.</p>
                             
                                 <pre>git config --global alias.publish '!git push -u origin $(git !git rev-parse --abbrev-ref HEAD)'</pre>
                             
@@ -273,8 +272,8 @@
                                         <h5 class="mt-0 font-weight-bold">Amy McGowan</h5>
                                         Amy McGowan is a web developer currently living in MA with her husband and goofy two-year-old son.
                                         She loves to solve problems and create products that are beautiful and useful.
-                                        When Amy first discovered coding, what began as a fun new activity quickly became a commitment begin a new
-                                        career. She loves to learn and to share what she learns with others.
+                                        When Amy first discovered coding, what began as a fun new activity quickly became a commitment to begin a new
+                                        career. She enjoys learning and sharing what she learns with others.
                                         Amy loves to travel, do yoga, create art, be outdoors, listen to podcasts, and learn all
                                         about plant-based nutrition. She also really wants to learn to play the ukulele.  You can find her at
                                         <a href="https://amymcgowan.dev">amymcgowan.dev</a>.

@@ -85,42 +85,43 @@
                                 feature is not another crazy and complex command that you have to memorize. Instead, this is a feature that lets you
                                 memorize less. Intrigued? Read on.</p>
                                 
-                                <p>There’s one thing about the daily use of git can get quite cumbersome: all the repetitive typing. Git status, git
-                                add -A, git commit -m “message”, git status, git checkout master, git checkout branch, git status, git add -A, git
-                                commit -m “message”... There’s gotta be a better way!</p>
+                                <p>There’s one thing about the daily use of git can get quite cumbersome: all the repetitive typing. <code>git status</code>, <code>git
+                                add -A</code>, <code>git commit -m “message”</code>, <code>git status</code>, <code>git checkout master</code>, <code>git checkout branch</code>, <code>git status</code>, <code>git add -A</code>, <code>git
+                                commit -m “message”</code>... That's 149 keystrokes.  There’s gotta be a better way!</p>
                                 
                                 <p>And there is.</p>
                                 
-                                <p>Let’s give a warm welcome to Git Aliases. :clapping hands:</p>
+                                <p>Let’s give a warm welcome to Git Aliases.</p>
+
+                                <h3>clapping gif</h3>
                                 
                                 <h4>What is a Git Alias?</h4>
                                 
-                                <p>A Git Alias is as it sounds: a shortcut for a longer command. The basic use for setting up an alias is to shorten common
-                                commands that you type everytime you use git. For example, with a git alias you only need to type git co instead of git checkout or git
-                                st instead of git status. But the magic really happens when you start using aliases for more complex, multi-step commands.</p>
+                                <p>A Git Alias is as sounds: a shortcut for a longer command. The basic use for setting up an alias is to shorten common
+                                commands that you type everytime you use git. For example, with a git alias you only need to type <code>git co</code> instead of <code>git checkout</code> or <code>git
+                                st</code> instead of <code>git status</code>. But the magic really happens when you start using aliases for more complex, multi-step commands.</p>
                                 
-                                <p>(Note: There’s also another thing called bash aliases. That’s similar, but different).</p>
-                                
-                                <p>This tutorial assumes you are already familiar with git and the command line. If you are and you’re ready to streamline
+                                <p>By the way, there’s also another concept called bash aliases. That’s similar, but different.  This tutorial is about git aliases and assumes you are already familiar with git and the command line. If you are and you’re ready to streamline
                                 your git flow, then let’s dive on in!</p>
                                 
                                 <h4>How to Create a Git Alias</h4>
                                 
-                                If you’re already using git, then you have a configuration file called .gitconfig that lives in your $HOME directory.
-                                Out of the box, it has some basic user info such as your name and email address, but we’re going to add to that today.
+                                <p>If you’re already using git, then you have a configuration file called <code>.gitconfig</code> that lives in your $HOME directory.
+                                Out of the box, it has some basic user info such as your name and email address, but we’re going to add to that today.</p>
                                 
-                                Let’s use git status as our example. To set an alias for git status, you simply type this command into your terminal
+                                <p>Let’s use <code>git status</code> as our example. To set an alias for <code>git status</code>, you simply type this command into your terminal</p>
                                 
-                                git config --global alias.st status
+                                <pre>git config --global alias.st status</pre>
                                 
-                                Here the --global flag sets the alias so that it will be available in any git repository on your machine. alias sets the
-                                alias. Here the co is whatever you want the shortcut to be, and the last word is what it is taking the place of. (if it
-                                the command that is being shortened is longer than one word, it needs to be in quotes).
+                                <p>Here the <code>--global</code> flag sets the alias so that it will be available in any git repository on your machine.  <code>alias</code> sets the
+                                alias. Here the <code>co</code> represents whatever you want the shortcut to be, and the last word is the command it is taking the place of. (If the
+                                 command that is being shortened is longer than one word, it needs to be in quotes).</p>
                                 
-                                Now when you are in the terminal and want to check git status, you can just type git st.
+                                <p>Now when you are in the terminal and want to check git status, you can just type <code>git st</code>.</p>
                                 
-                                These are a few more basic ones that you might find useful
+                                <p>These are a few more basic ones that you might find useful</p>
                                 
+                                <pre>
                                 git config –global alias.co checkout
                                 
                                 git config –global alias.cob ‘checkout -b’
@@ -128,114 +129,123 @@
                                 git config –global alias.com ‘checkout master’
                                 
                                 git config –global alias.ci commit
+                                </pre>
                                 
                                 <h4>Let’s Step It Up</h4>
                                 
-                                By far, one of the series of commands that I find most tedious is this:
+                                <p>One set of commands that I find most tedious is this</p>
                                 
+                                <pre>
                                 Git add -A
                                 Git commit -m “message”
+                                </pre>
                                 
-                                So let’s set an alias that combines both of these commands into one
+                                <p>So let’s set an alias that combines both of these commands into one.</p>
                                 
-                                Git config –global alias.ac ‘!git add -A && git commit -m’
+                                <pre>Git config –global alias.ac ‘!git add -A && git commit -m’</pre>
                                 
-                                (The ! is necessary when stringing together multiple commands).
+                                <p>The ! is necessary when stringing together multiple commands.  Now when you want to commit all 
+                                    your files (including untracked files) and make a commit, you can type</p>
                                 
-                                Now when you want to commit all your files, including untracked files, and want to make a commit, you can type
+                                <pre>Git ac “message”</pre>
                                 
-                                Git ac “message”
-                                
-                                That’s so much shorter, right?!
+                                <p>That’s so much shorter, right?!</p>
                                 
                                 <h4>Bonus Aliases</h4>
                                 
-                                Let’s look at two more helpful aliases.
+                                <p>Let’s look at two more helpful aliases.</p>
                                 
                                 <h5>Publish</h5>
                                 
-                                Let’s imagine you’re making your first push on a new feature branch. Personally, I regularly get an error message like
-                                this after typing git push
+                                <p>Let’s imagine you’re making your first push on a new feature branch. Personally, I regularly forget to set it upstream and get an error message like
+                                this after typing <code>git push</code></p>
                                 
-                                [ -set upstream error]
+                                <pre>[ -set upstream error]</pre>
                                 
-                                And then I either have to use the mouse to copy/paste that line or I proceed to type out
+                                <p>And then I either have to use the mouse to copy/paste that line or I proceed to type out</p>
                                 
-                                Git push -u origin <branch-name>
+                                <pre>Git push -u origin <branch-name></pre>
                                 
-                                It’s not super long...but it’s not short either. And if you’re working with many branches a day, the
-                                push-error-copy-paste-push workflow is not too efficient.
+                                <p>It’s not super long...but it’s not short either. And if you’re working with many branches a day, the
+                                push-error-copy-paste-push workflow is not too efficient.</p>
                             
-                                Instead, you can create this alias. It sets the upstream remote branch with the same name as the locoal branch,
+                                <p>Instead, you can create an alias that sets the upstream remote branch with the same name as the locoal branch,
                                 tracks it, and pushes the current branch all in one quick step. Then when you’re ready to push on your new branch,
-                                all you have to type is git publish
+                                all you have to type is <code>git publish</code></p>
                             
-                                Git config –global alias.publish "!git push -u origin $(git !git rev-parse --abbrev-ref HEAD)"
+                                <pre>Git config –global alias.publish "!git push -u origin $(git !git rev-parse --abbrev-ref HEAD)"</pre>
                             
-                                The first part of the replaced command looks the same as what appeared in our error message, but what about the last
-                                part in parentheses? Shouldn’t that just be the <branch name>?
+                                <p>The first part of the replaced command looks the same as what was suggested in our error message, but what about the last
+                                part in parentheses? Shouldn’t that just be the <code><branch name></code>?</p>
                                 
-                                It is! This is a helpful combo of git commands that retrieves the name of the current branch.
+                                <p>In fact, that's exactly what is! This is a helpful combo of git commands that retrieves the name of the current branch.</p>
                         
-                                Now your workflow just changed from this
+                                <p>Now your workflow just changed from this</p>
                         
+                                <pre>
                                 ...
                                 Git push
                                 [error message]
                                 Copy/paste
                                 Success
+                                </pre>
                         
-                                To
+                                <p>to</p>
                         
+                                <pre>
                                 ...
-                        
                                 Git publish
+                                </pre>
                         
                                 <h5>unstage</h5>
                         
-                                Another use case for git aliases is not only to simplify commands, but even to rename them. For example, git
-                                reset HEAD -- is used to remove a file from the staging area. It’s not necessarily a long command, but it’s not
-                                an intuitive name either. Since we are unstaging files, why not just call it unstage?
+                                <p>We've seen that git aliases can be used to simplify commands.  Another use case is to rename commands. For example, <code>git
+                                reset HEAD --</code> is used to remove a file from the staging area. It’s not necessarily a long command, but it’s not
+                                an intuitive name either. Since we are unstaging files, why not just call it "unstage"?</p>
                         
-                                Git confit –global alias.unstage “reset HEAD –”
+                                <pre>Git confit –global alias.unstage “reset HEAD –”</pre>
                         
-                                Now you can simply type
+                                <p>Now you can simply type</p>
                                 
-                                Git unstage /file/path.html
+                                <pre>Git unstage /file/path.html</pre>
                         
-                                Instead of
+                                <p>Instead of</p>
                         
-                                Git reset HEAD -- /file/path.html
+                                <pre>Git reset HEAD -- /file/path.html</pre>
                         
-                                That’s an improvement in my book!
+                                <p>That’s an improvement in my book!</p>
                         
-                                <h4>Some final tips</h4>
+                                <h4>Some Final Tips</h4>
                         
                                 <p>Thank you for taking the time to read this tutorial. I hope it has helped you to find a more efficient git
-                                workflow. You have learned about your .gitconfig file, how to set up basic git aliases, and have seen some
+                                workflow. You have learned about your <code>.gitconfig</code> file, how to set up basic git aliases, and have seen some
                                 examples of slightly more complex aliases that combine multiple commands into one alias. Before we go, I’ll
                                 leave you with a couple final alias tips.</p>
                         
-                                First of all, only create an alias for what you commonly use and for what will actually be helpful. There are a number of
+                                <p>First of all, only create an alias for what you commonly use and for what will actually be helpful. There are a number of
                                 git alias lists out there, but there’s not need to add them all. It just doesn’t make sense to memorize a lot of
                                 aliases, especially ones that aren’t used on a regular basis. Start with a few obvious basics, get used to using
-                                those, and then only create others as you realize they would be useful to have.
+                                those, and then only create others as you realize they would be useful to have.</p>
                         
-                                Lastly, you have added your aliases one by one, but how do you review what you have? You have a few options. In the
-                                command line, you can enter
+                                <p>Lastly, you have added your aliases one by one, but how do you review what you have? You have a few options. In the
+                                command line, you can enter</p>
                                     
                                 <ul>
-                                    <li>Open ~/.gitconfig – will open the file in your default text editor</li>
+                                    <li><code>open ~/.gitconfig</code> – this will open the file in your default text editor</li>
                             
-                                    <li>Code ~/.gitconfig – will open the file in VS Code if that’s what you use and you’ve set up the code command</li>
+                                    <li><code>code ~/.gitconfig</code> – this will open the file in VS Code if that’s what you use and you’ve set up the code command</li>
                             
-                                    <li>Git config --list --show-origin - will show the contents of your config file. This will also show the path to
+                                    <li><code>git config --list --show-origin</code> - this will show the contents of your config file. This will also show the path to
                                     your config file if you’re not sure where it is.</li>
                                 </ul>
 
-                                <p>For example, here's my config file with all the aliases discussed in this tutorial.</p>
+                                <p>Here's my config file with all the aliases discussed in this tutorial.</p>
                         
-                                [config file screenshot]
+                                <pre>[config file screenshot]</pre>
+
+                                <p>Remember the 149 keystrokes at the beginning of this tutorial?  With these aliases, that 149 keystrokes turns into
+                                    only 81 keystrokes.  Extrapolate that over all the coding you do in a day and that's some serious time savings!
+                                </p>
                                 
                                 <p>And that’s it! Congratulations on learning something new about git!</p>
 

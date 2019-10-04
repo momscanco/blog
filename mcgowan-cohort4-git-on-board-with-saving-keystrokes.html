@@ -111,7 +111,7 @@
                                 
                                 <p>Let’s use <code>git status</code> as our first example. To set an alias for <code>git status</code>, you simply type this command into your terminal</p>
                                 
-                                <pre>git config --global alias.st status</pre>
+                                <pre>$ git config --global alias.st status</pre>
                                                             
                                 <p>Here the <code>--global</code> flag sets the alias so that it will be available in any git repository on your machine.
                                 In this case, the <code>st</code> represents whatever you want the shortcut to be, and the last word is the command it is taking the place of. (If the
@@ -122,10 +122,10 @@
                                 <p>These are a few more basic ones that you might find useful</p>
                                 
                                 <pre>
-                                git config --global alias.co checkout
-                                git config --global alias.cob 'checkout -b'
-                                git config --global alias.com 'checkout master'
-                                git config --global alias.ci commit
+                                $ git config --global alias.co checkout
+                                $ git config --global alias.cob 'checkout -b'
+                                $ git config --global alias.com 'checkout master'
+                                $ git config --global alias.ci commit
                                 </pre>
                                 
                                 <h4>Let’s Step It Up</h4>
@@ -133,8 +133,8 @@
                                 <p>One set of commands that I find most tedious is this:</p>
                                 
                                 <pre>
-                                git add -A
-                                git commit -m "message"
+                                $ git add -A
+                                $ git commit -m "message"
                                 </pre>
                                 
                                 <p>So let’s set an alias that combines both of these commands into one.</p>
@@ -144,7 +144,7 @@
                                 <p>The ! is necessary when stringing together multiple commands.  Now when you want to commit all 
                                     your files (including untracked files) and make a commit, you can type</p>
                                 
-                                <pre>git ac "Your commit message"</pre>
+                                <pre>$ git ac "Your commit message"</pre>
                                 
                                 <p>That’s so much shorter, right?!</p>
 
@@ -191,15 +191,15 @@
                                 reset HEAD --</code> is used to remove a file from the staging area. It’s not necessarily a long command, but it’s not
                                 an intuitive name either. Since we are unstaging files, why not just call it "unstage"?</p>
                         
-                                <pre>git config --global alias.unstage 'reset HEAD --'</pre>
+                                <pre>$ git config --global alias.unstage 'reset HEAD --'</pre>
                         
                                 <p>Now you can simply type</p>
                                 
-                                <pre>git unstage /file/path.html</pre>
+                                <pre>$ git unstage /file/path.html</pre>
                         
                                 <p>Instead of</p>
                         
-                                <pre>git reset HEAD -- /file/path.html</pre>
+                                <pre>$ git reset HEAD -- /file/path.html</pre>
                         
                                 <p>That’s an improvement in my book!</p>
                         

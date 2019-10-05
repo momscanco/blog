@@ -79,72 +79,95 @@
                                     <footer class="blockquote-footer">Amy McGowan</footer>
                                 </blockquote>
 
-                                We’ve all been there, right? You’re working hard on your code, creating features, trying new styles – and then you see
+                                <p>We’ve all been there. You’re working hard on your code, creating features, trying new styles – and then you see
                                 it. You forgot to move to a feature branch and you’re making changes directly on master. You don’t want to continue
                                 working on master, but it seems way too complicated to try to copy/paste all your changes. And you certainly don’t want
-                                to lose all the hard work you’ve done.
+                                to lose all the hard work you’ve done.</p>
                                 
-                                Good news! Git has a useful feature called git stash. Think of git stash as a way of storing all your changes in a
-                                basket that is stored away for later use. The git documentation describes it in this way:
+                                <p>Good news! Git has a useful feature called <code>git stash</code>. Think of <code>git stash</code> as a way of storing all your changes in a
+                                basket that is stored away for later use. The git documentation describes it this way:</p>
                                 
-                                Use git stash when you want to record the current state of the working directory and the index, but want to go back to a
-                                clean working directory. The command saves your local modifications away and reverts the working directory to match the
-                                HEAD commit.
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">Use <code>git stash</code> when you want to record the current state of the working directory and the index, but want to go back to a
+                                    clean working directory. The command saves your local modifications away and reverts the working directory to match the
+                                    <code>HEAD</code> commit.</p>
+                                </blockquote>
                                 
-                                There are many uses for git stash, but in this tutorial we will focus on the case of rescuing unintended changes to
-                                master. Please note that git stash can only be used in this way if you have only made changes to master but no commits.
+                                <p>There are many uses for <code>git stash</code>, but in this tutorial we will focus on the case of rescuing unintended changes to
+                                master. Please note that <code>git stash</code> can only be used to save changes if they are in fact only modifications to master and not commits.
                                 However, if you do accidentally make a commit (or a few) to the master branch, I have also included a backup plan for
-                                you at the end. All is not lost.
+                                you at the end. All is not lost.</p>
                                 
-                                #How to use git stash
+                                <h4>How to Use Git Stash</h4>
                                 
-                                Rescuing uncommitted changes on a branch is actually a very easy fix. You can first use git stash to gather and store
-                                all the changes in a neat little package. Then switch to a new branch and use git stash pop to remove the changes from
+                                <p>Rescuing uncommitted changes on a branch is actually a very easy fix. You first use <code>git stash</code> to gather and store
+                                all the changes in a neat little package. Then switch to a new branch and use <code>git stash pop</code> to simultaneously remove the changes from
                                 your stash and then pop them onto the new branch. And there we have it! The master branch is clean and looks as it did
-                                at the last big commit. And the new changes you’ve been working on are now ready to go on the new branch. It will look
-                                something like this:
+                                at the last big commit. And the new changes you’ve been working on are now ready on the new branch. It will look
+                                something like this:</p>
                                 
-                                [git stash flow]
+                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-a.png" class="mb-3" width="500px">
+                                <!-- [git stash flow]
                                 A Repo (planning a garden, already have vegetables.md, fruit.md, layouts.md)
                                 Start to add to add to layouts.md – uh oh!
-                                No commits yet, but git status shows modified files
-                                ---
+                                No commits yet, but git status shows modified files -->
+                                
+                                <p>In this repository I am planning a garden.  I start making changes to <code>layouts.md</code> and then see
+                                that I forgot to make my feature branch and am on master.  I then use <code>git status</code> and see that I do in fact
+                                have a modified file.</p>
+                                
+                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-b.png" class="mb-3" width="500px">
+
+                                <p>As you can see in the screenshot above, I used <code>git stash</code> to stash my changes.  Then for the sake of 
+                                the tutorial I also used <code>git status</code> to show you that I do have a clean working directory.  The changes are gone.</p>
+                                <!-- ---
                                 B Git stash
-                                Git status (proof – clean working directory)
-                                ---
+                                Git status (proof – clean working directory) -->
+
+                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-c.png" class="mb-3" width="500px">
+
+                                <p>I then checkout a new branch and run <code>git stash pop</code> to put all those changes on the new branch.  As you can see, 
+                                the modified <code>layouts.md</code> file is now in the new branch.</p>
+                                <!-- ---
                                 C Git checkout -b add-layout
                                 Git pop
-                                Git status (proof – supplies file as we left it)
+                                Git status (proof – supplies file as we left it) -->
                                 
-                                There’s one last little note about git stash for now. Git stash will stash any files that are already being tracked
-                                whether staged or unstaged. However, it will not stash any new files that have been created. If you want to stash new
-                                untracked files, you will need to use a -u flag like this: git stash -u.
+                                <p>There’s one last little note about <code>git stash</code> for now. It will stash any files that are already being tracked
+                                whether staged or unstaged. However, it will <em>not</em> stash any <em>new</em> files that have been created. If you want to stash new
+                                untracked files, you will need to use a <code>-u</code> flag like this: <code>git stash -u</code>.</p>
                                 
-                                Let’s say I create a new file called supplies.md before I realize I’m on master. If I run git stash and then run git
-                                status again to make sure the changes have been stashed, see what happens:
+                                <p>Let’s say I create a new file called <code>supplies.md</code> before I realize I’m on master. If I run <code>git stash</code> and then run <code>git
+                                status</code> again to make sure the changes have been stashed, see what happens:</p>
                                 
-                                [-----]
+                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-d.png" class="mb-3" width="500px">
+
+                                <!-- [-----]
                                 D (in gardening directory, clean)
                                 Touch supplies.md
                                 Git status
                                 Git stash
-                                Git status
+                                Git status -->
                                 
-                                The new file is still on master. But if I run git stash -u, which stashes even new and untracked files, the new file
-                                will then be stashed.
+                                <p>The new file is still on master. But if I run <code>git stash -u</code>, which stashes even new and untracked files, the new file
+                                will then be stashed.</p>
                                 
-                                [-----]
+                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-e.png" class="mb-3" width="500px">
+
+                                <!-- [-----]
                                 E Git stash -u
-                                Git status (proof – new file gone)
+                                Git status (proof – new file gone) -->
                                 
-                                I can then pop the changes into a new branch
+                                <p>I can then pop the changes into a new branch.</p>
                                 
-                                [----]
+                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-f.png" class="mb-3" width="500px">
+
+                                <!-- [----]
                                 F Git checkout -b add-supplies.md
                                 Git pop
-                                Git status (proof – changes on new branch)
+                                Git status (proof – changes on new branch) -->
                                 
-                                #Backup Plan
+                                <h4>Backup Plan</h4>
                                 
                                 Let’s say you didn’t realize you were making changes on the master branch until you already have made one or more
                                 commits to the master branch. In this case, git stash will not work. Instead, you will need to use git reset –hard. I’ll
@@ -187,38 +210,41 @@
                                 D Git reflog (to find hash of 2 commits ago)
                                 Git reset –hard <hash>
                                 
-                                    Above, you can see I found the hash of my target commit with git reflog. I then reset master back to that commit and
-                                    received the message that HEAD is now at the original commit.
+                                Above, you can see I found the hash of my target commit with git reflog. I then reset master back to that commit and
+                                received the message that HEAD is now at the original commit.
+                            
+                                Now when I checkout the add-characters branch, everything is there as I left it and I can continue on coding in this
+                                branch as if it was that way all along.
+                            
+                                [---]
+                                E Git checkout add-characters
+                                Git reflog
+                            
+                                <h4>Summary</h4>
+                            
+                                <p>There you have it. Now you know how to save your work when you find yourself making changes on master whether you
+                                have already made commits or not. Of course the goal is to always move to a feature branch before making changes,
+                                but mistakes happen and it’s great that git has provided ways to rectify them. You have <code>git stash</code> and <code>git reset
+                                --hard</code> in your git toolbelt. Use them wisely and keep on coding!</p>
+                            
+                                <h4>Resources</h4>
+                            
+                                <p>I found the following resources most helpful for creating this tutorial:
+                                    <ul>
+                                        <li><a href="https://git-scm.com/docs/git-stash">https://git-scm.com/docs/git-stash</a></li>
+                                        <li><a href="https://stackoverflow.com/questions/8085838/how-to-move-the-changes-from-one-branch-to-another-branch-git">https://stackoverflow.com/questions/8085838/how-to-move-the-changes-from-one-branch-to-another-branch-git</li>
+                                        <li><a href="https://www.atlassian.com/git/tutorials/saving-changes/git-stash">https://www.atlassian.com/git/tutorials/saving-changes/git-stash</a></li>
+                                        <li><a href="https://www.theserverside.com/video/How-to-use-the-git-reset-hard-command-to-change-a-commit-history">https://www.theserverside.com/video/How-to-use-the-git-reset-hard-command-to-change-a-commit-history</a></li>
+                                    </ul>
+                                </p>
                                 
-                                    Now when I checkout the add-characters branch, everything is there as I left it and I can continue on coding in this
-                                    branch as if it was that way all along.
-                                
-                                    [---]
-                                    E Git checkout add-characters
-                                    Git reflog
-                                
-                                    #Summary
-                                
-                                    There you have it. Now you know how to save your work when you find yourself making changes on master whether you
-                                    have already made commits or not. Of course the goal is to always move to a feature branch before making changes,
-                                    but mistakes happen and it’s great that git has provided ways to rectify them. You have git stash and git reset
-                                    –hard in your git toolbelt. Use them wisely and on coding!
-                                
-                                
-                                    #Resources
-                                
-                                    The resources I found most helpful for creating this tutorial:
-                                    https://git-scm.com/docs/git-stash
-                                    https://stackoverflow.com/questions/8085838/how-to-move-the-changes-from-one-branch-to-another-branch-git
-                                    https://www.atlassian.com/git/tutorials/saving-changes/git-stash
-                                    https://www.theserverside.com/video/How-to-use-the-git-reset-hard-command-to-change-a-commit-history
-                                
-                                
-                                    There’s much more to git stash if you’re interested, like saving with a message (like a label), saving multiple
-                                    stashes, checking a list of stashes, applying only specific stashes. This is a helpful article that can give you a
-                                    slightly more indepth introduction to stash:
-                                    https://www.freecodecamp.org/news/useful-tricks-you-might-not-know-about-git-stash-e8a9490f0a1a/
-
+                                <p>There’s much more to <code>git stash</code> if you’re interested, like saving with a message, saving multiple
+                                stashes, checking a list of stashes, applying only specific stashes. This is a helpful article that can give you a
+                                slightly more indepth introduction to stash:
+                                    <ul>
+                                        <li><a href="https://www.freecodecamp.org/news/useful-tricks-you-might-not-know-about-git-stash-e8a9490f0a1a/">https://www.freecodecamp.org/news/useful-tricks-you-might-not-know-about-git-stash-e8a9490f0a1a/</a></li>
+                                    </ul>
+                                </p>
 
                             </div>
                         </div>

@@ -23,26 +23,3 @@
   margin-top: 100px;
 }
 
-<<<<<<< HEAD
-.wide-scroll {
-  overflow-x: auto;
-}
-
-=======
->>>>>>> master
-code {
-  background-color: #eee;
-  border-radius: 3px;
-  font-family: courier, monospace;
-  padding: 0 3px;
-<<<<<<< HEAD
-=======
-}
-
-pre {
-  text-align: left;
-  white-space: pre-line;
-  border-left: 2px solid rgb(146, 145, 145);
-  padding-left: 10px;
->>>>>>> master
-}

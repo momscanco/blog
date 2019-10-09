@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Moms Can & Co</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/andreamartz-style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--Main Navigation-->
+  <header>
+
+    <!-- Just an image -->
+    <nav class="navbar navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo_momscanco copy.png" height="50" alt="MCC logo">
+        </a>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+          <li class="nav-item">
+            <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5 pt-5">
+    <!--Main container-->
+    <div class="container">
+
+      <!-- section: post -->
+      <section class="mt-4">
+
+        <!-- Grid Row -->
+        <div class="row">
+
+          <!-- Grid Column -->
+          <div class="col-md-8 mb-4">
+            <!-- Featured Image -->
+            <div class="card mb-4 wow fadeIn">
+              <!-- <img src="img/yellow-iphone.jpg" class="img-fluid" alt="image"> -->
+              <img src="img/jeshoots-com--2vD8lIhdnw-unsplash.jpg" class="img-fluid" alt="frustrated woman looking at laptop screen">
+              
+              <!-- Embed banner photo credit; code taken from Unsplash -->
+              <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+                href="https://unsplash.com/@jeshoots?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                target="_blank" rel="noopener noreferrer"
+                title="Download free do whatever you want high-resolution photos from JESHOOTS.COM"><span
+                  style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+                    style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32">
+                    <title>unsplash-logo</title>
+                    <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+                  </svg></span><span style="display:inline-block;padding:2px 3px">JESHOOTS.COM</span></a>
+
+
+            </div><!-- Featured Image -->
+
+            <!-- Card -->
+            <div class="card mb-4 wow fadeIn">
+              <!-- Card Content -->
+              <div class="card-body">
+                <p class="h5 my-4">CSS Positioning: You Got This!</p>
+
+                <blockquote class="blockquote">
+                  <p class="mb-0"></p>
+                  <footer class="blockquote-footer">Andrea Martz, M.A.</footer>
+                </blockquote>
+
+                <h4>Why is it so hard to put things where I want them?</h4>
+                <p>When I first started learning HTML and CSS, I thought to myself, “Well, this is won’t be hard. I’m going to build my own
+                  custom webpage right now!” I was surprised to learn that while the syntax of CSS is straightforward and many properties
+                  are intuitive (think “color” and “border,” for example), positioning elements where I wanted them to go was not.
+                  Frustration set in: “Why doesn’t <span class="code">top: 100px</span> move my elemetn down 100 pixels like the MDN 
+                  documentation says it should? Did I miss a semi-colon? Did I select the element correctly?”</p>
+                
+                <div class="button-container">
+                  <a href="#table">
+                    <button type="button" class="btn btn-success">Learn the position <br> property now
+                    </button>
+                  </a>
+                </div>                  
+                
+                <p>It turns out that some CSS properties are not stand-alone properties. When we try to position an element using
+                  “directional” properties, as I like to call them, such as <span class="code">top, bottom, left,</span> and 
+                  <span class="code">right</span>, we first have to set a value for the <span class="code">position</span> property for that element. 
+                  If we don’t…well, CSS will ignore us like a spoiled housecat, and nothing will
+                  change on the page.</p>
+
+                <div class="image-container">
+                  <img class="photo" src="img/spoiled-housecat.jpg" alt="angry hissing housecat">
+                </div>
+
+                <p>After reading this article, you should have a full understanding of how to use the <span class="code">position</span> 
+                  property to completely control the placement of elements on your page and let that housecat know who will be the boss from now on.</p>
+                
+                <p>To get the most out of this article, you the reader should have a basic understanding of HTML and CSS, including the
+                  behavior and characteristics of the different types of HTML elements (i.e., block, inline, and inline-block). An
+                  understanding of the HTML document flow is also helpful but not required.</p>
+
+                <h4>CSS position and directional properties overview</h4>
+
+                <p>The <span class="code">position</span> property for an element can take on any one of five values:</p>
+                <span class="code keyword">static fixed relative absolute sticky</span>
+
+                <p>The <span class="code">position</span> property alone, though, doesn’t always make the element move (or move where you intend it to). Enter the
+                “directional” properties.</p>
+                
+                <p>The directional properties are as follows:</p>
+                <span class="code keyword">top right bottom left z-index</span>
+
+                <p>The first four properties determine the location of the element in two dimensions and will be 
+                  the focus of this article. The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index">z-index</a>
+                  can be thought of as adding a third dimension, and it is outside the scope of this article.</p>
+
+                <p>The table below summarizes the behavior of elements positioned with each of the values, except for <span class="code">sticky</span>,
+                  which I will discuss in a later section below.</p>
+                
+                <div id="table">
+                  <img class="table" src="img/position-property-table.jpg" alt="table showing position values">
+                </div>
+
+                <p>As can be seen in the table, the behavior of the positioned element will differ in important ways 
+                  based on the value of <span class="code">position</span>.</p>
+                
+                <ul>
+                  <li class="table-list-item">
+                    <span class="item-name">Use with directional properties?</span> Some values can be used with the directional 
+                    properties, and others cannot.
+                  </li>
+                  <li class="table-list-item">
+                    <span class="item-name">Positioning Context.</span> This defines the reference point, or starting position, for the position change. 
+                    Positioning contexts include the
+                    <ul>
+                      <li>
+                        <span class="item-name">viewport:</span> the visible area of the webpage, which will be different on each device or monitor,
+                      </li>
+                      <li>
+                        <span class="item-name">closest positioned ancestor:</span> the parent or closest ancestor containing the element which has 
+                        a <span class="code">position</span> value other than <span class="code">static</span>,
+                      </li>
+                      <li>
+                        <span class="item-name">HTML element <span>&lthtml&gt</span>:</span> the container of all elements on every webpage, and
+                      </li>
+                      <li>
+                        <span class="item-name">element itself:</span> the element’s original position in the document flow before positioning
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="table-list-item">
+                    <span class="item-name">Removed from document flow?</span> Some values for <span class="code">position</span> change the HTML document flow. The normal document 
+                    flow (i.e., without positioning) places the
+                    elements on the page from top to bottom and left to right in the order they are specified in the HTML and in accordance
+                    with their type (i.e., block, inline, or inline-block). When an element is removed from the flow, it is as though the
+                    element is floating above the other elements on the page. The other elements appear to ignore the element and will move
+                    into the place where it used to be.
+                  </li>
+                  <li class="table-list-item">
+                    <span class="item-name">Scroll behavior.</span> Elements scroll with the page by default. Some values alter the expected 
+                    scroll behavior.
+                  </li>
+                  <li class="table-list-item">
+                    <span class="item-name">Reduced block width?</span> Some values cause the width of block elements to be reduced to exactly the width of their 
+                    content, which makes them behave like inline-block elements.
+                  </li>
+                </ul>
+
+                <h4>So, what does it look like on the page?</h4>
+                <h5><span class="code">position: static</span></h5>
+
+                <p>Static (<span class="code">static</span>) is the default position value of all elements on a webpage. In the graphic below, 
+                  three <span class="code">&ltdiv&gt</span> elements are nested inside a parent element. This means that they are siblings of each other. 
+                  The parent element is inside the <span class="code">&ltbody&gt</span> element. No position values have been applied. 
+                  Therefore, they all have <span class="code">position: static</span>. Note also that that the blue <span class="code">&ltdiv&gt</span> 
+                  has some content.</p>
+
+                <div class="image-container">
+                  <img class="screenshot" src="img/static-normal-flow-content.JPG" alt="image showing position static">
+                </div>
+
+                <div class="note">NOTE: As each position value is discussed below, <span>keep an eye on the position of the <span class="blue-text">blue</span> box</span>,
+                 as that is the one that will get the position property applied each time.</div>
+
+                <h5><span class="code">position: fixed</span></h5>
+
+                <p>Now, let’s apply <span class="code">position: fixed</span> to the blue element without directional properties and watch for changes.</p>
+                
+                <div class="image-container">
+                  <img class="screenshot" src="img/fixed-no-dir.JPG" alt="">
+                </div>
+                
+                <p>The blue element has now been taken out of the flow. The orange element moved up to take its place, and it is now
+                sitting under the blue element. The blue element also has been reduced to the width of its content.</p>
+
+                <p>Now let’s position the box to the upper left corner of its positioning context, which is the viewport, by applying <span class="code">top: 0</span> and 
+                  <span class="code">left: 0</span>.</p>
+
+                <div class="image-container">
+                  <img class="screenshot" src="img/fixed-top-0-left-0.JPG" alt="">
+                </div>
+
+                <p>If we now scroll down the page, we’ll see that the blue box stays put, but all of the other elements scroll up:</p>
+
+                <div class="image-container">
+                  <video controls width="300">                 
+                    <source src="img/fixed-top-0-left-0-scroll.mp4" type="video/mp4">                
+                    Sorry, your browser doesn't support embedded videos.
+                  </video>
+                </div>
+
+                <h5><span class="code">position: relative</span></h5>
+
+                <p>Let’s now remove the directional properties and replace <span class="code">position: fixed</span> with 
+                  <span class="code">position: relative</span> and see what will change.</p>
+
+                <div class="image-container">
+                  <img class="screenshot" src="img/relative-no-dir.JPG" alt="">
+                </div>
+
+                <p>Interesting. The page looks just like it did before any positioning was applied. This is because the element remains in
+                the flow and we haven’t set a direction for it to move in yet.</p>
+
+                <p>We can verify that the positioning context is the image itself by applying <span class="code">top: 0</span> and
+                <span class="code">left: 0</span> and noting that the blue <span class="code">&ltdiv&gt</span> still does not move.</p>
+                
+                <p>It will move, though if we set non-zero values to <span class="code">top</span> and <span class="code">left</span>. 
+                  For example, let’s set <span class="code">top: -30px</span> and <span class="code">left: -20px</span>.</p>
+
+                <div class="image-container">
+                  <img class="screenshot" src="img/relative-top--30-left--20.JPG" alt="">
+                </div>
+
+                <p>The image moved up and to the left because the directional properties give the direction that the “push” is coming from.
+                 When the value is negative, it’s as if the push came from the opposite direction. We can verify this by removing the settings for 
+                 <span class="code">top</span> and <span class="code">left</span> and setting 
+                 <span class="code">bottom: 30px</span> and <span class="code">right: 20px</span> and noting that the image stays the same.</p>
+
+                <h5><span class="code">position: absolute</span></h5>
+
+                <p>With only <span class="code">position: absolute</span> applied, let’s see how the element behaves. It will behave 
+                in the same way whether there are positioned ancestors or not at this point, because we have not “moved” the element yet with directional properties.</p>
+
+                <div class="image-container">
+                  <img class="screenshot" src="img/absolute-no-dir-no-pos-ancestors.JPG" alt="">
+                </div>
+
+                <p>Let's apply <span class="code">position: relative</span> to the parent element and move the blue element using
+                <span class="code">top: 0</span> and <span class="code">left: 0</span>.</p>
+
+                <div class="image-container">
+                  <img class="screenshot" src="img/absolute-parent-relative-top-0-left-0.JPG" alt="">
+                </div>
+
+                <p>As expected, the element moved to the top left corner of the parent element.</p>
+
+                <h5><span class="code">position: sticky</span></h5>
+
+                <p>When an element is positioned using <span class="code">sticky</span>, its behavior is best described as a hybrid of 
+                <span class="code">fixed</span> and <span class="code">relative</span>, except
+                that the element’s width will <span class="underline">not</span> be reduced to the width of the content. Whether the element is behaving like it is
+                positioned using <span class="code">fixed</span> or <span class="code">relative</span> at any given time depends on the user’s scroll position.</p>
+
+                <p>If we only set <span class="code">position: sticky</span>, we might as well not bother, because nothing about the appearance or 
+                 behavior of the page will change. We need to also set at least one directional property.</p>
+
+                <p>With <span class="code">position: sticky</span>, and <span class="code">top: 0</span> and <span class="code">left: 0</span>, the initial appearance does not change, but let’s watch what happens when
+                the user scrolls the page.</p>
+
+                <div class="image-container">
+                  <video controls width="300">
+                    <source src="img/sticky-top-0-left-0-scroll.mp4" type="video/mp4">
+                    Sorry, your browser doesn't support embedded videos.
+                  </video>
+                </div>
+
+                <p>The element behaves as though it has <span class="code">position: relative</span> until it reaches the specified location 
+                  (i.e., <span class="code">top: 0</span> and <span class="code">left: 0</span>). At that point, it begins to behave like <span class="code">position:
+                fixed</span>. However, a sticky element cannot leave its parent container, so as the parent scrolls off the page, the element
+                goes with it. Also, because a sticky element must stay within its parent, its positioning context is a little different
+                than expected.</p>
+
+                <h5>That's it!</h5>
+
+                <p>Congratulations! You have tamed the position beast, and it will now succumb to your will.</p>
+                
+                <p>Good kitty.</p>
+
+                <div class="image-container">
+                  <img class="photo" src="img/good-kitty.jpg" alt="">
+                </div>
+
+              </div>
+              <!-- /card-body -->
+            </div>
+            <!-- /card -->
+
+            <!-- Card for Author -->
+            <div class="card mb-4 wow fadeIn">
+              <div class="card-header font-weight-bold">
+                <span>About author</span>
+                <span class="pull-right">
+                  <a href="https://www.facebook.com/andrea.p.martz">
+                    <i class="fab fa-facebook-f mr-2"></i>
+                  </a>
+                  <a href="https://twitter.com/amartzcoder">
+                    <i class="fab fa-twitter mr-2"></i>
+                  </a>
+                  <a href="https://www.instagram.com/andreamartz15">
+                    <i class="fab fa-instagram mr-2"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/andreamartz/">
+                    <i class="fab fa-linkedin-in mr-2"></i>
+                  </a>
+                </span>
+              </div>
+
+              <!-- card content -->
+              <div class="card-body">
+                <div class="media d-block d-md-flex mt-3">
+                  <img class="d-flex mb-3 mx-auto z-depth-1" src="img/Andrea-prof.jpg"
+                    alt="photo of the author" style="width: 100px;border-radius:50%;">
+                  <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                    <h5 class="mt-0 font-weight-bold">Andrea Martz</h5>
+                    <p>Andrea Martz is a rising self-taught web developer and jack-of-all-trades in professional certification testing. 
+                    She has worked 100% remotely for most of her career. As the only employee at a small company, she improved 
+                    products and processes to reduce costs and enhance client engagement and satisfaction.</p>
+                    <p>Andrea is happiest when there is variety in her work, interesting problems to solve, and the chance to collaborate,
+                    because that almost always means she’ll get to learn new skills and help others learn also.</p>
+                  </div>
+                </div>
+              </div><!-- /card-body -->
+
+            </div><!-- /card -->
+          </div><!-- grid column end -->
+
+          <!--Grid column-->
+          <div class="col-md-4 mb-4">
+
+            <!--Card: Jumbotron-->
+            <div class="card mb-4 wow fadeIn">
+
+              <!-- Content -->
+              <div class="card-body text-center">
+
+                <h4 class="mb-4">
+                  <strong>Learn Digital Skills</strong>
+                </h4>
+                <p>
+                  <strong>Find out when the next cohort begins!</strong>
+                </p>
+                <p class="mb-4">
+                  <strong>The most comprehensive program to up your game in the remote career world.
+                  </strong>
+                </p>
+                <a target="_blank" href="https://www.momscan.co" class="btn btn-md">Learn More
+                  <i class="fas fa-graduation-cap ml-2"></i>
+                </a>
+
+              </div>
+              <!-- Content -->
+            </div>
+            <!--Card: Jumbotron-->
+
+          </div><!-- Grid Column -->
+
+        </div><!-- Grid: row -->
+      </section>
+      <!--section: post -->
+      <a href="cohort_4.html" class="btn white-text elegant-color">Back</a>
+    </div>
+  </main> <!-- /main layout-->
+
+  <!-- Footer -->
+  <footer class="page-footer font-small elegant-color pt-4 mt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase">Moms Can & Co</h5>
+          <p>Helping to optimize women for remote entry-level job <br>opportunities through our online program.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">The Moms Can Code School</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="cohort_1.html">Cohort One</a>
+            </li>
+            <li>
+              <a href="cohort_2.html">Cohort Two</a>
+            </li>
+            <li>
+              <a href="cohort_3.html">Cohort Three</a>
+            </li>
+            <li>
+              <a href="cohort_4.html">Cohort Four</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">Connect With Us</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright
+      <a href="www.momscan.co"> www.momscan.co</a>
+    </div>
+    <!-- Copyright -->
+
+
+  </footer>
+  <!--Footer-->
+
+</body>
+
+</html>

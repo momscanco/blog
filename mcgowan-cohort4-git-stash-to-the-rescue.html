@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Moms Can & Co</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Main Navigation-->
+    <header>
+
+        <!-- Just an image -->
+        <nav class="navbar navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo_momscanco copy.png" height="50" alt="MCC logo">
+                </a>
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item">
+                        <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mt-5 pt-5">
+        <!--Main container-->
+        <div class="container">
+
+            <!-- section: post -->
+            <section class="mt-4">
+
+                <!-- Grid Row -->
+                <div class="row">
+
+                    <!-- Grid Column -->
+                    <div class="col-md-8 mb-4">
+                        <!-- Featured Image -->
+                        <div class="card mb-4 wow fadeIn">
+                            <img src="img/mcgowan-header-basket.png" class="img-fluid" alt="woman at computer">
+                        </div><!-- Featured Image -->
+
+                        <!-- Card -->
+                        <div class="card mb-4 wow fadeIn">
+                            <!-- Card Content -->
+                            <div class="card-body">
+                                <p class="h5 my-4">Git Stash to the Rescue</p>
+
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">Learn what to do when you suddenly realize you've been making changes on your master branch.</p>
+                                    <footer class="blockquote-footer">Amy McGowan</footer>
+                                </blockquote>
+
+                                <p>We’ve all been there. You’re working hard on your code, creating features, trying new styles – and then you notice
+                                something. You forgot to move to a feature branch and you’re making changes directly on master. You don’t want to continue
+                                working on master, but it seems way too complicated to try to copy/paste all your changes. And you certainly don’t want
+                                to lose all the hard work you’ve done.</p>
+                                
+                                <p>Good news! Git has a useful feature called <code>git stash</code>. Think of <code>git stash</code> as a way of storing all your changes in a
+                                basket that can be stored away for later use. The git documentation describes it this way:</p>
+                                
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">Use <code>git stash</code> when you want to record the current state of the working directory and the index, but want to go back to a
+                                    clean working directory. The command saves your local modifications away and reverts the working directory to match the
+                                    <code>HEAD</code> commit.</p>
+                                </blockquote>
+                                
+                                <p>There are many uses for <code>git stash</code>, but in this tutorial we will focus on the case of rescuing unintended changes to
+                                master. Please note that <code>git stash</code> can only be used to save changes if they are in fact only modifications to master and not commits.
+                                However, if you do accidentally make a commit (or a few) to the master branch, I have also included a backup plan for
+                                you at the end. All is not lost.</p>
+                                
+                                <h4>How to Use Git Stash</h4>
+                                
+                                <p>Rescuing uncommitted changes on a branch is actually a very easy fix. 
+                                    <ol>
+                                        <li>You first use <code>git stash</code> to gather and store all the changes in a neat little package.</li>
+                                        <li>Then use <code>git checkout &lt;new-branch-name&gt;</code> to create and switch to a new branch.</li>
+                                        <li>Lastly, use <code>git stash pop</code> to simultaneously remove the changes from your stash and then pop them onto the new branch.</li>
+                                    </ol>
+                                    And there we have it! The master branch is clean and looks as it did at the last big commit. Plus the new changes you’ve been working on 
+                                    are now on the new branch.</p>
+                                
+                                <p>In the repository below, I am planning a garden. I start making changes to <code>layouts.md</code> and then see
+                                    that I forgot to make my feature branch and am still on master. I then use <code>git status</code> and see that I do in fact
+                                    have a modified file.</p>
+
+                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-a.png" class="mb-3" width="500px">
+                                
+                                <p>As you can see in the screenshot below, I use <code>git stash</code> to stash my changes. Then for the sake of
+                                    the tutorial I also run <code>git status</code> to show you that I do have a clean working directory. The changes
+                                    are off master and stashed away.</p>
+                                
+                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-b.png" class="mb-3" width="500px">
+
+                                <p>I then checkout a new branch and run <code>git stash pop</code> to put all those changes on the new branch. As you
+                                    can see, the modified <code>layouts.md</code> file is now in the new branch.</p>
+
+                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-c.png" class="mb-3" width="500px">
+                                
+                                <p>There’s one last little note about <code>git stash</code> for now. It will stash any files that are already being tracked
+                                whether staged or unstaged. However, it will <em>not</em> stash any <em>new</em> files that have been created. If you want to stash new
+                                untracked files, you will need to use a <code>-u</code> flag like this: <code>git stash -u</code>.</p>
+                                
+                                <p>Let’s say I create a new file called <code>supplies.md</code> before I realize I’m on master. If I run <code>git stash</code> and then run <code>git
+                                status</code> again to make sure the changes have been stashed, see what happens:</p>
+                                
+                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-d.png" class="mb-3" width="500px">
+                                
+                                <p>The new file is still on master. But if I run <code>git stash -u</code>, which stashes even new and untracked files, the new file
+                                will then be stashed.</p>
+                                
+                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-e.png" class="mb-3" width="500px">
+                                
+                                <p>I can then pop the changes into a new branch.</p>
+                                
+                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-f.png" class="mb-3" width="500px">
+                                
+                                <h4>Backup Plan</h4>
+                                
+                                <p>Let’s say you didn’t realize you were making changes on the master branch until you already have made one or more
+                                commits to the master branch. In this case, <code>git stash</code> will not work. Instead, you will need to use <code>git reset --hard</code>. I’ll
+                                explain through an example.</p>
+                                
+                                <pre class="wide-scroll">(Commit1) --- (Commit2) --- (Commit3) --- (Commit4) --- (Commit5)
+                          Last intended                   head
+                          master commit
+                                </pre>
+                                
+                                <p>The last intentional commit on master was at commit 3, but now you’ve made 2 more commits and you’re on commit 5. Before
+                                we set everything right, make sure that everything is committed and there are no unstaged or staged changes.</p>
+                                
+                                <p>For our example, let’s pretend I have a repository about Harry Potter. So far my master branch has 3 files. I can use
+                                <code>git reflog</code> to see my commit history. The most recent commit is on top.</p>
+                                
+                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-reset-a.png" class="mb-3" width="500px">
+                                
+                                <p>While still on master, I forget to create a new branch to add more characters to <code>characters.html</code> and instead just
+                                open the file and start adding to it. I add one character and make a commit, then I add another character and make a commit.
+                                Oops! I’m still on master, but I’ve now made 2 commits that I shouldn’t have. The commits about Luna and Hermione should
+                                be on a separate branch, not master.</p>
+                                
+                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-reset-b.png" class="mb-3" width="500px">
+                                
+                                <p>Now, the first step is to create a new branch off of my current commit. This duplicates the master branch as it is so
+                                that I am able to pick up where I left off on the new branch as if it were there all along.</p>
+                                
+                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-reset-c.png" class="mb-3" width="500px">
+                                
+                                <p>The new <code>add-characters</code> branch looks exactly like master. (Note: the <code>add-characters</code> branch has been created, but I’m still on
+                                master, which is important for the next step.) Now I want master to reset back to where it was before I made
+                                the changes. We can accomplish this with <code>git reset –hard &lt;commit&gt;</code>, where “commit" is the hash of the commit that should be
+                                last on master. The hash number can be found with <code>git reflog</code>. In this example, we can look back and see that the commit
+                                with the message “Add initial hogwarts facts" is the last commit before the changes and has a hash of 9f993aa. <code>reset</code>
+                                rolls the <code>HEAD</code> back to the specified commit as if the new commits on master never happened.</p>
+                                
+                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-reset-d.png" class="mb-3" width="500px">
+
+                                <!-- [---]
+                                D Git reflog (to find hash of 2 commits ago)
+                                Git reset –hard <hash> -->
+                                
+                                <p>Above, you can see I found the hash of my target commit with <code>git reflog</code>. I then reset master back to that commit and
+                                received the message that <code>HEAD</code> is now at the original commit.</p>
+                            
+                                <p>Now when I checkout the <code>add-characters</code> branch, everything is there as I left it and I can continue coding in this
+                                branch as if it was that way all along.</p>
+                            
+                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-reset-e.png" class="mb-3" width="500px">
+
+                                <!-- [---]
+                                E Git checkout add-characters
+                                Git reflog -->
+                            
+                                <h4>Summary</h4>
+                            
+                                <p>There you have it. Now you know how to save your work when you find yourself making changes on master whether you
+                                have already made commits or not. Of course the goal is to always move to a feature branch before making changes,
+                                but mistakes happen and it’s great that git has provided ways to rectify them. You have <code>git stash</code> and <code>git reset
+                                --hard</code> in your git toolbelt. Use them wisely and keep on coding!</p>
+                            
+                                <h4>Resources</h4>
+                            
+                                <p>I found the following resources most helpful for creating this tutorial:
+                                    <ul>
+                                        <li><a href="https://git-scm.com/docs/git-stash">https://git-scm.com/docs/git-stash</a></li>
+                                        <li><a href="https://stackoverflow.com/questions/8085838/how-to-move-the-changes-from-one-branch-to-another-branch-git">https://stackoverflow.com/questions/8085838/how-to-move-the-changes-from-one-branch-to-another-branch-git</li>
+                                        <li><a href="https://www.atlassian.com/git/tutorials/saving-changes/git-stash">https://www.atlassian.com/git/tutorials/saving-changes/git-stash</a></li>
+                                        <li><a href="https://www.theserverside.com/video/How-to-use-the-git-reset-hard-command-to-change-a-commit-history">https://www.theserverside.com/video/How-to-use-the-git-reset-hard-command-to-change-a-commit-history</a></li>
+                                    </ul>
+                                </p>
+                                
+                                <p>There’s much more to <code>git stash</code> if you’re interested, like saving with a message, saving multiple
+                                stashes, checking a list of stashes, applying only specific stashes. This is a helpful article that can give you a
+                                slightly more indepth introduction to stash:
+                                    <ul>
+                                        <li><a href="https://www.freecodecamp.org/news/useful-tricks-you-might-not-know-about-git-stash-e8a9490f0a1a/">https://www.freecodecamp.org/news/useful-tricks-you-might-not-know-about-git-stash-e8a9490f0a1a/</a></li>
+                                    </ul>
+                                </p>
+
+                            </div>
+                        </div>
+                        <!-- /card -->
+
+                        <!-- Card for Author -->
+                        <div class="card mb-4 wow fadeIn">
+                            <div class="card-header font-weight-bold">
+                                <span>About author</span>
+                                <span class="pull-right">
+                                    <!-- <a href="">
+                                        <i class="fab fa-facebook-f mr-2"></i>
+                                    </a> -->
+                                    <a href="https://twitter.com/_amymcgowan">
+                                        <i class="fab fa-twitter mr-2"></i>
+                                    </a>
+                                    <!-- <a href="">
+                                        <i class="fab fa-instagram mr-2"></i>
+                                    </a> -->
+                                    <a href="https://www.linkedin.com/in/amy-mcgowan/">
+                                        <i class="fab fa-linkedin-in mr-2"></i>
+                                    </a>
+                                </span>
+                            </div>
+
+                            <!-- card content -->
+                            <div class="card-body">
+                                <div class="media d-block d-md-flex mt-3">
+                                    <img class="d-flex mb-3 mx-auto z-depth-1" src="img/mcgowan-amy-headshot.jpg"
+                                        alt="amy-mcgowan" style="width: 100px;">
+                                    <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                                        <h5 class="mt-0 font-weight-bold">Amy McGowan</h5>
+                                        Amy McGowan is a web developer currently living in MA with her husband and goofy
+                                        two-year-old son.
+                                        She loves to solve problems and create products that are beautiful and useful.
+                                        When Amy first discovered coding, what began as a fun new activity quickly
+                                        became a commitment to begin a new
+                                        career. She enjoys learning and sharing what she learns with others.
+                                        Amy loves to travel, do yoga, create art, be outdoors, listen to podcasts, and
+                                        learn all
+                                        about plant-based nutrition. She also really wants to learn to play the ukulele.
+                                        You can find her at
+                                        <a href="https://amymcgowan.dev">amymcgowan.dev</a>.
+
+                                    </div>
+                                </div>
+                            </div><!-- /card-body -->
+
+                        </div><!-- /card -->
+                    </div><!-- grid column end -->
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-4">
+
+                        <!--Card: Jumbotron-->
+                        <div class="card mb-4 wow fadeIn">
+
+                            <!-- Content -->
+                            <div class="card-body text-center">
+
+                                <h4 class="mb-4">
+                                    <strong>Learn Digital Skills</strong>
+                                </h4>
+                                <p>
+                                    <strong>Find out when the next cohort begins!</strong>
+                                </p>
+                                <p class="mb-4">
+                                    <strong>The most comprehensive program to up your game in the remote career world.
+                                    </strong>
+                                </p>
+                                <a target="_blank" href="https://www.momscan.co" class="btn btn-md">Learn More
+                                    <i class="fas fa-graduation-cap ml-2"></i>
+                                </a>
+
+                            </div>
+                            <!-- Content -->
+                        </div>
+                        <!--Card: Jumbotron-->
+
+                    </div><!-- Grid Column -->
+
+                </div><!-- Grid: row -->
+            </section>
+            <!--section: post -->
+            <a href="cohort_4.html" class="btn white-text elegant-color">Back</a>
+        </div>
+    </main> <!-- /main layout-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small elegant-color pt-4 mt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Moms Can & Co</h5>
+                    <p>Helping to optimize women for remote entry-level job <br>opportunities through our online
+                        program.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">The Moms Can Code School</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="cohort_1.html">Cohort One</a>
+                        </li>
+                        <li>
+                            <a href="cohort_2.html">Cohort Two</a>
+                        </li>
+                        <li>
+                            <a href="cohort_3.html">Cohort Three</a>
+                        </li>
+                        <li>
+                            <a href="cohort_4.html">Cohort Four</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Connect With Us</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright
+            <a href="www.momscan.co"> www.momscan.co</a>
+        </div>
+        <!-- Copyright -->
+
+
+    </footer>
+    <!--Footer-->
+
+</body>
+
+</html>

@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+.button-container > button {
+  font-size: 1.2rem;
+}
+
 .image-container {
   text-align: center;
 }
@@ -16,6 +20,7 @@
 
 #table {
   max-width: 550px;
+  margin: 0 auto;
 }
 
 .table-list-item .item-name {

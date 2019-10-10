@@ -14,6 +14,7 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/amymcgowan-style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -122,10 +123,10 @@
                                 <p>These are a few more basic ones that you might find useful</p>
                                 
                                 <pre>
-                                $ git config --global alias.co checkout
-                                $ git config --global alias.cob 'checkout -b'
-                                $ git config --global alias.com 'checkout master'
-                                $ git config --global alias.ci commit
+$ git config --global alias.co checkout
+$ git config --global alias.cob 'checkout -b'
+$ git config --global alias.com 'checkout master'
+$ git config --global alias.ci commit
                                 </pre>
                                 
                                 <h4>Let’s Step It Up</h4>
@@ -133,13 +134,13 @@
                                 <p>One set of commands that I find most tedious is this:</p>
                                 
                                 <pre>
-                                $ git add -A
-                                $ git commit -m "message"
-                                </pre>
+$ git add -A
+$ git commit -m "message"</pre>
+                                
                                 
                                 <p>So let’s set an alias that combines both of these commands into one.</p>
                                 
-                                <pre>git config --global alias.ac '!git add -A && git commit -m'</pre>
+                                <pre>$ git config --global alias.ac '!git add -A && git commit -m'</pre>
                                 
                                 <p>The ! is necessary when stringing together multiple commands.  Now when you want to commit all 
                                     your files (including untracked files) and make a commit, you can type</p>

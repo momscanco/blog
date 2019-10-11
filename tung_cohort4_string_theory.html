@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Moms Can & Co</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+        table {background-color: #a5abad; width: 80%; margin-top: -20px; margin-left: 20px; padding-top: 0px;}
+        th {width: 60%; border-right:2px solid #ffffff;}   
+        td {width: 60%; border-right:2px solid #ffffff;}
+  </style>
+</head>
+
+<body>
+
+<!--Main Navigation-->
+<header>
+
+<!-- Just an image -->
+<nav class="navbar navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo_momscanco copy.png" height="50" alt="MCC logo">
+    </a>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main class="mt-5 pt-5">
+  <!--Main container-->
+  <div class="container">
+    
+    <!-- section: post -->
+    <section class="mt-4">
+
+      <!-- Grid Row -->
+      <div class="row">
+
+        <!-- Grid Column -->
+        <div class="col-md-8 mb-4">
+          <!-- Featured Image -->
+          <div class="card mb-4 wow fadeIn">
+            <img src="img/string.jpg" class="img-fluid" alt="ball-of-string">
+          </div><!-- Featured Image -->
+
+          <!-- Card -->
+          <div class="card mb-4 wow fadeIn">
+            <!-- Card Content -->
+            <div class="card-body">
+              <p class="h4 my-4">Beginner String “Theory” in JavaScript</p>
+              <p>When do I use single quotes (‘’), double quotes (“”), or backticks (``)?</p>
+
+              <div class="getting started">
+                  <p>Let’s start off with the easy statement – single quotes and double quotes do the same thing in JavaScript.  Each of my examples will show either single quotes or double quotes – never both in the same example as the non-matching syntax will produce an error – to show that they both operate the same way.</p>
+              </div>
+              
+                <div class="section">
+                <p>Quotes will keep a string of text together:</p>
+                <table>
+                    <tr>
+                    <th><strong>Code</strong></th>
+                    <th><strong>Displays on Console</strong></th>
+                    </tr>
+                    <tr>
+                    <td>console.log(“Hello, thank you for visiting!”);</td>
+                    <td>Hello, thank you for visiting!</td>
+                    </tr>
+                </table><br>
+                <table>
+                    <tr>
+                    <th><strong>Code</strong></th>
+                    <th><strong>Displays on Console</strong></th>
+                    </tr>
+                    <tr>
+                    <td>console.log(‘10 + 2’);</td>
+                    <td>10 + 2</td>
+                    </tr>
+                </table>
+                <p>Notice how it's only the string of text that will display, not the calculated sum.</p>
+                </div>
+                
+                <div class="section">
+                <p>Without quotes, numbers are treated as integers in an equation:</p>
+                <table>
+                    <tr>
+                    <th><strong>Code</strong></th>
+                    <th><strong>Displays on Console</strong></th>
+                    </tr>
+                    <tr>
+                    <td>console.log(10 + 2);</td>
+                    <td>12</td>
+                    </tr>
+                </table>
+                <p>When there are no quotes around an equation, the calculated result will display.</p>
+                </div>                   
+
+                <div class="section">
+                <p>You can concatenate strings together:</p>
+                <table>
+                    <tr>
+                    <th><strong>Code</strong></th>
+                    <th><strong>Displays on Console</strong></th>
+                    </tr>
+                    <tr>
+                    <td>console.log(‘abc ’ + ‘123’);</td>
+                    <td>abc 123</td>
+                    </tr>
+                </table>
+                <p>Notice how the space after c is included in the display.</p>
+                <p>Taking our number example from earlier and placing each number in quotes:</p>
+                <table>
+                    <tr>
+                    <th><strong>Code</strong></th>
+                    <th><strong>Displays on Console</strong></th>
+                    </tr>
+                    <tr>
+                    <td>console.log(“10” + “2”);</td>
+                    <td>102</td>
+                    </tr>
+                </table>
+                <p>The use of quotes around each individual number will join the contents within the quotes together.</p>
+                </div> 
+
+                <div class="section">
+                <p>When using constants or variables, use backticks to include the values of them in your string:</p>
+                <table>
+                    <tr>
+                    <th><strong>Code</strong></th>
+                    <th><strong>Displays on Console</strong></th>
+                    </tr>
+                    <tr>
+                    <td>const language = “JavaScript”;<br>console.log(`Learning ${language} is fun!`);</td>
+                    <td>Learning JavaScript is fun!</td>
+                    </tr>
+                </table>
+                </div>
+                <br>
+                <div class="section">
+                <p>If we were to use either double quotes or single quotes, a different display would occur:</p>
+                <table>
+                    <tr>
+                    <th><strong>Code</strong></th>
+                    <th><strong>Displays on Console</strong></th>
+                    </tr>
+                    <tr>
+                    <td>const language = “JavaScript”;<br>console.log("Learning ${language} is fun!");</td>
+                    <td>Learning ${language} is fun!</td>
+                    </tr>
+                </table>
+                <p>The use of quotes around the whole string will keep the contents within the quotes together.</p>
+                </div>
+
+                <div class="section">
+                <p>I hope this quick post helps with how you code your strings in JS!</p>
+                </div> 
+                
+            </div>
+          </div>
+        <!-- /card -->
+
+        <!-- Card for Author -->
+        <div class="card mb-4 wow fadeIn">
+          <div class="card-header font-weight-bold">
+            <span>About author</span>
+            <span class="pull-right">
+              <a href="https://twitter.com/racqcancode">
+                  <i class="fab fa-twitter mr-2"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/racquel-mangaser-tung-46984a6/">
+                  <i class="fab fa-linkedin-in mr-2"></i>
+              </a>
+            </span>
+          </div>
+
+          <!-- card content -->
+          <div class="card-body">
+            <div class="media d-block d-md-flex mt-3">
+              <img class="d-flex mb-3 mx-auto z-depth-1" src="img/RMT.jpg" alt="placeholder image" style="width: 100px;">
+              <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                  <h5 class="mt-0 font-weight-bold">Racquel Tung</h5>
+                  <p>Racquel is a full-time working mom to two fierce little girls. She, her husband, the kiddos, and shiba inu reside in New Jersey.</p>
+                  <p>Racquel is a forever a student; obtaining degrees and certificates to support her pharmaceutical career. Her latest venture, however, is one that serves her personal interest: coding. She looks forward to the challenge set forth by Moms Can & Co to be fundamentally ready as a Junior Web Developer.</p>
+              </div>
+            </div>
+          </div><!-- /card-body -->
+
+        </div><!-- /card -->
+      </div><!-- grid column end -->
+
+          <!--Grid column-->
+          <div class="col-md-4 mb-4">
+
+              <!--Card: Jumbotron-->
+              <div class="card mb-4 wow fadeIn">
+
+              <!-- Content -->
+              <div class="card-body text-center">
+
+                <h4 class="mb-4">
+                  <strong>Learn Digital Skills</strong>
+                </h4>
+                <p>
+                  <strong>Find out when the next cohort begins!</strong>
+                </p>
+                <p class="mb-4">
+                  <strong>The most comprehensive program to up your game in the remote career world. 
+                    </strong>
+                </p>
+                <a target="_blank" href="https://www.momscan.co" class="btn btn-md">Learn More
+                  <i class="fas fa-graduation-cap ml-2"></i>
+                </a>
+
+              </div>
+              <!-- Content -->
+            </div>
+          <!--Card: Jumbotron-->
+
+          </div><!-- Grid Column -->
+
+      </div><!-- Grid: row -->
+    </section><!--section: post -->
+    <a href="cohort_4.html" class="btn white-text elegant-color">Back</a>
+   </div>
+  </main> <!-- /main layout-->
+
+<!-- Footer -->
+<footer class="page-footer font-small elegant-color pt-4 mt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase">Moms Can & Co</h5>
+          <p>Helping to optimize women for remote entry-level job <br>opportunities through our online program.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+            <!-- Links -->
+            <h5 class="text-uppercase">The Moms Can Code School</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="cohort_1.html">Cohort One</a>
+              </li>
+              <li>
+                <a href="cohort_2.html">Cohort Two</a>
+              </li>
+              <li>
+                <a href="cohort_3.html">Cohort Three</a>
+              </li>
+              <li>
+                <a href="cohort_4.html">Cohort Four</a>
+              </li>
+            </ul>
+  
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+  
+            <!-- Links -->
+            <h5 class="text-uppercase">Connect With Us</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+          <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright
+      <a href="www.momscan.co"> www.momscan.co</a>
+    </div>
+    <!-- Copyright -->
+  
+  
+</footer>
+<!--Footer-->
+  
+  </body>
+  </html>
+  

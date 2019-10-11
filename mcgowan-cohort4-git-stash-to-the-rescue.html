@@ -114,18 +114,18 @@
                                     that I forgot to make my feature branch and am still on master. I then use <code>git status</code> and see that I do in fact
                                     have a modified file.</p>
 
-                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-a.png" class="mb-3" width="500px">
+                                <img src="img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-a.png" class="mb-3" width="500px">
                                 
                                 <p>As you can see in the screenshot below, I use <code>git stash</code> to stash my changes. Then for the sake of
                                     the tutorial I also run <code>git status</code> to show you that I do have a clean working directory. The changes
                                     are off master and stashed away.</p>
                                 
-                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-b.png" class="mb-3" width="500px">
+                                <img src="img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-b.png" class="mb-3" width="500px">
 
                                 <p>I then checkout a new branch and run <code>git stash pop</code> to put all those changes on the new branch. As you
                                     can see, the modified <code>layouts.md</code> file is now in the new branch.</p>
 
-                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-c.png" class="mb-3" width="500px">
+                                <img src="img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-c.png" class="mb-3" width="500px">
                                 
                                 <p>There’s one last little note about <code>git stash</code> for now. It will stash any files that are already being tracked
                                 whether staged or unstaged. However, it will <em>not</em> stash any <em>new</em> files that have been created. If you want to stash new
@@ -134,16 +134,16 @@
                                 <p>Let’s say I create a new file called <code>supplies.md</code> before I realize I’m on master. If I run <code>git stash</code> and then run <code>git
                                 status</code> again to make sure the changes have been stashed, see what happens:</p>
                                 
-                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-d.png" class="mb-3" width="500px">
+                                <img src="img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-d.png" class="mb-3" width="500px">
                                 
                                 <p>The new file is still on master. But if I run <code>git stash -u</code>, which stashes even new and untracked files, the new file
                                 will then be stashed.</p>
                                 
-                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-e.png" class="mb-3" width="500px">
+                                <img src="img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-e.png" class="mb-3" width="500px">
                                 
                                 <p>I can then pop the changes into a new branch.</p>
                                 
-                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-f.png" class="mb-3" width="500px">
+                                <img src="img/mcgowan-post2-stash-reset/mcgowan-blog2-stash-f.png" class="mb-3" width="500px">
                                 
                                 <h4>Backup Plan</h4>
                                 
@@ -162,19 +162,19 @@
                                 <p>For our example, let’s pretend I have a repository about Harry Potter. So far my master branch has 3 files. I can use
                                 <code>git reflog</code> to see my commit history. The most recent commit is on top.</p>
                                 
-                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-reset-a.png" class="mb-3" width="500px">
+                                <img src="img/mcgowan-post2-stash-reset/mcgowan-blog2-reset-a.png" class="mb-3" width="500px">
                                 
                                 <p>While still on master, I forget to create a new branch to add more characters to <code>characters.html</code> and instead just
                                 open the file and start adding to it. I add one character and make a commit, then I add another character and make a commit.
                                 Oops! I’m still on master, but I’ve now made 2 commits that I shouldn’t have. The commits about Luna and Hermione should
                                 be on a separate branch, not master.</p>
                                 
-                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-reset-b.png" class="mb-3" width="500px">
+                                <img src="img/mcgowan-post2-stash-reset/mcgowan-blog2-reset-b.png" class="mb-3" width="500px">
                                 
                                 <p>Now, the first step is to create a new branch off of my current commit. This duplicates the master branch as it is so
                                 that I am able to pick up where I left off on the new branch as if it were there all along.</p>
                                 
-                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-reset-c.png" class="mb-3" width="500px">
+                                <img src="img/mcgowan-post2-stash-reset/mcgowan-blog2-reset-c.png" class="mb-3" width="500px">
                                 
                                 <p>The new <code>add-characters</code> branch looks exactly like master. (Note: the <code>add-characters</code> branch has been created, but I’m still on
                                 master, which is important for the next step.) Now I want master to reset back to where it was before I made
@@ -183,7 +183,7 @@
                                 with the message “Add initial hogwarts facts" is the last commit before the changes and has a hash of 9f993aa. <code>reset</code>
                                 rolls the <code>HEAD</code> back to the specified commit as if the new commits on master never happened.</p>
                                 
-                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-reset-d.png" class="mb-3" width="500px">
+                                <img src="img/mcgowan-post2-stash-reset/mcgowan-blog2-reset-d.png" class="mb-3" width="500px">
 
                                 <!-- [---]
                                 D Git reflog (to find hash of 2 commits ago)
@@ -195,7 +195,7 @@
                                 <p>Now when I checkout the <code>add-characters</code> branch, everything is there as I left it and I can continue coding in this
                                 branch as if it was that way all along.</p>
                             
-                                <img src="/img/mcgowan-post2-stash-reset/mcgowan-blog2-reset-e.png" class="mb-3" width="500px">
+                                <img src="img/mcgowan-post2-stash-reset/mcgowan-blog2-reset-e.png" class="mb-3" width="500px">
 
                                 <!-- [---]
                                 E Git checkout add-characters

@@ -12,4 +12,7 @@ td {
     border: 1px solid #e9ebec;
 }
 
-;
+.center {
+    display: block;
+    margin: 0 auto;
+}

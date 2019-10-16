@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Moms Can & Co</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--Main Navigation-->
+  <header>
+
+    <!-- Just an image -->
+    <nav class="navbar navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo_momscanco copy.png" height="50" alt="MCC logo">
+        </a>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+          <li class="nav-item">
+            <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5 pt-5">
+    <!--Main container-->
+    <div class="container">
+
+      <!-- section: post -->
+      <section class="mt-4">
+
+        <!-- Grid Row -->
+        <div class="row">
+
+          <!-- Grid Column -->
+          <div class="col-md-8 mb-4">
+            <!-- Featured Image -->
+            <div class="card mb-4 wow fadeIn">
+              <img src="img/martz-post2-modals/modal-enjoyed.jpg" class="img-fluid" alt="image">
+            </div><!-- Featured Image -->
+
+            <!-- Card -->
+            <div class="card mb-4 wow fadeIn">
+              <!-- Card Content -->
+              <div class="card-body">
+                <p class="h5 my-4">You <em>Ought</em> to Know About Modals</p>
+
+                <blockquote class="blockquote">
+                  <p class="mb-0">Learn what a modal is and how to create one for your website.</p>
+                  <footer class="blockquote-footer">Andrea Martz, M.A.</footer>
+                </blockquote>
+
+                <p>Relax, this is not a grammar lesson, but really you <em>should</em> learn about modals. In web 
+                  development, the term modal refers to a window that pops up at a time we specify or when a certain 
+                  event happens on the web page. Sometimes animations accompany the image to transition it onto the 
+                  page rather than having it appear abruptly. The window is usually a call-to-action (CTA) and is 
+                  often shown with a darkened backdrop in order to draw attention to the modal. Here is an
+                  example from Designmodo.com of how a modal might be implemented on a retail website:
+                  <a href="https://designmodo.com/design-modal-windows/" style="display:block;text-align:center;padding:1rem 0">
+                    <img style="width:85%" src="img/martz-post2-modals/modal-example.JPG" 
+                         alt="image and link to an article showing examples of modal windows">
+                  </a></p>
+                <p>Recommended pre-knowledge for this lesson:
+                  <ul>
+                    <li>The basics of HTML, CSS, and JavaScript (JS)</li>
+                    <li>Familiarity with the DOM (Document Object Model)</li>
+                  </ul>               
+                  If you have this knowledge, let’s get to it!
+                </P>
+                
+                <p>It is recommended that you open a code editor and try to create this modal step-by-step with me. 
+                  Even better, try to add to the code or change it to make it your own.
+                </p>
+
+                <h6 style="font-size:1.1rem;font-weight:bold">Planning for the modal</h6>
+                <p>As is always the case in web development, before you begin coding, you should think about the 
+                  specific behavior you desire for your modal in terms of what is right for your audience (the user). 
+                  Specifically, answer the following questions:
+                </p>
+                <p>
+                  <ol>
+                    <li><p><span style="font-style:italic">What event will trigger the display of the modal?</span>
+                      That is, when do you want the modal to appear? Will it be when the user clicks or hovers over an 
+                      element on the page? Will it happen a few seconds after the page has loaded?</p></li>
+                    <li><p><span style="font-style:italic">What event will trigger the disappearance of the modal?</span>
+                      Will it be when the user clicks a close button on the modal? Or by clicking anywhere on the backdrop?</p></li>
+                    <li><p><span style="font-style:italic">What transitions, if any, will the modal have as it enters onto the 
+                      page?</span> That is, will it bounce a little? Will it slide onto the page? Something else?</p></li>
+                  </ol>
+                </p>
+
+                <h6 style="font-size:1.1rem;font-weight:bold">The goal</h6>
+                <p>In this article, I will show you how to create a very basic modal with no transitions as it comes onto the page.
+                  You can always add the fancy features later. It will be activated by clicking on a specific image on the page. 
+                  The act of the user clicking on the image is called an event in JS. As a bonus, I will also show you how to 
+                  make a modal pop up after a slight delay when the page loads.</p>
+
+                <h6 style="font-size:1.1rem;font-weight:bold">The code</h6>
+                <p>The modal we’ll create will be the one that appears in the header image of this article. The code will make more sense if you understand
+                first how the modal is constructed. You can think of it as having three layers. The bottom layer is the image of the
+                mountains. When the page loads, this image without the modal is all you’ll see:</p>
+
+                <p style="text-align:center">
+                  <img style="width:85%" src="img/martz-post2-modals/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg" alt="photo of mountain scenery">
+                </p>
+                <p>On top of that is the dark backdrop. The topmost layer is the text in the white box.</p>
+                
+                <p>The code will consist of one of each of these file types: HTML, CSS, and JS. Now we’ll get into what you came here for:
+                  the code.
+                </p>
+
+                <h6 style="font-size:1.1rem;font-weight:bold">HTML</h6>
+                <p>The HTML <code style="font-family:Courier New;font-size:1rem">&ltbody&gt</code> looks like this:</p>
+
+                <p style="text-align:center">
+                  <img style="width:85%" src="img/martz-post2-modals/modal-html.png" alt="">
+                </p>
+
+                <p>Notice that the very last element in the <code style="font-family:Courier New;font-size:1rem">&ltbody&gt</code> is the 
+                  <code style="font-family:Courier New;font-size:1rem">&ltscript&gt</code> tag for the JS file. It's important to not put 
+                  this in the <code style="font-family:Courier New;font-size:1rem">&lthead&gt</code>.</p>
+
+                <p>Also, you'll see that there is an empty <code style="font-family:Courier New;font-size:1rem">&ltdiv&gt</code> with 
+                  <code style="font-family:Courier New;font-size:1rem">class=”backdrop”</code> that will serve as our backdrop, 
+                  which is the darkened overlay that will appear to be under the modal. There is also a 
+                  <code style="font-family:Courier New;font-size:1rem">&ltdiv&gt</code> which will serve as our modal with 
+                  <code style="font-family:Courier New;font-size:1rem">class=”modal”</code>, that contains some text. Within the 
+                  <code style="font-family:Courier New;font-size:1rem">&ltmain&gt</code> tag, there is a 
+                  <code style="font-family:Courier New;font-size:1rem">&ltdiv&gt</code> containing the image we will click on to activate, 
+                  or “turn on” the modal.</p>
+
+                <p style="background-color:#eeeeef;border:1px solid #000;padding:5px">Note: These class names are up to you to choose. 
+                  They should be different from each other, and they should make sense to you.</p>
+
+                <h6 style="font-size:1.1rem;font-weight:bold">CSS</h6>
+                <p>The CSS shown below shows how the modal and backdrop should be styled. While most of these properties control
+                positioning and appearance and are based in personal preference, there are three that are important for making the
+                elements appear and disappear in the right way. I have highlighted those properties in yellow.</p>
+
+                <p style="text-align:center">
+                  <img style="width:50%" src="img/martz-post2-modals/modal-css.png" alt="">
+                </p>
+                
+                <p><code style="font-family:Courier New;font-size:1rem">display:none</code> on both the modal and the backdrop prevents 
+                  them from showing up on the page when it loads. This property-value combination also takes these two elements out of the normal 
+                  document flow, which means that no space for them is reserved on the page. (Contrast this with the way 
+                  <code style="font-family:Courier New;font-size:1rem">visibility: hidden</code> works.). This is why the mountain image 
+                  is showing at the top of the page, even though the backdrop and modal elements were built first in the HTML.</p>
+
+                <p><code style="font-family:Courier New;font-size:1rem">position: fixed</code> causes these elements to remain in 
+                  the same place on the page even when the user scrolls. It is worth mentioning that this 
+                  property also takes the elements out of the document flow. So, if for some reason, we chose not to use 
+                  <code style="font-family:Courier New;font-size:1rem">display:none</code>, 
+                  <code style="font-family:Courier New;font-size:1rem">position: fixed</code> would still be allowing the mountain 
+                  image to appear at the top of the page.</p>
+
+                <p><code style="font-family:Courier New;font-size:1rem">z-index: 1</code> causes the modal to appear above other content 
+                  on the page. Note that the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index">
+                  <code style="font-family:Courier New;font-size:1rem">z-index</code></a> can be any integer, and it must be set higher than the 
+                  <code style="font-family:Courier New;font-size:1rem">z-index</code> of the element it will be appearing above. In this case, 
+                  that other element is the photo of the mountain. The default value of <code style="font-family:Courier New;font-size:1rem">z-index</code>
+                  for any element is <code style="font-family:Courier New;font-size:1rem">0</code>, and we did not change that for the mountain image. 
+                  This means that a <code style="font-family:Courier New;font-size:1rem">z-index</code> of 
+                  <code style="font-family:Courier New;font-size:1rem">1</code> or greater on the modal and backdrop will cause them to appear above the image.</p>
+                
+                <p>At this point, you may be wondering how the modal appears above the backdrop when they both have the same value for the 
+                  <code style="font-family:Courier New;font-size:1rem">z-index</code>. Notice that in the HTML code the backdrop comes before the modal. 
+                  When there is a “tie” in the <code style="font-family:Courier New;font-size:1rem">z-index</code> value, the order of elements in the HTML is the 
+                  tie-breaker. The element that comes later will be on top of the one that comes before it in the HTML.</p>
+                
+                <h6 style="font-size:1.1rem;font-weight:bold">JavaScript</h6>
+                
+                <p>Finally, we have the JS. In the following JS code, we tell the browser three kinds of things:</p>
+                <p>
+                  <ul>
+                    <li>
+                      <p>what “nicknames” we’ll use for the elements we’ll refer to in the JS code (i.e., the variable declarations),</p>
+                    </li>
+                    <li>
+                      <p>what to do when an event happens (i.e., the function declarations), and</p>
+                    </li>
+                    <li>
+                      <p>what events to “listen” for and which function to run when the event happens (i.e., event listeners)</p>
+                    </li>
+                  </ul>
+                </p>
+
+                <p style="text-align:center">
+                  <img style="width:85%" src="img/martz-post2-modals/modal-js.png" alt="">
+                </p>
+
+                <h6 style="text-decoration:underline">Variable Declarations</h6>
+
+                <p>The variables are declared at the top using <code style="font-family:Courier New;font-size:1rem">const</code>. 
+                  Each variable name will serve as a shorter way to refer to the element in the rest of the JS, similar to the way 
+                  we use a nickname for a person instead of their full name.</p>
+                
+                <p>The variable declarations here all use the <code style="font-family:Courier New;font-size:1rem">querySelector</code>
+                  method to find the elements we want to target in the document, or the DOM.</p>
+                
+                <p>As you can see above, we are targeting the image, backdrop and modal by their classes assigned in the CSS.</p>
+
+                <p style="background-color:#eeeeef;border:1px solid #000;padding:5px">Note: If there are multiple elements with 
+                  a given class name, <code style="font-family:Courier New;font-size:1rem">querySelector</code> will only find the 
+                  first one. If you need to find all of them for some reason, there are other methods that are better suited to the job.</p>
+
+                <p style="background-color:#eeeeef;border:1px solid #000;padding:5px">Note: Be careful to use came case (e.g., camelCase) 
+                  for the names of variables, functions, etc. in JS. If your CSS classes are specified in kebab case (e.g., kebab-case), 
+                  however, keep them that way in the parentheses of the <code style="font-family:Courier New;font-size:1rem">querySelector</code>
+                  method.</p>
+
+                <h6 style="text-decoration:underline">Function Declarations</h6>
+                
+                <p>Remember how our CSS gave a <code style="font-family:Courier New;font-size:1rem">display</code> value of 
+                  <code style="font-family:Courier New;font-size:1rem">none</code> to the 
+                  backdrop and modal? Well, now we want to write a JS function that will change the 
+                  <code style="font-family:Courier New;font-size:1rem">display</code> property to <code style="font-family:Courier New;font-size:1rem">block</code>
+                   for them so that they will appear on the page. A function is like instructions for what to do and in what order to do it. 
+                   Let’s call this function <code style="font-family:Courier New;font-size:1rem">openModal</code>. The two lines of code in this 
+                   function simply assign the value of <code style="font-family:Courier New;font-size:1rem">block</code> to the style display property. 
+                   They won’t do that assignment, though, until we call the function. More on that in a minute.</p>
+                
+                <p>We’ll also need a way to close (hide) the backdrop and modal after they are opened (displayed). To do that, we can write
+                  a nearly identical function called <code style="font-family:Courier New;font-size:1rem">closeModal</code> that will assign the value of 
+                  <code style="font-family:Courier New;font-size:1rem">none</code> to the style display property.</p>
+                
+                <h6 style="text-decoration:underline">Event Listeners</h6>
+
+                <p>If we stopped here, the code would never change anything on the page. To make that happen, we need to tell JavaScript to “listen”
+                  for a click on the image and then run the <code style="font-family:Courier New;font-size:1rem">openModal</code> function. Functions 
+                  don’t do anything until they are called, so we call the <code style="font-family:Courier New;font-size:1rem">openModal</code> 
+                  function in the event listener on the <code style="font-family:Courier New;font-size:1rem">imageMountain</code> element.</p>
+
+                <p>Once the backdrop and modal are displayed, however, we can’t access anything on the page. In the case of our simple 
+                  example, there isn’t anything on the page to interact with anyway, but most pages are not as simple as a single image. 
+                  They are usually designed for some interactivity of the user with buttons, navigation bars, and other page elements. 
+                  Now, remember the “layering” of our elements? If this were a typical page, all those clickable elements would be under 
+                  the backdrop, which takes up the whole screen. As long as the backdrop is displayed, those elements are not clickable, 
+                  and the user can’t interact with the page at all.</p>
+
+                <p>Event listeners to the rescue again! Let’s add an event listener to the backdrop so that when JavaScript “hears” a click 
+                  on it, the <code style="font-family:Courier New;font-size:1rem">closeModal</code> function will run. Actually, this event
+                  listener is already included as the last line in the JS code above. Try removing it in your code editor and notice that 
+                  the only way to make the backdrop disappear is to refresh the page. Always give your user an easy way to remove the backdrop 
+                  and modal by clicking on it.</p>
+
+                <h6 style="font-size:1.1rem;font-weight:bold">Bonus</h6>
+                <p>So, of course, it is very cool and quite empowering for you, as a new coder, to be able to add a modal to your website. 
+                  But, let’s be honest, in the real world, do you really want a modal to pop up <em>every</em> time the user clicks on the image? 
+                  Probably not. And, if the user is a customer who wants to buy something from you, you definitely don’t want to get in 
+                  the way of that shopping and payment process.</p>
+
+                <p>What if there was a way to have the modal display just one time right after the page loads instead of when the user clicks? 
+                  Well, there is! Instead of using an event listener that opens the modal, you could insert the following code at the bottom 
+                  (or the top; it doesn’t matter) of the JS file and remove the line of code for the click event on the image 
+                  (i.e., <code style="font-family:Courier New;font-size:1rem">imageMountain.addEventListener</code>…).</p>
+                
+                <p style="text-align:center">
+                  <img style="width:50%" src="img/martz-post2-modals/modal-delay-js.png" alt="">
+                </p>
+
+                <p>Here we are saying, “Run the <code style="font-family:Courier New;font-size:1rem">openModal</code> function after the page 
+                  has been open for 3000 milliseconds.” So, three full seconds after the page loads is when the modal will appear. The revised 
+                  full JS file would look like this:</p>
+
+                <p style="text-align:center">
+                  <img style="width:85%" src="img/martz-post2-modals/modal-final-js.png" alt="">
+                </p>
+                
+                <p>Note that the event listener that closes the modal with a click is still in there.</p>
+
+                <h6 style="font-size:1.1rem;font-weight:bold">A final word</h6>
+                <p>Modals have many uses, including error alerts, collecting information from users, and notification of a site’s privacy
+                or cookies policy. You <em>may</em> not have known how to implement a modal before, but after reading this article, surely you
+                <em>must</em> have a better idea now.</p>
+
+                <p>If you enjoyed the corny plays on words here, you <em>can</em> thank me. If not, it’s my editor’s fault. In any case,
+                congratulations on building your first modal! For more information on other events you could add to an event listener,
+                check out <a href="https://developer.mozilla.org/en-US/docs/Web/Events">MDN’s very extensive event reference</a>.</p>
+
+              </div>
+            </div>
+            <!-- /card -->
+
+            <!-- Card for Author -->
+            <div class="card mb-4 wow fadeIn">
+              <div class="card-header font-weight-bold">
+                <span>About author</span>
+                <span class="pull-right">
+                  <a href="https://www.facebook.com/andrea.p.martz">
+                    <i class="fab fa-facebook-f mr-2"></i>
+                  </a>
+                  <a href="https://twitter.com/amartzcoder">
+                    <i class="fab fa-twitter mr-2"></i>
+                  </a>
+                  <a href="https://www.instagram.com/andreamartz15/">
+                    <i class="fab fa-instagram mr-2"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/andreamartz/">
+                    <i class="fab fa-linkedin-in mr-2"></i>
+                  </a>
+                </span>
+              </div>
+
+              <!-- card content -->
+              <div class="card-body">
+                <div class="media d-block d-md-flex mt-3">
+                  <img class="d-flex mb-3 mx-auto z-depth-1" src="img/Andrea-prof.JPG"
+                    alt="photo of author Andrea Martz" style="width: 100px;border-radius:50%">
+                  <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                    <h5 class="mt-0 font-weight-bold">Andrea Martz</h5>
+                    <p>Andrea Martz is a rising self-taught web developer and "jack of many trades" in professional 
+                      certification testing. She has worked 100% remotely for most of her career. As the only employee
+                      at a small company, she improved products and processes to reduce costs and enhance client 
+                      engagement and satisfaction.</p>
+                    <p>Andrea is happiest when there is variety in her work, interesting problems to solve, and the chance to collaborate,
+                    because that almost always means she’ll get to learn new skills and help others learn also.</p>
+                  </div>
+                </div>
+              </div><!-- /card-body -->
+
+            </div><!-- /card -->
+          </div><!-- grid column end -->
+
+          <!--Grid column-->
+          <div class="col-md-4 mb-4">
+
+            <!--Card: Jumbotron-->
+            <div class="card mb-4 wow fadeIn">
+
+              <!-- Content -->
+              <div class="card-body text-center">
+
+                <h4 class="mb-4">
+                  <strong>Learn Digital Skills</strong>
+                </h4>
+                <p>
+                  <strong>Find out when the next cohort begins!</strong>
+                </p>
+                <p class="mb-4">
+                  <strong>The most comprehensive program to up your game in the remote career world.
+                  </strong>
+                </p>
+                <a target="_blank" href="https://www.momscan.co" class="btn btn-md">Learn More
+                  <i class="fas fa-graduation-cap ml-2"></i>
+                </a>
+
+              </div>
+              <!-- Content -->
+            </div>
+            <!--Card: Jumbotron-->
+
+          </div><!-- Grid Column -->
+
+        </div><!-- Grid: row -->
+      </section>
+      <!--section: post -->
+      <a href="cohort_4.html" class="btn white-text elegant-color">Back</a>
+    </div>
+  </main> <!-- /main layout-->
+
+  <!-- Footer -->
+  <footer class="page-footer font-small elegant-color pt-4 mt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase">Moms Can & Co</h5>
+          <p>Helping to optimize women for remote entry-level job <br>opportunities through our online program.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">The Moms Can Code School</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="cohort_1.html">Cohort One</a>
+            </li>
+            <li>
+              <a href="cohort_2.html">Cohort Two</a>
+            </li>
+            <li>
+              <a href="cohort_3.html">Cohort Three</a>
+            </li>
+            <li>
+              <a href="cohort_4.html">Cohort Four</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">Connect With Us</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright
+      <a href="www.momscan.co"> www.momscan.co</a>
+    </div>
+    <!-- Copyright -->
+
+
+  </footer>
+  <!--Footer-->
+
+</body>
+
+</html>

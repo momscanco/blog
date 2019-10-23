@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Moms Can & Co</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--Main Navigation-->
+    <header>
+      <!-- Just an image -->
+      <nav class="navbar navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo_momscanco copy.png" height="50" alt="MCC logo" />
+          </a>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+              <a
+                href="https://twitter.com/momscanco"
+                class="nav-link waves-effect waves-light"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://www.instagram.com/momscanco/"
+                class="nav-link waves-effect waves-light"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://www.facebook.com/momscanco/"
+                class="nav-link waves-effect waves-light"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mt-5 pt-5">
+      <!--Main container-->
+      <div class="container">
+        <!-- section: post -->
+        <section class="mt-4">
+          <!-- Grid Row -->
+          <div class="row">
+            <!-- Grid Column -->
+            <div class="col-md-8 mb-4">
+              <!-- Featured Image -->
+              <div class="card mb-4 wow fadeIn">
+                <img src="img/fly.jpg" class="img-fluid" alt="image" />
+              </div>
+              <!-- Featured Image -->
+
+              <!-- Card -->
+              <div class="card mb-4 wow fadeIn">
+                <!-- Card Content -->
+                <div class="card-body">
+                  <p class="h5 my-4">
+                    Debugging JavaScript 101
+                  </p>
+
+                  <blockquote class="blockquote">
+                    <p class="mb-0">
+                      Basic JavaScript debugging tools for beginners.
+                    </p>
+                    <footer class="blockquote-footer">Sarah Buckingham</footer>
+                  </blockquote>
+
+                  <p>
+                    Back in 1945, computers were as big as football fields with giant wires everywhere.  On September 9th, 1945, U.S Navy officer Grace Hopper, a pioneer of computer programming, was experiencing a malfunction on the computer she was working on (Harvard Mark I).  She explored the wires and between two spots on a relay, she noticed that there was a dead bug on the wire causing a malfunction. They even taped the bug and recorded the story in a log book.  Thus, birthing the terms “bug” and "debugging". 
+                  </p>
+                  <p>
+                    <img
+                      src="img/firstBug.jpg"
+                      class="img-fluid"
+                      alt="image"
+                    />
+                  </p>
+
+                  <p><b>VOCABULARY LESSON:</b></p>
+                  <p>
+                    Back then, a bug was a <i>LITERAL</i> bug.  
+                    <br />Today, a <font color="red">bug</font> is just an error in your program.  
+                    <br /><font color="red">Debugging</font> is the term used to describe the process of fixing the error.
+                    <br /><font color="red">Syntax bugs</font> are errors caused by something typed – it could be a spelling mistake or a command that the computer doesn’t understand, so it is unable to execute properly.
+                    <br /><font color="red">Logical bugs</font> are errors where even though the computer is able to carry out its instructions, it doesn’t act as the programmer intended or the user expects.
+                      <p><b>FUN FACT: Developers spend <i><u>more</u></i> time debugging code, than they do writing it</b></p>
+                  </p>
+
+                  <p>Therefore, it is vital to be up to parr on your debugging skills.  The better you are at diagnosing your bugs, the more time you save.</p>
+
+                  <p>Pro-tip: Don’t be a show-off and write clever code that is hard to read - it will be 10x harder to debug for you, and other developers who may need to debug it in the future….</p>
+
+                  <p><b>"Cool story. But how the heck do I know that the bug is an error in my JavaScript???"</b></p>
+                  <p>
+                    If you’re interactive functionality isn’t working properly, you’re likely experiencing JavaScript errors or conflicts.  For example, if you build a calculator and you attempt to add 5 + 1 and the result is 51, there is an error in your JavaScript code.  It’s important to know how to diagnose these errors and how to maximize the tools accessible to you to fix them.
+                  </p>
+
+                  <p><b>"Okay, gotcha. Teach me how to squash these bugs!"</b></p>
+                  
+                  <p>
+                    There are a lot of ways and tools to debug JavaScript- in this post, I’m going to talk about the 4 very basic tools understand ordered by level of power.
+                  </p>
+
+                  <p>
+                        <font size="5" color="red"
+                          ><b
+                            ><u
+                              >#1 THE SIMPLE "SHOO FLY" METHOD</u
+                            ></b
+                          ></font
+                        >
+                      </p>
+                      <img
+                      class="img-fluid"
+                      src="img/shoo-fly.gif"
+                    />
+                    <br />
+                    <br />
+                      <p><b>RUBBERDUCKING</b></p>
+    
+                      <p>
+                            Rubberducking is a method of debugging from the 1999 book The Pragmatic Programmer.  The process involves the following:
+                      </p>
+                      <img
+                      class="img-fluid"
+                      src="img/RubberDucky.jpg"
+                    />
+    
+                      <ol>
+                        <li>Obtain a rubber duck (or another inanimate object)</li>
+                        <li>Explain to your rubber ducky what your code is supposed to do.</li>
+                        <li>Go over your code line-by-line explaining what each line is doing in great detail.</li>  
+                        <li>At some point, you hopefully get to a spot in your code where what you tell the duck you are trying to does not align with what are actually doing in your code base</li>  
+                        <li>You kiss your rubber ducky, fix your code and voilà!</li>
+                      </ol>
+
+                  <p>
+                    <font size="5" color="red"
+                      ><b
+                        ><u
+                          >#2 THE GOOD OL' FLY SWATTER</u
+                        ></b
+                      ></font
+                    >
+                  </p>
+                  <img
+                      class="img-fluid"
+                      src="img/fly-swatter.gif"
+                    />
+                  <br />
+                  <br />
+                  <p><b>READING JAVASCRIPT ERROR MESSAGES</b></p>
+
+                  <p>If you’re functionality isn’t working right, the <b><u>first</u></b> instinct you should have is to <b><u>open your console and see if there are any errors.</u></b></p>
+
+                  <p>"COOL. NO clue how to do that..."</p>
+                <p></p>
+                  <ol>
+                    <li>Open your console</li>
+                    Every browser has a console for you to use - and a console provides you with the ability to write, manage and monitor your JavaScript code on demand.
+                    To open the developer console window on Chrome, use the keyboard shortcut <code>Cmd+Shift+J</code> (on Windows) or <code>Cmd+Option+J</code>(on Mac)
+                    <li> Identify the error - located in your console in red</li>
+                    Don’t be overwhelmed if there are a lot of lines and cryptic info in the stack trace.  Look for the file or files you were working on and look at the line number of the error.
+                    <img
+                      class="img-fluid"
+                      src="img/consoleError.png"
+                    />
+                    You can see that this error is a TypeError in line 2, index 1 of the file "Anonymous" 
+                    <li>Locate the error in your code base</li>  
+                    the console will provide you with the error type, the location/file of the error and the line number of the error.
+                    <li>Fix the error!</li>  
+                    Sometimes fixing it might involve the next two steps of debugging
+                  </ol>
+
+                  <p>
+                    <font size="5" color="red"
+                      ><b
+                        ><u
+                          >#3 THE ELECTRIC BUG ZAPPER</u
+                        ></b
+                      ></font
+                    >
+                  </p>
+                  <img
+                      class="img-fluid"
+                      src="img/bug-zapper.gif"
+                    />
+
+                  <br />
+                  <br /><p><b><code>CONSOLE.LOG();</code></b></p>
+
+                  <p>
+                    Your console gives you access to the console object which includes methods you can utilize to inspect your program.
+                  </p>
+                  <p><code>Console.log()</code> is one of the methods on the console object that outputs a message to the web console.  It can be extremely useful when debugging, because it allows you to examine different aspects of your code. You can examine variables or determine whether the logic in your program is executing correctly.</p>
+                  <p>For example, if you have an `if` statement and you want to see whether the `if` statement’s code executes, you can utilize console.log()</p>
+                  <ol>
+                  <li>Insert <code>console.log();</code> into your JavaScript</li>
+                  <li>Inside of the parentheses, add the things you want to be displayed on the screen in the console</li>
+                  EX: <code>console.log('This is HelloWorld Func', helloWorld();)</code>
+                  <li>When the browser executes your JavaScript and sees an expression like that, it knows that it's supposed to log the message to the Console</li>  
+                </ol>
+                  
+
+                  <p><code>Console.log()</code> is a simple debugging tool that doesn’t require any set-up making it convenient to use for an abundant amount of reasons.
+                    See other methods you can utilize from the console object <a href="https://levelup.gitconnected.com/moving-beyond-console-log-8-console-methods-you-should-use-when-debugging-javascript-and-node-25f6ac840ada">here</a></p>.
+
+                    <p>
+                        <font size="5" color="red"
+                          ><b
+                            ><u
+                              >#4 THE MR. MIYAGI METHOD</u
+                            ></b
+                          ></font
+                        >
+                      </p>
+                      <img
+                      class="img-fluid"
+                      src="img/mr-miyagi.gif"
+                    />
+    
+                      <br />
+                      <br /><p><b>CHROME DEVTOOLS DEBUGGER</b></p>
+    
+                      <p><code>Console.log();</code> is great to use when debugging smaller pieces of code.  However, when your code base grows, or you find yourself using multiple console.logs to debug, you may find yourself playing a wild goose chase trying to find the location of your bug.  This can become tedious and you might consider using a more powerful tool.  </p>    
+                      The debugger is one of the most powerful tools you can use.  The debugger allows you to pause at a specific spot in your program and step through your code line by line to inspect specific values as they evaluate, in real time.  As you move line by line, you are able to see exactly where functionality is breaking in your code. 
+                      
+                      <p>
+                          <p>How to use the debugger:</p>
+                      <ol>
+                        <li>Place the <code>debugger;</code> keyword in the spot where you want the debugger to pause your code.</li>
+                        <li>Open your console -- your console must be open for this to work! </li>
+                        <li>Go to the Sources Tab in your dev tools</li>  
+                        <li>Use the stepover function. 
+                            <img
+                            class="img-fluid"
+                            src="img/stepOverFunc.png"
+                          />
+                        The stepover function lets you go through your program line by line. You will see what variables are evaluated as under the “Script” section. </li>  
+                        <li>See where variables are being evaluating incorrectly, and SQUASH THAT BUG!</li>
+                      </ol>
+                    </p>
+
+                    <p>Debugging is part of the testing process and is an integral part of the entire software development lifecycle.   Something working and being bug-free the first time you do it, in programming will RARELY ever happen.  If you aren't able to diagnose, locate, and correct the error, then you might not ever have a properly functioning program.</p>
+                    <p>SO, get your rubber ducky and all your fly swat gear ready - time to train with Mr. Miyagi!</p>
+                  <p>Helpful Links:</p>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://developers.google.com/web/tools/chrome-devtools/javascript"
+                        >Getting Started with Debugging JavaScript DevTools</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://davidwalsh.name/fix-javascript-errors"
+                        >JavaScript Erros and How to Fix Them
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /card -->
+
+              <!-- Card for Author -->
+              <div class="card mb-4 wow fadeIn">
+                <div class="card-header font-weight-bold">
+                  <span>About Sarah</span>
+                  <span class="pull-right">
+                    <a
+                      href="https://medium.com/@sarah.rose.buckingham"
+                      target="_blank"
+                    >
+                      <i class="fab fa-medium mr-2"></i>
+                    </a>
+                    <a href="https://twitter.com/sbuck89" target="_blank">
+                      <i class="fab fa-twitter mr-2"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/sbuck89/"
+                      target="_blank"
+                    >
+                      <i class="fab fa-instagram mr-2"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/sarah-buckingham/"
+                      target="_blank"
+                    >
+                      <i class="fab fa-linkedin-in mr-2"></i>
+                    </a>
+                  </span>
+                </div>
+
+                <!-- card content -->
+                <div class="card-body">
+                  <div class="media d-block d-md-flex mt-3">
+                    <img
+                      class="d-flex mb-3 mx-auto z-depth-1"
+                      src="./img/sarah-buckingham.png"
+                      alt="placeholder image"
+                      style="width: 100px;"
+                    />
+                    <div
+                      class="media-body text-center text-md-left ml-md-3 ml-0"
+                    >
+                      <h5 class="mt-0 font-weight-bold">Sarah Buckingham</h5>
+                      I love to find innovative solutions to social problems.
+                      Working in Social Work, I’ve seen how tech can help reach
+                      vulnerable populations; helping people make more informed
+                      decisions, creating ways for people to connect, and giving
+                      people access to the tools they need to have agency in
+                      their own lives. The myriad of possibilities piqued my
+                      interest and so I decided to pursue an education at
+                      Fullstack Academy to become a software engineer to put my
+                      innovative ideas at play.
+                      <p>
+                        I am a mother of two VERY strong-willed children, and
+                        two rambunctious dogs. When I am not coding, I'm off
+                        hiking in the Pacific Northwest, traveling abroad, or
+                        have my nose in a captivating book. I have a strong
+                        passion for music and a deep love for black and white
+                        film photography. I am excited to continue to couple my
+                        expertise in Social Work with my passion as a full-stack
+                        developer to have a positive and lasting impact on the
+                        lives of many.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card-body -->
+              </div>
+              <!-- /card -->
+            </div>
+            <!-- grid column end -->
+
+            <!--Grid column-->
+            <div class="col-md-4 mb-4">
+              <!--Card: Jumbotron-->
+              <div class="card mb-4 wow fadeIn">
+                <!-- Content -->
+                <div class="card-body text-center">
+                  <h4 class="mb-4">
+                    <strong>Learn Digital Skills</strong>
+                  </h4>
+                  <p>
+                    <strong>Find out when the next cohort begins!</strong>
+                  </p>
+                  <p class="mb-4">
+                    <strong
+                      >The most comprehensive program to up your game in the
+                      remote career world.
+                    </strong>
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://www.momscan.co"
+                    class="btn btn-md"
+                    >Learn More
+                    <i class="fas fa-graduation-cap ml-2"></i>
+                  </a>
+                </div>
+                <!-- Content -->
+              </div>
+              <!--Card: Jumbotron-->
+            </div>
+            <!-- Grid Column -->
+          </div>
+          <!-- Grid: row -->
+        </section>
+        <!--section: post -->
+        <a href="cohort_4.html" class="btn white-text elegant-color">Back</a>
+      </div>
+    </main>
+    <!-- /main layout-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small elegant-color pt-4 mt-4">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+            <!-- Content -->
+            <h5 class="text-uppercase">Moms Can & Co</h5>
+            <p>
+              Helping to optimize women for remote entry-level job
+              <br />opportunities through our online program.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none pb-3" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">The Moms Can Code School</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="cohort_1.html">Cohort One</a>
+              </li>
+              <li>
+                <a href="cohort_2.html">Cohort Two</a>
+              </li>
+              <li>
+                <a href="cohort_3.html">Cohort Three</a>
+              </li>
+              <li>
+                <a href="cohort_4.html">Cohort Four</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Connect With Us</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="https://twitter.com/momscanco"
+                  class="nav-link waves-effect waves-light"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/momscanco/"
+                  class="nav-link waves-effect waves-light"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/momscanco/"
+                  class="nav-link waves-effect waves-light"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2018 Copyright
+        <a href="www.momscan.co"> www.momscan.co</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!--Footer-->
+  </body>
+</html>

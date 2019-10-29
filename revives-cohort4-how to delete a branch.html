@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Moms Can & Co</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--Main Navigation-->
+<header>
+
+<!-- Just an image -->
+<nav class="navbar navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo_momscanco copy.png" height="50" alt="MCC logo">
+    </a>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main class="mt-5 pt-5">
+  <!--Main container-->
+  <div class="container">
+    
+    <!-- section: post -->
+    <section class="mt-4">
+
+      <!-- Grid Row -->
+      <div class="row">
+
+        <!-- Grid Column -->
+        <div class="col-md-8 mb-4">
+          <!-- Featured Image -->
+          <div class="card mb-4 wow fadeIn">
+            <img src="img/yellow-iphone.jpg" class="img-fluid" alt="image">
+          </div><!-- Featured Image -->
+
+          <!-- Card -->
+          <div class="card mb-4 wow fadeIn">
+            <!-- Card Content -->
+            <div class="card-body">
+              <p class="h5 my-4">How to Delete a local Branch on Git</p>
+
+              <blockquote class="blockquote">
+                <p class="mb-0">Git ready to delete a local branch!</p>
+                <footer class="blockquote-footer">Almarose Revives</footer>
+              </blockquote>
+
+              <p>I get it. Git has specific ways to communicate our needs. It is a new language to novices like me who 
+                are entering the programming world. I knew that my question, "Why can't I just 
+                  delete a file instead of deleting a "branch" anyway?!?" would always lead me to a path of "You're going to learn
+                  it if you want to be a developer homegirl." There is no arguing about, "Why Can't We just...?" The only
+                  option is to learn it and be a "git teacher" to others to be proficient at git.  
+                  There's so much to learn, journal I must. Share I shall. Teach I will. The yoda in me will 
+                  conquer this git with you and overcome this new world of git beginning with: "Deleting a Branch on Git."
+
+                  <img src="img/revives-yoda.jpg" width="700px" height="500px" alt="yoda holding cane" > Image by <a href="https://pixabay.com/users/Ribastank-805206/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=667955">Ribastank</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=667955">Pixabay</a>
+              </p>
+              
+              <p>This tutorial is based on using the <a href="https://code.visualstudio.com/docs/introvideos/basics" target=_blank>visual code studio's terminal (VSC)</a>  where you enter the commands
+                  from a repository copied from Github. At anytime we enter a command in the terminal, we follow the command with
+                  the enter key. We do not surround our command with any quotation marks. We do not need periods after the command 
+                  (at least for this example and in majority of commands).
+              </p>
+
+              <p>FIRST:  How do we know which branch we need to remove? We do this by typing:  git branch. 
+                  (We do not need to type a period after the command in the terminal.) 
+                  Your terminal will reflect your name and your github user name before the $.
+                  Below shows an example with my name as the owner of the example terminal and my github user before the $. 
+                  We do not need to enter the latter information as it will automatically reflect this information on your terminal.
+                  <iframe src="https://share.getcloudapp.com/KouQ72Yj?embed=true" alt="terminal" width="575" height="400" style="border:none" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+              </p>
+
+              <p>
+                  SECOND: Once you hit enter, you'll find an asterisk * noted on the current branch you are viewing.
+                  In this example, there are 2 branches & 1 master branch. There is 1 branch called "almarose/techblog1" 
+                  & "almarose/techblog2." We need to delete the "almarose/techblog2" branch. (Extra credit if you remembered
+                  NOT to put quotation marks around the command and did not add a period at the end of the command.)
+                  <iframe src="https://share.getcloudapp.com/2NuAlGRG?embed=true" alt="branches-on-terminal" width="575" height="400" style="border:none" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+          
+              </p> 
+
+              <p>THIRD: On your terminal, type: "git branch -d branch-name-you-want-to-delete." 
+                You will get a confirmation on your terminal that your branch is deleted.  Remember: Do not include
+                the quotations around the command! (NOTICE: There are no quotation marks surrounding commands & 
+                does not have a period after the command. It just says: git branch.)
+
+                <iframe src="https://share.getcloudapp.com/12uEvXD5?embed=true" alt="branches-to-delete-terminal" width="575" height="400" style="border:none" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+              </p>
+
+              <p>
+                To have a clean view of your terminal and to double-confirm that the branch has been deleted, type: 
+                "git branch" to see what branches still exist.  Remember: Pat yourself on the back if you did not 
+                put quotations around the command. See example:
+                <iframe src="https://share.getcloudapp.com/nOuWvqN4?embed=true" alt="confirm-delete-branch" width="575" height="400" style="border:none" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+              </p>
+
+                 <p> CONGRATULATIONS!!! YOU ARE A GIT STAR !!! You have just successfully deleted a local branch on git
+                   using the VSC!  I'm proud of you!!!
+
+                   <img src="img/revives-congratulations.jpg" alt="congratulations" width="700px" height="500px" alt="good job congratulations thumbs up">Image by <a href="https://pixabay.com/users/rawpixel-4283981/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3935695">rawpixel</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3935695">Pixabay</a> 
+                   
+                 </p>
+
+                 <p>
+                   TO RECAP:
+                   (1) Follow your commands with the Enter key.
+                   (2) To view which branch you are currently viewing: Git branch.
+                   (3) To delete a local branch:  git branch -d branch-name-you-want-to-delete.
+                 </p>
+
+                 <p>
+                  Thank you for taking this git journey with me ! Best of luck in your programming adventures!
+                 </p>
+
+            
+            </div>
+          </div>
+        <!-- /card -->
+
+        <!-- Card for Author -->
+        <div class="card mb-4 wow fadeIn">
+          <div class="card-header font-weight-bold">
+            <span>About author</span>
+            <span class="pull-right">
+              
+              <a href="https://twitter.com/home">
+                  <i class="fab fa-twitter mr-2"></i>
+              </a>
+              
+              <a href="https://github.com/arevives">
+                  <i class="fab fa-github"></i>
+              </a>
+            </span>
+          </div>
+
+          <!-- card content -->
+          <div class="card-body">
+            <div class="media d-block d-md-flex mt-3">
+              <img class="d-flex mb-3 mx-auto z-depth-1" src="img/revives-family.jpg" alt="almarose family" style="width: 100px;">
+              <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                  <h5 class="mt-0 font-weight-bold">Almarose Revives</h5>
+                  Almarose has served people with special needs for over 10 years. She has been in the Speech & Language Pathology field helping
+                  to form communication using Augmentative & Alternative Communication (AAC) devices and educational
+                  apps as an Assistive Technology Specialist. One of her dreams is to work remotely as a Website Accessibility Consultant & a 
+                  Full-Stack Developer upon completion from Moms Can Code.  And the other is to play tennis like a boss--watch out Serena & Venus!  
+                  The best dream come true has been becoming a mother to her baby boy.
+                  
+                  <isindex>
+              </div>
+            </div>
+          </div><!-- /card-body -->
+
+        </div><!-- /card -->
+      </div><!-- grid column end -->
+
+          <!--Grid column-->
+          <div class="col-md-4 mb-4">
+
+              <!--Card: Jumbotron-->
+              <div class="card mb-4 wow fadeIn">
+
+              <!-- Content -->
+              <div class="card-body text-center">
+
+                <h4 class="mb-4">
+                  <strong>Learn Digital Skills</strong>
+                </h4>
+                <p>
+                  <strong>Find out when the next cohort begins!</strong>
+                </p>
+                <p class="mb-4">
+                  <strong>The most comprehensive program to up your game in the remote career world. 
+                    </strong>
+                </p>
+                <a target="_blank" href="https://www.momscan.co" class="btn btn-md">Learn More
+                  <i class="fas fa-graduation-cap ml-2"></i>
+                </a>
+
+              </div>
+              <!-- Content -->
+            </div>
+          <!--Card: Jumbotron-->
+
+          </div><!-- Grid Column -->
+
+      </div><!-- Grid: row -->
+    </section><!--section: post -->
+    <a href="cohort_4.html" class="btn white-text elegant-color">Back</a>
+   </div>
+  </main> <!-- /main layout-->
+
+<!-- Footer -->
+<footer class="page-footer font-small elegant-color pt-4 mt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase">Moms Can & Co</h5>
+          <p>Helping to optimize women for remote entry-level job <br>opportunities through our online program.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+            <!-- Links -->
+            <h5 class="text-uppercase">The Moms Can Code School</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="cohort_1.html">Cohort One</a>
+              </li>
+              <li>
+                <a href="cohort_2.html">Cohort Two</a>
+              </li>
+              <li>
+                <a href="cohort_3.html">Cohort Three</a>
+              </li>
+              <li>
+                <a href="cohort_4.html">Cohort Four</a>
+              </li>
+            </ul>
+  
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+  
+            <!-- Links -->
+            <h5 class="text-uppercase">Connect With Us</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+          <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright
+      <a href="www.momscan.co"> www.momscan.co</a>
+    </div>
+    <!-- Copyright -->
+  
+  
+</footer>
+<!--Footer-->
+  
+  </body>
+  </html>
+  

@@ -32,3 +32,10 @@ footer .fab {
   font-style: italic;
 }
 
+.nav-link {
+  float: left;
+}
+
+.infographic {
+  text-align: center;
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Moms Can & Co</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="css/mdb.min.css" rel="stylesheet">
+	<!-- Your custom styles (optional) -->
+	<link href="css/style.css" rel="stylesheet">
+	<style>
+
+	</style>
+</head>
+
+<body>
+
+	<!--Main Navigation-->
+	<header>
+
+		<!-- Just an image -->
+		<nav class="navbar navbar-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/logo_momscanco copy.png" height="50" alt="MCC logo">
+				</a>
+				<ul class="navbar-nav ml-auto nav-flex-icons">
+					<li class="nav-item">
+						<a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+							<i class="fab fa-facebook"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+	</header>
+	<!--Main Navigation-->
+
+	<!--Main layout-->
+	<main class="mt-5 pt-5">
+		<!--Main container-->
+		<div class="container">
+
+			<!-- section: post -->
+			<section class="mt-4">
+
+				<!-- Grid Row -->
+				<div class="row">
+
+					<!-- Grid Column -->
+					<div class="col-md-8 mb-4">
+						<!-- Featured Image -->
+						<div class="card mb-4 wow fadeIn">
+							<img src="img/dugan/dugan_tent-dog.jpg" class="img-fluid" alt="Woman and dog in tent">
+							<!-- Photo by Patrick Hendry on Unsplash -->
+						</div><!-- Featured Image -->
+
+						<!-- Card -->
+						<div class="card mb-4 wow fadeIn">
+							<!-- Card Content -->
+							<div class="card-body">
+								<h1>Simple Sass Compiling</h1>
+
+								<p class="lead">If you’ve been writing your own HTML and CSS for a while, you’ll know that the larger
+									the project, the more difficult it can be to keep your CSS nice and organized. Maybe you’ve done some
+									online tutorials to learn Sass (short for <i>syntactically awesome style sheets</i>), but how do make
+									the
+									jump from in-browser tutorials to using it in your own projects?
+								</p>
+								<h2>Compile? I Thought CSS was Front-End!</h2>
+								<p>Once you have your <code>.scss</code> file written, you’re not quite ready to upload to the server.
+									Since Sass is not understood natively by the browser, first it needs to be converted to format that
+									can be read. This step is called preprocessing. When you use a preprocessor on an <code>.scss</code>
+									file, it takes that file and compiles it into a regular <code>.css</code> file which can be read by
+									the browser
+									just as if you had written it by hand.</p>
+								<p>The resulting <code>.css</code> file is the one you upload and link to in your HTML.</p>
+
+								<h2>Options</h2>
+								<p>The preprocessing step can be done in one of two main ways: either via the command line, or by using
+									an application to handle it for you.
+								</p>
+								<h3>Command Line</h3>
+								<p>When installing Sass on the command line, you will need some familiarity using <a
+										href="https://nodejs.org/en/" target="_blank">Node.js</a> and <a href="https://www.npmjs.com/"
+										target="_blank">npm</a> or
+									another package manager such as <a href="https://brew.sh/" target="_blank">Homebrew</a> for Mac. For
+									beginners this can be intimidating and really
+									slow things down when all you want to do is try out some styling using Sass. Luckily, there is another
+									option.
+								</p>
+								<h3>Applications</h3>
+								<p>There are a number of applications (paid or free) that can be used to compile your Sass without
+									opening the terminal. Some, like <a href="https://codekitapp.com/" target="_blank">CodeKit</a>, are
+									more all-in-one solutions that in addition to
+									preprocessing Sass can also do post-processing tasks such as running <a
+										href="https://github.com/postcss/autoprefixer" target="_blank">Autoprefixer</a> or <a
+										href="https://babeljs.io/" target="_blank">Babel</a>. But if you
+									want something simple for your Sass experiments, Scout-App is a free tool for Windows, Mac and Linux
+									that does one thing: it watches for changes in your <code>.scss</code> files and compiles them to
+									<code>.css</code> on save.
+									Super easy!
+								</p>
+								<h4>Walkthrough Using Scout-App</h4>
+								<ol>
+									<li>Download Scout-App from <a href="https://scout-app.io/" target="_blank">https://scout-app.io/</a>
+									</li>
+									<li>Click the Add a Project button <img src="img/dugan/scout-1.png" class="img-fluid"
+											alt="Screenshot of Scout-App"></li>
+									<li>Choose your Input Folder (the location of your <code>.scss</code> file(s)) <img
+											src="img/dugan/scout-2.png" class="img-fluid" alt="Screenshot of Scout-App"></li>
+									<li>Choose your Output Folder (where the <code>.css</code> should go)</li>
+									<li>Select your desired Environment settings (for example, compact the CSS for production)</li>
+									<li>Click the blue triangle to run.</li>
+								</ol>
+								<p>Now whenever you save the <code>.scss</code> file, Scout will automatically compile it into
+									<code>.css</code>!
+								</p>
+								<h2>Go Forth and Be Sassy!</h2>
+								<p>If you are just getting your feet wet in the world of CSS preprocessors, you don’t have to take a
+									detour and become an expert on npm if you’re not ready for it. Thanks to some GUI applications, the
+									benefits of writing <code>.scss</code> are within your reach for your own learning and personal
+									projects.</p>
+
+								<h3>Resources</h3>
+								<ul>
+									<li><a href="https://sass-lang.com/install" target="_blank">Sass: Install Sass</a></li>
+									<li><a href="https://scout-app.io/" target="_blank">Scout-App</a></li>
+									<li><a href="https://codekitapp.com/" target="_blank">CodeKit</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /card -->
+
+						<!-- Card for Author -->
+						<div class="card mb-4 wow fadeIn">
+							<div class="card-header font-weight-bold">
+								<span>About the author</span>
+								<span>
+									<a class="p-2" href="https://www.linkedin.com/in/kristidugan/" target="_blank">
+										<i class="fab fa-linkedin"></i>
+									</a>
+
+									<a class="p-2" href="https://twitter.com/codemamakristi" target="_blank">
+										<i class="fab fa-twitter"></i>
+									</a>
+
+									<a class="p-2" href="https://github.com/KristiDugan" target="_blank">
+										<i class="fab fa-github"></i>
+									</a>
+								</span>
+							</div>
+
+							<!-- card content -->
+							<div class="card-body">
+								<div class="media d-block d-md-flex mt-3">
+									<img class="d-flex mb-3 mx-auto z-depth-1 rounded" width="100" src="img/dugan/dugan_profile-photo.jpg"
+										alt="Kristi Dugan">
+									<div class="media-body text-center text-md-left ml-md-3 ml-0">
+										<h5 class="mt-0 font-weight-bold">Kristi Dugan</h5>
+										Kristi Dugan has been a Front-End Web Developer since the early days of CSS. She has helped
+										companies small and large expand their web presence in the areas of arts education, online learning
+										and healthcare. With an enthusiasm for researching and utilizing web technologies, she excels at
+										solving the problem at hand in the most fitting manner for both the client and end user. Her
+										background in the arts, language, and business has aided her career in technology by giving her an
+										appreciation for good design and the ability to communicate effectively with stakeholders of varying
+										levels of technical expertise. Kristi is currently working with a group of women in the Moms Can
+										Code School, which helps mothers gain the skills necessary to work remotely while still being there
+										for their family. When not studying to become a Full-Stack JavaScript Developer, she enjoys spending
+										time with her husband and three young children. You can find out more about Kristi at <a
+											href="https://kristidugan.com" target="_blank">kristidugan.com</a>.
+
+									</div>
+								</div>
+							</div><!-- /card-body -->
+
+						</div><!-- Card for Author end -->
+
+					</div><!-- grid column end -->
+
+					<!--Grid column-->
+					<div class="col-md-4 mb-4">
+
+						<!--Card: Jumbotron-->
+						<div class="card mb-4 wow fadeIn">
+
+							<!-- Content -->
+							<div class="card-body text-center">
+
+								<h4 class="mb-4">
+									<strong>Learn Digital Skills</strong>
+								</h4>
+								<p>
+									<strong>Find out when the next cohort begins!</strong>
+								</p>
+								<p class="mb-4">
+									<strong>The most comprehensive program to up your game in the remote career world.
+									</strong>
+								</p>
+								<a target="_blank" href="https://www.momscan.co" class="btn btn-md">Learn More
+									<i class="fas fa-graduation-cap ml-2"></i>
+								</a>
+
+							</div>
+							<!-- Content -->
+						</div>
+						<!--Card: Jumbotron-->
+
+					</div><!-- Grid Column -->
+
+				</div><!-- Grid: row -->
+			</section>
+			<!--section: post -->
+			<a href="cohort_5.html" class="btn white-text elegant-color">Back</a>
+		</div>
+	</main> <!-- /main layout-->
+
+	<!-- Footer -->
+	<footer class="page-footer font-small elegant-color pt-4 mt-4">
+
+		<!-- Footer Links -->
+		<div class="container text-center text-md-left">
+
+			<!-- Grid row -->
+			<div class="row">
+
+				<!-- Grid column -->
+				<div class="col-md-6 mt-md-0 mt-3">
+
+					<!-- Content -->
+					<h5 class="text-uppercase">Moms Can & Co</h5>
+					<p>Helping to optimize women for remote entry-level job <br>opportunities through our online program.</p>
+
+				</div>
+				<!-- Grid column -->
+
+				<hr class="clearfix w-100 d-md-none pb-3">
+
+				<!-- Grid column -->
+				<div class="col-md-3 mb-md-0 mb-3">
+
+					<!-- Links -->
+					<h5 class="text-uppercase">The Moms Can Code School</h5>
+
+					<ul class="list-unstyled">
+						<li>
+							<a href="cohort_1.html">Cohort One</a>
+						</li>
+						<li>
+							<a href="cohort_2.html">Cohort Two</a>
+						</li>
+						<li>
+							<a href="cohort_3.html">Cohort Three</a>
+						</li>
+						<li>
+							<a href="cohort_4.html">Cohort Four</a>
+						</li>
+						<li>
+							<a href="cohort_5.html">Cohort Five</a>
+						</li>
+					</ul>
+
+				</div>
+				<!-- Grid column -->
+
+				<!-- Grid column -->
+				<div class="col-md-3 mb-md-0 mb-3">
+
+					<!-- Links -->
+					<h5 class="text-uppercase">Connect With Us</h5>
+
+					<ul class="list-unstyled">
+						<li>
+							<a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+								<i class="fab fa-facebook"></i>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+				<!-- Grid column -->
+
+			</div>
+			<!-- Grid row -->
+
+		</div>
+		<!-- Footer Links -->
+
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">&copy; 2020 Copyright
+			<a href="www.momscan.co"> www.momscan.co</a>
+		</div>
+		<!-- Copyright -->
+
+
+	</footer>
+	<!--Footer-->
+
+</body>
+
+</html>

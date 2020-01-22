@@ -76,29 +76,32 @@
 
               <blockquote class="blockquote">
                 <p class="mb-0">How to use Flexbox to div elements to achieve flexible layouts for website.</p>
-                <footer class="blockquote-footer">Shradha Doshi</footer>
+                <div class="blockquote-footer">Shradha Doshi</div>
               </blockquote>
 
-              <p>As a beginner in web development struggling with making my web page items “behave” using float was extremely hard and inconsistent. So, when I read about flexbox and how the “flex”ibility was going to be the answer for everything, I was over the moon. However, when I started using it in my project, I had entirely different feelings. </p>
+              <p>As a beginner in web development struggling with making my web page items “behave” using float 
+                was extremely hard and inconsistent. So, when I read about flexbox and how the “flex"ibility was 
+                going to be the answer for everything, I was over the moon. However, when I started using it in 
+                my project, I had entirely different feelings.</p>
               
-              <p><i>Below you see on the  is my portfolio with just using float</i></p>
-              <img src="img/before-flex.PNG" height="400" width= "600"alt="Portfolio Before Flexbox">
+              <p><i>Below you see my portfolio which was styled with the use of a float</i></p>
+              <img src="img/before-flex.PNG" class="img-fluid" alt="Portfolio Before Flexbox">
               <br>
               <p><i>..and this is what I was able to achieve using flexbox</i></p><br>
-              <img src="img/after-flex.PNG" height="400" width= "600"alt="Portfolio After Flexbox">
+              <img src="img/after-flex.PNG" class="img-fluid" alt="Portfolio After Flexbox">
             
               <p>The <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">basic tutorials</a> on flexbox syntax showed how I can move the items under portfolio adjacent to each other with row and column properties.I really thought I found my magic solution in flexbox. I truly believed “display: flex; “ was the answer to all my problems. Until I started applying Flexbox to nested div behave very differently when using flexbox.</p>
               <p>
              Here is a before wireframe which is the very basis of all my div elements in my html-
                 </p>
-                <img src="img/wireframe-beforeflex.png" height="400" width= "600" alt="Wirefram for Before Flexbox">
+                <img src="img/wireframe-beforeflex.png" class="img-fluid" alt="Wirefram for Before Flexbox">
                 
 
             <p>
                 Notice that I didn’t account for the container that holds portfolio header, portfolio, about me, publication, contact me aka the purple container. I was applying flexbox to parent “portfolio” and the child “portfolio items” and it wouldn’t take effect, no matter what I did. Or all sections within purple container would overlap over each other making the content unreadable.
             </p>
             <p>  Here is my after -</p>
-            <img src="img/wireframe-afterflex.png" height="400" width= "600"alt="Wirefram for After Flexbox">
+            <img src="img/wireframe-afterflex.png" class="img-fluid" alt="Wirefram for After Flexbox">
             <p>Few changes I made are as below- 
                 <ol>
                 <li>HTML Change: I add a div element of ”content-wrapper” which is now parent to child items portfolio, about me, publication and contact me. These again hold their own child items</li>
@@ -190,7 +193,7 @@
 
       </div><!-- Grid: row -->
     </section><!--section: post -->
-    <a href="cohort_4.html" class="btn white-text elegant-color">Back</a>
+    <a href="cohort_5.html" class="btn white-text elegant-color">Back</a>
    </div>
   </main> <!-- /main layout-->
 
@@ -233,6 +236,9 @@
               </li>
               <li>
                 <a href="cohort_4.html">Cohort Four</a>
+              </li>
+              <li>
+                <a href="cohort_5.html">Cohort Five</a>
               </li>
             </ul>
   

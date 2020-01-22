@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Moms Can & Co</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--Main Navigation-->
+<header>
+
+<!-- Just an image -->
+<nav class="navbar navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo_momscanco copy.png" height="50" alt="MCC logo">
+    </a>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main class="mt-5 pt-5">
+  <!--Main container-->
+  <div class="container">
+    
+    <!-- section: post -->
+    <section class="mt-4">
+
+      <!-- Grid Row -->
+      <div class="row">
+
+        <!-- Grid Column -->
+        <div class="col-md-8 mb-4">
+          <!-- Featured Image -->
+          <div class="card mb-4 wow fadeIn">
+            <img src="img/doshi_cohort5_headerimage.jpg" class="img-fluid" alt="image">
+          </div><!-- Featured Image -->
+
+          <!-- Card -->
+          <div class="card mb-4 wow fadeIn">
+            <!-- Card Content -->
+            <div class="card-body">
+              <p class="h5 my-4">Extending Flexbox To Existing Nested Div Elements</p>
+
+              <blockquote class="blockquote">
+                <p class="mb-0">How to use Flexbox to div elements to achieve flexible layouts for website.</p>
+                <footer class="blockquote-footer">Shradha Doshi</footer>
+              </blockquote>
+
+              <p>As a beginner in web development struggling with making my web page items “behave” using float was extremely hard and inconsistent. So, when I read about flexbox and how the “flex”ibility was going to be the answer for everything, I was over the moon. However, when I started using it in my project, I had entirely different feelings. </p>
+              
+              <p><i>Below you see on the  is my portfolio with just using float</i></p>
+              <img src="img/before-flex.PNG" height="400" width= "600"alt="Portfolio Before Flexbox">
+              <br>
+              <p><i>..and this is what I was able to achieve using flexbox</i></p><br>
+              <img src="img/after-flex.PNG" height="400" width= "600"alt="Portfolio After Flexbox">
+            
+              <p>The <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">basic tutorials</a> on flexbox syntax showed how I can move the items under portfolio adjacent to each other with row and column properties.I really thought I found my magic solution in flexbox. I truly believed “display: flex; “ was the answer to all my problems. Until I started applying Flexbox to nested div behave very differently when using flexbox.</p>
+              <p>
+             Here is a before wireframe which is the very basis of all my div elements in my html-
+                </p>
+                <img src="img/wireframe-beforeflex.png" height="400" width= "600" alt="Wirefram for Before Flexbox">
+                
+
+            <p>
+                Notice that I didn’t account for the container that holds portfolio header, portfolio, about me, publication, contact me aka the purple container. I was applying flexbox to parent “portfolio” and the child “portfolio items” and it wouldn’t take effect, no matter what I did. Or all sections within purple container would overlap over each other making the content unreadable.
+            </p>
+            <p>  Here is my after -</p>
+            <img src="img/wireframe-afterflex.png" height="400" width= "600"alt="Wirefram for After Flexbox">
+            <p>Few changes I made are as below- 
+                <ol>
+                <li>HTML Change: I add a div element of ”content-wrapper” which is now parent to child items portfolio, about me, publication and contact me. These again hold their own child items</li>
+                <li>CSS Changes: After having made this change in html, I removed all percent height attributes within nested elements </li>
+                <li>Also, added display flex to all parent and child and grandchild items</li>
+                    <ol type="a">
+                        <li>Content-Wrapper: I set <code>flex-direction:column;</code> This makes sure portfolio, about me, publication, contact me are one below another</li>
+                        <li>Portfolio, About me: I set <code>flex-direction:row;</code>. The makes sure their child items are set in a row fashion adjacent to each other. Also setting parent to     align-items: stretch; makes sure the child items will stretch across whole cross axis which is vertical by default and the flexbox items fill up the whole vertical space.</li>
+                        <li>Portfolio-items: In order to view each portfolio items adjacent to each other in one row and take similar space I utilized flex property to set flex-basis using the syntax <code>flex: 0 0 33.3333%;</code></li>
+                        <li>I also created some separation between each portfolio-items by setting     margin: 0 10px; Flexbox items stick to each other by default.</li>
+                    </ol>
+                </ol>
+            </p>
+            <p>Conclusion: It is important to know that flexbox is a one dimensional layout which enforces us to think in either row or column and the content flows from left-right or top to bottom.</p>
+            <p>Resources: 
+                <ul>
+                    <li>Nested Div-</li>
+                    <ul>
+                        <li><a href="https://medium.com/@neernim/how-to-use-css-flexbox-on-nested-divs-6ebc0b63810">https://medium.com/@neernim/how-to-use-css-flexbox-on-nested-divs-6ebc0b63810</a></li>
+                        <li><a href="https://stackoverflow.com/questions/18639129/how-to-make-nested-flexboxes-work">https://stackoverflow.com/questions/18639129/how-to-make-nested-flexboxes-work</a></li>
+                     </ul>
+                     <li>Basics</li>
+                     <ul>
+                     <li><a href="https://www.freecodecamp.org/news/an-animated-guide-to-flexbox-d280cf6afc35/">https://www.freecodecamp.org/news/an-animated-guide-to-flexbox-d280cf6afc35/</a></li>
+                        <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></li>
+                        <li><a href= "https://medium.com/@jillplatts/6-minute-beginners-guide-to-css-flexbox-527b3ff3480b">https://medium.com/@jillplatts/6-minute-beginners-guide-to-css-flexbox-527b3ff3480b</a></li>
+                            <li> <a href= "https://spaceninja.com/2015/08/24/what-is-flexbox/">https://spaceninja.com/2015/08/24/what-is-flexbox/</a></li>
+
+                     </ul>
+                </ul>
+                </p>
+            </div>
+          </div>
+        <!-- /card -->
+
+        <!-- Card for Author -->
+        <div class="card mb-4 wow fadeIn">
+          <div class="card-header font-weight-bold">
+            <span>About author</span>
+            <a href="https://www.linkedin.com/in/shradha-doshi/">
+                <i class="fab fa-linkedin-in mr-2"></i>
+            </a>
+          </span>
+        </div>
+
+          <!-- card content -->
+          <div class="card-body">
+            <div class="media d-block d-md-flex mt-3">
+              <img class="d-flex mb-3 mx-auto z-depth-1" src="img/shradha_agileboard_002.png" alt="Shradha's Image" style="width: 100px;">
+              <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                  <h5 class="mt-0 font-weight-bold">Shradha Doshi</h5>
+                  Shradha Doshi is a product owner, an entrepreneur a mom of 2 girls and an aspiring web developer. She firmly believes in user centric, empathy based design and how products and websites built with these principles help bring communities together. She loves working in product management and development since it allows her to practice her passion in design, finding solutions that work for masses and where she gets to change lens between big picture and minute details. Her future goals include empowering stay at home parents especially mothers trying to get back into the workforce based on her own journey and share the lessons she’s learned along the way. When she isnt working, she loves cooking, spending time with her husband and 2 kids and doing arts and crafts with them.
+              </div>
+            </div>
+          </div><!-- /card-body -->
+
+        </div><!-- /card -->
+      </div><!-- grid column end -->
+
+          <!--Grid column-->
+          <div class="col-md-4 mb-4">
+
+              <!--Card: Jumbotron-->
+              <div class="card mb-4 wow fadeIn">
+
+              <!-- Content -->
+              <div class="card-body text-center">
+
+                <h4 class="mb-4">
+                  <strong>Learn Digital Skills</strong>
+                </h4>
+                <p>
+                  <strong>Find out when the next cohort begins!</strong>
+                </p>
+                <p class="mb-4">
+                  <strong>The most comprehensive program to up your game in the remote career world. 
+                    </strong>
+                </p>
+                <a target="_blank" href="https://www.momscan.co" class="btn btn-md">Learn More
+                  <i class="fas fa-graduation-cap ml-2"></i>
+                </a>
+
+              </div>
+              <!-- Content -->
+            </div>
+          <!--Card: Jumbotron-->
+
+          </div><!-- Grid Column -->
+
+      </div><!-- Grid: row -->
+    </section><!--section: post -->
+    <a href="cohort_4.html" class="btn white-text elegant-color">Back</a>
+   </div>
+  </main> <!-- /main layout-->
+
+<!-- Footer -->
+<footer class="page-footer font-small elegant-color pt-4 mt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase">Moms Can & Co</h5>
+          <p>Helping to optimize women for remote entry-level job <br>opportunities through our online program.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+            <!-- Links -->
+            <h5 class="text-uppercase">The Moms Can Code School</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="cohort_1.html">Cohort One</a>
+              </li>
+              <li>
+                <a href="cohort_2.html">Cohort Two</a>
+              </li>
+              <li>
+                <a href="cohort_3.html">Cohort Three</a>
+              </li>
+              <li>
+                <a href="cohort_4.html">Cohort Four</a>
+              </li>
+            </ul>
+  
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+  
+            <!-- Links -->
+            <h5 class="text-uppercase">Connect With Us</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://twitter.com/momscanco" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/momscanco/" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/momscanco/" class="nav-link waves-effect waves-light">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+          <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright
+      <a href="https://www.momscan.co/">www.momscan.co</a>
+    </div>
+    <!-- Copyright -->
+  
+  
+</footer>
+<!--Footer-->
+  
+  </body>
+  </html>
+  
